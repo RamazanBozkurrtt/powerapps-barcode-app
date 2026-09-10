@@ -1,0 +1,12 @@
+[
+  {
+    "file": "monitor.json",
+    "bytes": 203049,
+    "sha256": "73e741e8c3c149d27859b7a6fc1f49aa91b02bf36c0ca0d5b23b38e6abb25d64"
+  },
+  {
+    "file": "studio.msapp",
+    "bytes": 258251,
+    "sha256": "1a38eb954b7a6b9037fde20e21a2ff69c9f41f67d83ca8cff5d3eb8283072ab6"
+  }
+]

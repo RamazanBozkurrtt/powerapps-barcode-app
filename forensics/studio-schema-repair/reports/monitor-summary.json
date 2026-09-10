@@ -1,0 +1,232 @@
+[
+  {
+    "time_utc": "2026-09-10T12:23:22.113000+00:00",
+    "category": "Runtime",
+    "name": "Client session id",
+    "data": {
+      "clientSessionId": "4acc5dcf-c19f-4f43-a44d-664756d0750d"
+    }
+  },
+  {
+    "time_utc": "2026-09-10T12:23:22.113000+00:00",
+    "category": "Function",
+    "name": "Hata",
+    "data": {
+      "errorMessage": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı.",
+      "raiseToastNotification": false,
+      "wasReported": false,
+      "functionName": null,
+      "context": null,
+      "info": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı."
+    }
+  },
+  {
+    "time_utc": "2026-09-10T12:23:28.083000+00:00",
+    "category": "Function",
+    "name": "Hata",
+    "data": {
+      "errorMessage": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı.",
+      "raiseToastNotification": false,
+      "wasReported": false,
+      "functionName": null,
+      "context": null,
+      "info": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı."
+    }
+  },
+  {
+    "time_utc": "2026-09-10T12:23:28.442000+00:00",
+    "category": "Network",
+    "name": "getRows",
+    "url": "https://org81ed1142.crm4.dynamics.com/api/data/v9.0/msdyn_aimodels?%24filter=%28%28msdyn_TemplateId%2Fmsdyn_uniquename+eq+%27TextRecognition%27%29and%28statecode+eq+1%29%29and%28statuscode+eq+1%29&%24select=msdyn_aimodelid&%24top=1&%24count=true",
+    "status": 200,
+    "start": "2026-09-10T12:23:27.992Z",
+    "end": "2026-09-10T12:23:28.442Z",
+    "response": {
+      "@odata.context": "https://org81ed1142.crm4.dynamics.com/api/data/v9.0/$metadata#msdyn_aimodels(msdyn_aimodelid)",
+      "@odata.count": 1,
+      "@Microsoft.Dynamics.CRM.totalrecordcount": 1,
+      "@Microsoft.Dynamics.CRM.totalrecordcountlimitexceeded": false,
+      "@Microsoft.Dynamics.CRM.globalmetadataversion": "29878103",
+      "value": [
+        {
+          "@odata.etag": "W/\"29721287\"",
+          "msdyn_aimodelid": "86419a67-205a-454f-b6fc-601394f2786d"
+        }
+      ]
+    }
+  },
+  {
+    "time_utc": "2026-09-10T12:23:33.082000+00:00",
+    "category": "Network",
+    "name": "invokeAction",
+    "url": "https://org81ed1142.crm4.dynamics.com/api/data/v9.0/msdyn_aimodels%2886419a67-205a-454f-b6fc-601394f2786d%29/Microsoft.Dynamics.CRM.Predict?%24format=application%2Fjson%3Bodata.metadata%3Dnone",
+    "status": 200,
+    "start": "2026-09-10T12:23:28.444Z",
+    "end": "2026-09-10T12:23:33.082Z",
+    "response": {
+      "response": null,
+      "overrideHttpStatusCode": null,
+      "overrideLocation": null,
+      "overrideRetryAfter": null,
+      "responsev2": {
+        "operationStatus": "Success",
+        "predictionId": "8f6fd3d4-7697-4e0b-a133-47fab4d224db",
+        "predictionOutput": {
+          "fullText": "10120 MX\nSelam\nMerhaba\n2032 MB",
+          "costAsAiBuilderCredits": 3,
+          "costAsCopilotCredits": 0,
+          "results": [
+            {
+              "page": 1,
+              "fullPageText": "10120 MX\nSelam\nMerhaba\n2032 MB",
+              "lines": [
+                {
+                  "text": "10120 MX",
+                  "boundingBox": {
+                    "left": 0.3433333333333333,
+                    "top": 0.270625,
+                    "width": 0.31083333333333335,
+                    "height": 0.041874999999999996,
+                    "polygon": {
+                      "coordinates": [
+                        {
+                          "x": 0.3433333333333333,
+                          "y": 0.27125
+                        },
+                        {
+                          "x": 0.6541666666666667,
+                          "y": 0.270625
+                        },
+                        {
+                          "x": 0.6541666666666667,
+                          "y": 0.311875
+                        },
+                        {
+                          "x": 0.3433333333333333,
+                          "y": 0.3125
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "text": "Selam",
+                  "boundingBox": {
+                    "left": 0.3375,
+                    "top": 0.420625,
+                    "width": 0.16333333333333333,
+                    "height": 0.04624999999999996,
+                    "polygon": {
+                      "coordinates": [
+                        {
+                          "x": 0.3375,
+                          "y": 0.425
+                        },
+                        {
+                          "x": 0.5008333333333334,
+                          "y": 0.420625
+                        },
+                        {
+                          "x": 0.49916666666666665,
+                          "y": 0.46125
+                        },
+                        {
+                          "x": 0.33916666666666667,
+                          "y": 0.466875
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "text": "Merhaba",
+                  "boundingBox": {
+                    "left": 0.32916666666666666,
+                    "top": 0.46875,
+                    "width": 0.24833333333333335,
+                    "height": 0.05062500000000003,
+                    "polygon": {
+                      "coordinates": [
+                        {
+                          "x": 0.32916666666666666,
+                          "y": 0.476875
+                        },
+                        {
+                          "x": 0.575,
+                          "y": 0.46875
+                        },
+                        {
+                          "x": 0.5775,
+                          "y": 0.51
+                        },
+                        {
+                          "x": 0.3308333333333333,
+                          "y": 0.519375
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "text": "2032 MB",
+                  "boundingBox": {
+                    "left": 0.325,
+                    "top": 0.555,
+                    "width": 0.25499999999999995,
+                    "height": 0.04937499999999995,
+                    "polygon": {
+                      "coordinates": [
+                        {
+                          "x": 0.325,
+                          "y": 0.568125
+                        },
+                        {
+                          "x": 0.5775,
+                          "y": 0.555
+                        },
+                        {
+                          "x": 0.58,
+                          "y": 0.590625
+                        },
+                        {
+                          "x": 0.3283333333333333,
+                          "y": 0.604375
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "time_utc": "2026-09-10T12:23:33.190000+00:00",
+    "category": "Function",
+    "name": "Hata",
+    "data": {
+      "errorMessage": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı.",
+      "raiseToastNotification": false,
+      "wasReported": false,
+      "functionName": null,
+      "context": null,
+      "info": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı."
+    }
+  },
+  {
+    "time_utc": "2026-09-10T12:23:36.396000+00:00",
+    "category": "Function",
+    "name": "Hata",
+    "data": {
+      "errorMessage": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı.",
+      "raiseToastNotification": false,
+      "wasReported": false,
+      "functionName": null,
+      "context": null,
+      "info": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı."
+    }
+  }
+]
