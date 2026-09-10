@@ -278,7 +278,10 @@ def verify():
     for p in (BASE / 'repaired' / 'Src').rglob('*'):
         if p.is_file():
             assert p.read_bytes() == (BASE / 'roundtrip' / 'Src' / p.relative_to(BASE / 'repaired' / 'Src')).read_bytes()
-    dump('validation.json', {'package_validation': 'PASS', 'runtime': 'REQUIRES POWER APPS STUDIO',
+    acceptance_path = REPORTS / 'runtime-acceptance.json'
+    acceptance = json.loads(acceptance_path.read_text(encoding='utf-8')) if acceptance_path.exists() else None
+    dump('validation.json', {'package_validation': 'PASS', 'runtime': acceptance['status'] if acceptance else 'REQUIRES POWER APPS STUDIO',
+          'runtime_acceptance': acceptance,
           'runtime_reason': 'Computer-use inventory returned apps=[] and browsers=[]; getBrowser for https://make.powerapps.com/ returned No browser is available. No player session was executed.',
           'output': str(OUTPUT), 'bytes': OUTPUT.stat().st_size, 'sha256': sha(OUTPUT.read_bytes()),
           'changed_package_entries': changed, 'schema_scans': scans,
@@ -288,7 +291,7 @@ def verify():
           'all_formulas_and_instance_ids_preserved': True, 'repaired_msapr_equals_reunpacked_msapr_except_pack_timestamp': True,
           'original_input_hashes_unchanged': True,
           'retained_historical_checker_report': 'AppCheckerResult.sarif is unchanged historical analysis, not an executable schema or a fresh validation.'})
-    print('PACKAGE VALIDATION: PASS. Runtime was not executed.')
+    print('PACKAGE VALIDATION: PASS. ' + ('User-reported runtime: ' + acceptance['status'] if acceptance else 'Runtime was not executed.'))
 
 
 if __name__ == '__main__':

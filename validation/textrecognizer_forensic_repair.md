@@ -1,5 +1,13 @@
 TextRecognizer forensic repair
 
+**SUPERSEDING RUNTIME RESULT — FAIL (user-reported).** The delivered repair still produces the same JSON error during navigation. The earlier package PASS below means only that the requested metadata transplant survived local serialization. It is not a successful application repair. The former exact-runtime-root-cause conclusion is withdrawn: classification **F — unknown; more evidence required**, with a proven historical schema discrepancy. The original report is retained below as the record of that attempted repair.
+
+The supplied Monitor session reports errors at 15:23:22.113, 15:23:28.083, 15:23:33.190, and 15:23:36.396; getRows and invokeAction succeeded between them. Error controlName, propertyName, nodeId, functionName, and context are null and formula script is empty. This does not identify Results, Selected, a specific connector, or an application formula as the failing boundary. Successful network operations do not prove that output conversion succeeded.
+
+The local delivered artifact was re-inspected and still has Results Table/array and populated Selected fields, with SHA-256 `13be94e0e451bcb6232d9f3fb42299df8534a91e74ca6f05a403171ef62195a9`. It also retains LoadFromYaml=true and the previously documented source/snapshot formula discrepancy. No package exported AFTER the failing Studio load is available. Therefore whether Studio replaced or disregarded the transplanted schema is untested. Merely disabling YAML loading could activate the stale snapshot OnChange formula (automatic navigation and flow call); it is not a justified production fix.
+
+Required next evidence: save a separate copy of the failing Studio app, download its current `.msapp`, and export the complete Monitor session with the getRows/invokeAction details. Compare that actual post-load package against the delivered local artifact before another repair. No original file or runtime formula was changed in response to this failure. Runtime evidence is recorded in [runtime-acceptance.json](../forensics/textrecognizer-repair/reports/runtime-acceptance.json).
+
 The fixed artifact is `C:\Users\ramaz\source\repos\powerapps-barcode-app\Barkod-Uygulamasi-Phase2-FIXED.msapp`. Package validation passed after independent PAC re-unpack. Runtime Home → Scan requires Power Apps Studio; no runtime PASS is claimed.
 
 1. Input hashes

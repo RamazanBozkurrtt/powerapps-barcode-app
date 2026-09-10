@@ -1,0 +1,17 @@
+{
+  "status": "FAIL",
+  "source": "User-reported Power Apps Studio Monitor session after testing delivered repair",
+  "error": "JSON ayrıştırma hatası. 'nesne' bekleniyordu ancak 'dizi' alındı.",
+  "events": [
+    {"id": 1, "time": "15:23:22.113", "operation": "Client session id", "result": "Success"},
+    {"id": 2, "time": "15:23:22.113", "operation": "Error", "result": "Error"},
+    {"id": 3, "time": "15:23:28.083", "operation": "Error", "result": "Error"},
+    {"id": 4, "time": "15:23:28.442", "operation": "getRows", "result": "Success"},
+    {"id": 5, "time": "15:23:33.082", "operation": "invokeAction", "result": "Success"},
+    {"id": 6, "time": "15:23:33.190", "operation": "Error", "result": "Error"},
+    {"id": 7, "time": "15:23:36.396", "operation": "Error", "result": "Error"}
+  ],
+  "error_context": {"controlName": null, "propertyName": null, "nodeId": null, "script": "", "functionName": null, "context": null},
+  "post_Studio_export_available": false,
+  "conclusion": "Offline schema transplant did not establish a runtime fix. Exact runtime root cause remains unknown. Do not deploy the artifact as a verified fix."
+}
