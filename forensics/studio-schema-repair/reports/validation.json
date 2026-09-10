@@ -1,0 +1,13 @@
+{
+  "package_validation": "PASS",
+  "runtime": "NOT EXECUTED",
+  "output": "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase2-FIXED-v2.msapp",
+  "sha256": "42fb0e7263c7dbc63dc281acb4098b656c68374692e881229590105e0ea888bc",
+  "bytes": 256183,
+  "changed_entry": "Controls/15.json",
+  "added_entry": "packed.json",
+  "LoadFromYaml": false,
+  "all_other_studio_entries_byte_identical": true,
+  "all_formula_values_unchanged": true,
+  "healthy_schema_survives_reunpack": true
+}

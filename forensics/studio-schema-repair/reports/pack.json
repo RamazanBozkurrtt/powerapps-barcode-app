@@ -1,0 +1,6 @@
+{
+  "command": "pac canvas pack --sources C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\forensics\\studio-schema-repair\\source --msapp C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase2-FIXED-v2.msapp --layout SourceCode --disable-load-from-yaml",
+  "stdout": "Pack from C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\forensics\\studio-schema-repair\\source --> C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase2-FIXED-v2.msapp\nPacking succeeded.\n",
+  "stderr": "",
+  "exit": 0
+}

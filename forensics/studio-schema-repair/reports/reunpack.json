@@ -1,0 +1,6 @@
+{
+  "command": "pac canvas unpack --msapp C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase2-FIXED-v2.msapp --sources C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\forensics\\studio-schema-repair\\roundtrip --layout SourceCode",
+  "stdout": "Unpack from C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase2-FIXED-v2.msapp --> C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\forensics\\studio-schema-repair\\roundtrip\nUnpacking succeeded.\n",
+  "stderr": "",
+  "exit": 0
+}
