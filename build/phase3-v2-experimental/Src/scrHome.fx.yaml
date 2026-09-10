@@ -1,0 +1,225 @@
+scrHome As screen:
+    ContentLanguage: =""
+    Fill: =RGBA(247, 249, 252, 1)
+    LoadingSpinnerColor: =RGBA(37, 99, 235, 1)
+
+    shpHomeTopGlow As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(232, 239, 255, 1)
+        Height: =220
+        Width: =Parent.Width
+        ZIndex: =1
+
+    lblHomeEyebrow As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(37, 99, 235, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =12
+        Text: ="STOK ASİSTANI"
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =42
+        ZIndex: =2
+
+    lblHomeTitle As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(20, 27, 45, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =112
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =28
+        Text: ="Depo stok bilgisine saniyeler içinde ulaşın."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =84
+        ZIndex: =3
+
+    btnHomeHeroCard As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Disabled
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =440
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =false
+        TabIndex: =0
+        Text: =""
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =218
+        ZIndex: =4
+
+    btnHomeScanMark As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Disabled
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =112
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =false
+        TabIndex: =0
+        Text: ="⌗"
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =112
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =270
+        ZIndex: =5
+
+    lblHomeCardTitle As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(20, 27, 45, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =20
+        Text: ="Ürün etiketini tarayın"
+        Width: =Parent.Width - 112
+        X: =56
+        Y: =410
+        ZIndex: =6
+
+    lblHomeCardBody As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(91, 101, 120, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =72
+        PaddingBottom: =0
+        PaddingLeft: =12
+        PaddingRight: =12
+        PaddingTop: =0
+        Text: ="Etiketi kılavuz alanına hizalayın. Ürün kodu algılandıktan sonra stok bilgileri hazırlanır."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =Parent.Width - 112
+        X: =56
+        Y: =468
+        ZIndex: =7
+
+    lblHomeCardHint As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(37, 99, 235, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(244, 247, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =46
+        PaddingBottom: =0
+        PaddingLeft: =12
+        PaddingRight: =12
+        PaddingTop: =0
+        Size: =12
+        Text: ="HIZLI  •  GÜVENLİ  •  MOBİL"
+        Width: =Parent.Width - 176
+        X: =88
+        Y: =570
+        ZIndex: =8
+
+    btnScan As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: ="Ürün etiketini taramaya başla"
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =76
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: |-
+            =Set(varFlowCallStarted, false);
+            Navigate(scrScan, ScreenTransition.Fade)
+        TabIndex: =0
+        Text: ="Tarama Yap"
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =Parent.Height - 200
+        ZIndex: =9
+
+    lblHomeFooter As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(117, 127, 145, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =52
+        PaddingBottom: =0
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =0
+        Size: =11
+        Text: ="Kamera erişimi yalnızca ürün etiketini okumak için kullanılır."
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =Parent.Height - 108
+        ZIndex: =10
+

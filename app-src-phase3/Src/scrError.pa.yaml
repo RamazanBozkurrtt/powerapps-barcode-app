@@ -1,0 +1,84 @@
+Screens:
+  scrError:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+    Children:
+    - btnErrorCard:
+        Control: Button@0.0.45
+        Properties:
+          DisplayMode: =DisplayMode.Disabled
+          Height: =560
+          Text: =""
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =(Parent.Height - Self.Height) / 2
+          Appearance: ="Secondary"
+          BasePaletteColor: =RGBA(194, 65, 12, 1)
+    - btnErrorMark:
+        Control: Button@0.0.45
+        Properties:
+          DisplayMode: =DisplayMode.Disabled
+          Height: =104
+          Text: ="!"
+          Width: =104
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =(Parent.Height - 560) / 2 + 62
+          Appearance: ="Secondary"
+          BasePaletteColor: =RGBA(194, 65, 12, 1)
+    - lblErrorTitle:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(20, 27, 45, 1)
+          FontWeight: =FontWeight.Bold
+          Height: =52
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =23
+          Text: ="İşlem tamamlanamadı"
+          Width: =Parent.Width - 112
+          X: =56
+          Y: =(Parent.Height - 560) / 2 + 204
+    - lblErrorBody:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(91, 101, 120, 1)
+          Height: =82
+          PaddingBottom: =0
+          PaddingLeft: =12
+          PaddingRight: =12
+          PaddingTop: =0
+          Size: =14
+          Text: =If(IsBlank(varErrorMessage), "Bağlantınızı kontrol edin ve ürün etiketini yeniden tarayın.", varErrorMessage)
+          VerticalAlign: =VerticalAlign.Top
+          Width: =Parent.Width - 112
+          X: =56
+          Y: =(Parent.Height - 560) / 2 + 274
+    - btnErrorRetry:
+        Control: Button@0.0.45
+        Properties:
+          AccessibleLabel: ="Ürün etiketini yeniden tara"
+          Height: =64
+          OnSelect: |-
+            =Set(varFlowCallStarted, false);
+            Navigate(scrScan, ScreenTransition.Fade)
+          Text: ="Tekrar Dene"
+          Width: =Parent.Width - 144
+          X: =72
+          Y: =(Parent.Height - 560) / 2 + 384
+          BasePaletteColor: =RGBA(194, 65, 12, 1)
+    - btnErrorHome:
+        Control: Button@0.0.45
+        Properties:
+          AccessibleLabel: ="Ana sayfaya dön"
+          Height: =56
+          OnSelect: =Navigate(scrHome, ScreenTransition.Fade)
+          Text: ="Ana Sayfa"
+          Width: =Parent.Width - 144
+          X: =72
+          Y: =(Parent.Height - 560) / 2 + 464
+          BasePaletteColor: =RGBA(194, 65, 12, 1)

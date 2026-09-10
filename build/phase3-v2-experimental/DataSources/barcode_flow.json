@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "b01d48b9-743d-42ab-89f9-8403a18af775",
+    "Name": "barcode_flow",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "263ae41b-edac-f111-aaab-7ced8d125e8b"
+  }
+]

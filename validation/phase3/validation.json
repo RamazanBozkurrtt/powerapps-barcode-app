@@ -1,0 +1,279 @@
+{
+  "package": "PASS",
+  "runtime": "NOT EXECUTED: no connected apps or browsers",
+  "sha256": "aa68c3bc1f83fb96281349701922878b450f27dd013b3c592ad9e44674ba146b",
+  "bytes": 245924,
+  "ocr_metadata_unchanged": true,
+  "backend_references_unchanged": true,
+  "flow_parse_group_error_logic_unchanged": true,
+  "flow_call_sites": 1,
+  "manual_selection_references": 0,
+  "roundtrip_byte_identical": true,
+  "changed_controls": {
+    "scrHome": [
+      "Fill",
+      "LoadingSpinnerColor"
+    ],
+    "lblHomeEyebrow": [
+      "Color"
+    ],
+    "btnHomeHeroCard": [
+      "Appearance",
+      "BasePaletteColor"
+    ],
+    "btnHomeScanMark": [
+      "Appearance",
+      "BasePaletteColor"
+    ],
+    "lblHomeCardHint": [
+      "Color"
+    ],
+    "btnScan": [
+      "BasePaletteColor"
+    ],
+    "scrScan": [
+      "Fill",
+      "LoadingSpinnerColor",
+      "OnVisible"
+    ],
+    "btnScanBack": [
+      "BasePaletteColor"
+    ],
+    "lblScanGuideCaption": [
+      "Color"
+    ],
+    "btnScanSurface": [
+      "Appearance",
+      "BasePaletteColor"
+    ],
+    "TextRecognizer1": [
+      "BorderColor",
+      "FillColor",
+      "OnChange",
+      "ShowBoundingBoxes"
+    ],
+    "shpScanGuideTopLeft": [
+      "Fill"
+    ],
+    "shpScanGuideTopRight": [
+      "Fill"
+    ],
+    "shpScanGuideBottomLeft": [
+      "Fill"
+    ],
+    "shpScanGuideBottomRight": [
+      "Fill"
+    ],
+    "btnScanEmptyCard": [
+      "Appearance",
+      "BasePaletteColor"
+    ],
+    "btnContinueWithSelectedProduct": [
+      "BasePaletteColor"
+    ],
+    "scrLoading": [
+      "Fill",
+      "LoadingSpinnerColor",
+      "OnVisible"
+    ],
+    "btnLoadingHalo": [
+      "Appearance",
+      "BasePaletteColor"
+    ],
+    "btnLoadingCard": [
+      "Appearance",
+      "BasePaletteColor"
+    ],
+    "lblLoadingProduct": [
+      "Color",
+      "Fill"
+    ],
+    "scrResults": [
+      "Fill",
+      "LoadingSpinnerColor",
+      "OnVisible"
+    ],
+    "lblResultsEyebrow": [
+      "Color",
+      "Text",
+      "Y"
+    ],
+    "btnResultsScanAgain": [
+      "BasePaletteColor",
+      "FontSize",
+      "Height",
+      "Width",
+      "X",
+      "Y"
+    ],
+    "btnProductCard": [
+      "AccessibleLabel",
+      "Appearance",
+      "BasePaletteColor",
+      "BorderColor",
+      "DisplayMode",
+      "Height",
+      "OnSelect"
+    ],
+    "lblProductNumber": [
+      "Color",
+      "Height",
+      "OnSelect",
+      "Text",
+      "Width",
+      "X",
+      "Y"
+    ],
+    "btnResultsEmptyCard": [
+      "Appearance",
+      "BasePaletteColor",
+      "Y"
+    ],
+    "btnResultsEmptyMark": [
+      "Appearance",
+      "BasePaletteColor",
+      "Y"
+    ],
+    "scrError": [
+      "Fill",
+      "LoadingSpinnerColor"
+    ],
+    "btnErrorMark": [
+      "Appearance",
+      "BasePaletteColor"
+    ],
+    "btnErrorCard": [
+      "Appearance",
+      "BasePaletteColor"
+    ],
+    "btnErrorRetry": [
+      "BasePaletteColor"
+    ],
+    "btnErrorHome": [
+      "BasePaletteColor"
+    ],
+    "App": [
+      "OnStart"
+    ],
+    "lblScanInstruction": [
+      "Text"
+    ],
+    "lblScanHint": [
+      "Text"
+    ],
+    "tmrLoadingFlow": [
+      "OnTimerEnd"
+    ],
+    "lblResultsTitle": [
+      "Text",
+      "Width",
+      "Y"
+    ],
+    "lblResultsCount": [
+      "Width",
+      "Y"
+    ],
+    "galProducts": [
+      "AccessibleLabel",
+      "AutoHeight",
+      "DelayItemLoading",
+      "Height",
+      "TemplatePadding",
+      "TemplateSize",
+      "Y"
+    ],
+    "lblProductName": [
+      "AutoHeight",
+      "Height",
+      "OnSelect",
+      "Size",
+      "Text",
+      "Width",
+      "X",
+      "Y"
+    ],
+    "lblProductConflict": [
+      "Height",
+      "Visible",
+      "Width",
+      "X",
+      "Y"
+    ],
+    "galWarehouses": [
+      "AccessibleLabel",
+      "Height",
+      "ShowScrollbar",
+      "TemplateSize",
+      "Visible",
+      "Width",
+      "X",
+      "Y"
+    ],
+    "lblWarehouseName": [
+      "Height",
+      "Size",
+      "Tooltip",
+      "Width",
+      "X",
+      "Y"
+    ],
+    "lblWarehouseAvailable": [
+      "Height",
+      "Size",
+      "Width",
+      "X",
+      "Y"
+    ],
+    "lblWarehouseAvailableCaption": [
+      "Height",
+      "Visible",
+      "Y"
+    ],
+    "lblWarehouseReserved": [
+      "Color",
+      "Fill",
+      "Height",
+      "PaddingLeft",
+      "Size",
+      "Text",
+      "Visible",
+      "Width",
+      "X",
+      "Y"
+    ],
+    "lblResultsEmptyTitle": [
+      "Y"
+    ],
+    "lblResultsEmptyBody": [
+      "Y"
+    ],
+    "lblProductChevron": [
+      "Align",
+      "Color",
+      "Height",
+      "OnSelect",
+      "Size",
+      "Text",
+      "Width",
+      "X",
+      "Y",
+      "ZIndex"
+    ]
+  },
+  "changed_package_entries": [
+    "Properties.json",
+    "Controls/4.json",
+    "Controls/15.json",
+    "Controls/31.json",
+    "Controls/38.json",
+    "Controls/60.json",
+    "Controls/1.json",
+    "Src/App.pa.yaml",
+    "Src/scrError.pa.yaml",
+    "Src/scrHome.pa.yaml",
+    "Src/scrLoading.pa.yaml",
+    "Src/scrResults.pa.yaml",
+    "Src/scrScan.pa.yaml",
+    "packed.json"
+  ]
+}

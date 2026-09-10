@@ -1,0 +1,145 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  scrHome:
+    Properties:
+      Fill: =RGBA(247, 249, 252, 1)
+      LoadingSpinnerColor: =RGBA(37, 99, 235, 1)
+    Children:
+      - shpHomeTopGlow:
+          Control: Rectangle@2.3.0
+          Properties:
+            Fill: =RGBA(232, 239, 255, 1)
+            Height: =220
+            Width: =Parent.Width
+      - lblHomeEyebrow:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(37, 99, 235, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: ="STOK ASİSTANI"
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =42
+      - lblHomeTitle:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(20, 27, 45, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =112
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =28
+            Text: ="Depo stok bilgisine saniyeler içinde ulaşın."
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =84
+      - btnHomeHeroCard:
+          Control: Button@0.0.45
+          Properties:
+            DisplayMode: =DisplayMode.Disabled
+            Height: =440
+            Text: =""
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =218
+      - btnHomeScanMark:
+          Control: Button@0.0.45
+          Properties:
+            DisplayMode: =DisplayMode.Disabled
+            Height: =112
+            Text: ="⌗"
+            Width: =112
+            X: =(Parent.Width - Self.Width) / 2
+            Y: =270
+      - lblHomeCardTitle:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(20, 27, 45, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =44
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: ="Ürün etiketini tarayın"
+            Width: =Parent.Width - 112
+            X: =56
+            Y: =410
+      - lblHomeCardBody:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(91, 101, 120, 1)
+            Height: =72
+            PaddingBottom: =0
+            PaddingLeft: =12
+            PaddingRight: =12
+            PaddingTop: =0
+            Size: =14
+            Text: ="Etiketi kılavuz alanına hizalayın. Ürün kodu algılandıktan sonra stok bilgileri hazırlanır."
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.Width - 112
+            X: =56
+            Y: =468
+      - lblHomeCardHint:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(37, 99, 235, 1)
+            Fill: =RGBA(244, 247, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            PaddingBottom: =0
+            PaddingLeft: =12
+            PaddingRight: =12
+            PaddingTop: =0
+            Size: =12
+            Text: ="HIZLI  •  GÜVENLİ  •  MOBİL"
+            Width: =Parent.Width - 176
+            X: =88
+            Y: =570
+      - btnScan:
+          Control: Button@0.0.45
+          Properties:
+            AccessibleLabel: ="Ürün etiketini taramaya başla"
+            Height: =76
+            OnSelect: |-
+              =Set(varFlowCallStarted, false);
+              Navigate(scrScan, ScreenTransition.Fade)
+            Text: ="Tarama Yap"
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =Parent.Height - 200
+      - lblHomeFooter:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(117, 127, 145, 1)
+            Height: =52
+            PaddingBottom: =0
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =0
+            Size: =11
+            Text: ="Kamera erişimi yalnızca ürün etiketini okumak için kullanılır."
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =Parent.Height - 108

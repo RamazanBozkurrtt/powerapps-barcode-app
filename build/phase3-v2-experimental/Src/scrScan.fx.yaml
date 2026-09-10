@@ -1,0 +1,331 @@
+scrScan As screen:
+    ContentLanguage: =""
+    Fill: =RGBA(247, 249, 252, 1)
+    LoadingSpinnerColor: =RGBA(37, 99, 235, 1)
+    OnVisible: |-
+        =Set(varScanAccepted, false);
+        Set(varFlowCallStarted, false);
+        Set(varOcrEmpty, false);
+        Set(varErrorMessage, "");
+        Set(varResultJson, "")
+
+    btnScanBack As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: ="Ana sayfaya dön"
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =48
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Navigate(scrHome, ScreenTransition.Fade)
+        TabIndex: =0
+        Text: ="‹"
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =48
+        X: =24
+        Y: =24
+        ZIndex: =1
+
+    lblScanTitle As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(20, 27, 45, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =48
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =24
+        Text: ="Ürün etiketini tara"
+        Width: =Parent.Width - 120
+        X: =88
+        Y: =24
+        ZIndex: =2
+
+    lblScanInstruction As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(91, 101, 120, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =58
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Text: ="Ürün adını görünür alanın içine yerleştirin ve görüntüyü çekin."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =96
+        ZIndex: =3
+
+    lblScanGuideCaption As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(37, 99, 235, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =34
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =11
+        Text: ="ETİKETİ BU ALANA HİZALAYIN"
+        Width: =Parent.Width - 80
+        X: =40
+        Y: =174
+        ZIndex: =4
+
+    btnScanSurface As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Disabled
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =650
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =false
+        TabIndex: =0
+        Text: =""
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =214
+        ZIndex: =5
+
+    TextRecognizer1 As TextRecognizer:
+        BorderColor: =RGBA(191, 205, 232, 1)
+        BorderStyle: ="solid"
+        BorderThickness: =1
+        ButtonHeight: =70
+        CommandBarFontSize: =20
+        CommandBarIconSize: =24
+        ContentLanguage: =""
+        DefaultImage: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(37, 99, 235, 1)
+        FontColor: =RGBA(255, 255, 255, 1)
+        Height: =610
+        ImageDisplayed: =true
+        LoadSchema: =true
+        OnChange: =false
+        ShouldReset: =true
+        ShowBoundingBoxes: =true
+        ShowControls: =true
+        TabIndex: =0
+        Text: ="Görüntü çek veya seç"
+        Tooltip: =""
+        Visible: =true
+        Width: =Parent.Width - 96
+        X: =48
+        Y: =234
+        ZIndex: =6
+
+    btnContinueWithSelectedProduct As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: ="Seçili ürün adıyla devam et"
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =60
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: |-
+            =If(
+                IsBlank(TextRecognizer1.Selected.Text),
+                Notify(
+                    "Lütfen ürün adının üzerindeki kutuyu seçin.",
+                    NotificationType.Warning
+                ),
+                Set(varAcceptedText, TextRecognizer1.Selected.Text);
+                Set(varFlowCallStarted, true);
+                Navigate(scrLoading)
+            )
+        TabIndex: =0
+        Text: ="Seçili Ürünle Devam Et"
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =Parent.Height - Self.Height - 32
+        ZIndex: =7
+
+    shpScanGuideTopLeft As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(37, 99, 235, 1)
+        Height: =4
+        Width: =76
+        X: =48
+        Y: =234
+        ZIndex: =8
+
+    shpScanGuideTopRight As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(37, 99, 235, 1)
+        Height: =4
+        Width: =76
+        X: =Parent.Width - 124
+        Y: =234
+        ZIndex: =9
+
+    shpScanGuideBottomLeft As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(37, 99, 235, 1)
+        Height: =4
+        Width: =76
+        X: =48
+        Y: =840
+        ZIndex: =10
+
+    shpScanGuideBottomRight As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(37, 99, 235, 1)
+        Height: =4
+        Width: =76
+        X: =Parent.Width - 124
+        Y: =840
+        ZIndex: =11
+
+    lblScanHint As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(91, 101, 120, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =72
+        PaddingBottom: =0
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =0
+        Size: =13
+        Text: ="Net ve iyi aydınlatılmış bir görüntü, ürün bilgisinin daha doğru okunmasına yardımcı olur."
+        VerticalAlign: =VerticalAlign.Top
+        Visible: =!varOcrEmpty
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =900
+        ZIndex: =12
+
+    btnScanEmptyCard As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Disabled
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =104
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =false
+        TabIndex: =0
+        Text: =""
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =varOcrEmpty
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =884
+        ZIndex: =13
+
+    lblScanEmptyTitle As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(185, 28, 28, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Text: ="Metin algılanamadı"
+        Visible: =varOcrEmpty
+        Width: =Parent.Width - 112
+        X: =56
+        Y: =900
+        ZIndex: =14
+
+    lblScanEmptyBody As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(127, 29, 29, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =42
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =12
+        Text: ="Etiketi kılavuz alanına hizalayıp yeniden görüntü alın."
+        VerticalAlign: =VerticalAlign.Top
+        Visible: =varOcrEmpty
+        Width: =Parent.Width - 112
+        X: =56
+        Y: =936
+        ZIndex: =15
+

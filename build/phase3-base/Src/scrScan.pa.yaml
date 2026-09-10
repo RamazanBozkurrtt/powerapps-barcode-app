@@ -1,0 +1,206 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  scrScan:
+    Properties:
+      Fill: =RGBA(247, 249, 252, 1)
+      LoadingSpinnerColor: =RGBA(37, 99, 235, 1)
+      OnVisible: |-
+        =Set(varScanAccepted, false);
+        Set(varFlowCallStarted, false);
+        Set(varOcrEmpty, false);
+        Set(varErrorMessage, "");
+        Set(varResultJson, "")
+    Children:
+      - btnScanBack:
+          Control: Button@0.0.45
+          Properties:
+            AccessibleLabel: ="Ana sayfaya dön"
+            Height: =48
+            OnSelect: =Navigate(scrHome, ScreenTransition.Fade)
+            Text: ="‹"
+            Width: =48
+            X: =24
+            Y: =24
+      - lblScanTitle:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(20, 27, 45, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =24
+            Text: ="Ürün etiketini tara"
+            Width: =Parent.Width - 120
+            X: =88
+            Y: =24
+      - lblScanInstruction:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(91, 101, 120, 1)
+            Height: =58
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =14
+            Text: ="Ürün adını görünür alanın içine yerleştirin ve görüntüyü çekin."
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =96
+      - lblScanGuideCaption:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(37, 99, 235, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =11
+            Text: ="ETİKETİ BU ALANA HİZALAYIN"
+            Width: =Parent.Width - 80
+            X: =40
+            Y: =174
+      - btnScanSurface:
+          Control: Button@0.0.45
+          Properties:
+            DisplayMode: =DisplayMode.Disabled
+            Height: =650
+            Text: =""
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =214
+      - TextRecognizer1:
+          Control: TextRecognizer@1.0.112
+          Properties:
+            BorderColor: =RGBA(191, 205, 232, 1)
+            FillColor: =RGBA(37, 99, 235, 1)
+            Height: =610
+            Text: ="Görüntü çek veya seç"
+            Width: =Parent.Width - 96
+            X: =48
+            Y: =234
+      - btnContinueWithSelectedProduct:
+          Control: Button@0.0.45
+          Properties:
+            AccessibleLabel: ="Seçili ürün adıyla devam et"
+            Height: =60
+            OnSelect: |-
+              =If(
+                  IsBlank(TextRecognizer1.Selected.Text),
+                  Notify(
+                      "Lütfen ürün adının üzerindeki kutuyu seçin.",
+                      NotificationType.Warning
+                  ),
+                  Set(varAcceptedText, TextRecognizer1.Selected.Text);
+                  Set(varFlowCallStarted, true);
+                  Navigate(scrLoading)
+              )
+            Text: ="Seçili Ürünle Devam Et"
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =Parent.Height - Self.Height - 32
+      - shpScanGuideTopLeft:
+          Control: Rectangle@2.3.0
+          Properties:
+            Fill: =RGBA(37, 99, 235, 1)
+            Height: =4
+            Width: =76
+            X: =48
+            Y: =234
+      - shpScanGuideTopRight:
+          Control: Rectangle@2.3.0
+          Properties:
+            Fill: =RGBA(37, 99, 235, 1)
+            Height: =4
+            Width: =76
+            X: =Parent.Width - 124
+            Y: =234
+      - shpScanGuideBottomLeft:
+          Control: Rectangle@2.3.0
+          Properties:
+            Fill: =RGBA(37, 99, 235, 1)
+            Height: =4
+            Width: =76
+            X: =48
+            Y: =840
+      - shpScanGuideBottomRight:
+          Control: Rectangle@2.3.0
+          Properties:
+            Fill: =RGBA(37, 99, 235, 1)
+            Height: =4
+            Width: =76
+            X: =Parent.Width - 124
+            Y: =840
+      - lblScanHint:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(91, 101, 120, 1)
+            Height: =72
+            PaddingBottom: =0
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =0
+            Size: =13
+            Text: ="Net ve iyi aydınlatılmış bir görüntü, ürün bilgisinin daha doğru okunmasına yardımcı olur."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =!varOcrEmpty
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =900
+      - btnScanEmptyCard:
+          Control: Button@0.0.45
+          Properties:
+            DisplayMode: =DisplayMode.Disabled
+            Height: =104
+            Text: =""
+            Visible: =varOcrEmpty
+            Width: =Parent.Width - 64
+            X: =32
+            Y: =884
+      - lblScanEmptyTitle:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(185, 28, 28, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =14
+            Text: ="Metin algılanamadı"
+            Visible: =varOcrEmpty
+            Width: =Parent.Width - 112
+            X: =56
+            Y: =900
+      - lblScanEmptyBody:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(127, 29, 29, 1)
+            Height: =42
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: ="Etiketi kılavuz alanına hizalayıp yeniden görüntü alın."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varOcrEmpty
+            Width: =Parent.Width - 112
+            X: =56
+            Y: =936

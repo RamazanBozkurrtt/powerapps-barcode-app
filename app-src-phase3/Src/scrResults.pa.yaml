@@ -1,0 +1,309 @@
+Screens:
+  scrResults:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+      OnVisible: =Set(varExpandedItemNumber, Blank())
+    Children:
+    - lblResultsEyebrow:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(194, 65, 12, 1)
+          FontWeight: =FontWeight.Semibold
+          Height: =28
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =11
+          Text: ="STOK ASİSTANI"
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =24
+    - lblResultsTitle:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(20, 27, 45, 1)
+          FontWeight: =FontWeight.Bold
+          Height: =48
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =25
+          Text: ="Depo Stokları"
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =62
+    - lblResultsCount:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(91, 101, 120, 1)
+          Height: =34
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =13
+          Text: =If(CountRows(colProductGroups) = 0, "Sonuç bulunamadı", CountRows(colProductGroups) & " ürün bulundu")
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =112
+    - btnResultsScanAgain:
+        Control: Button@0.0.45
+        Properties:
+          AccessibleLabel: ="Yeni ürün etiketi tara"
+          Height: =56
+          OnSelect: |-
+            =Set(varFlowCallStarted, false);
+            Navigate(scrScan, ScreenTransition.Fade)
+          Text: ="Yeniden Tara"
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =162
+          BasePaletteColor: =RGBA(194, 65, 12, 1)
+          FontSize: =18
+    - galProducts:
+        Control: Gallery@2.15.0
+        Variant: VariableHeight
+        Properties:
+          Height: =Parent.Height - Self.Y - 24
+          Items: =colProductGroups
+          TemplatePadding: =12
+          TemplateSize: =1
+          Visible: =CountRows(colProductGroups) > 0
+          Width: =Parent.Width - 32
+          X: =16
+          Y: =242
+          AccessibleLabel: ="Ürünler. Ambar stoklarını görmek için ürün kartını açın."
+          AutoHeight: =true
+          DelayItemLoading: =false
+        Children:
+        - btnProductCard:
+            Control: Button@0.0.45
+            Properties:
+              DisplayMode: =DisplayMode.Edit
+              Height: =galWarehouses.Y + galWarehouses.Height + 16
+              Text: =""
+              Width: =Parent.TemplateWidth - 8
+              X: =4
+              AccessibleLabel: =Coalesce(ThisItem.ProductName, ThisItem.ItemNumber) & If(varExpandedItemNumber =
+                ThisItem.ItemNumber, ", açık. Kapat", ", kapalı. Ambarları göster")
+              Appearance: ="Secondary"
+              BasePaletteColor: =RGBA(194, 65, 12, 1)
+              BorderColor: =RGBA(229, 231, 235, 1)
+              OnSelect: =Set(varExpandedItemNumber, If(varExpandedItemNumber = ThisItem.ItemNumber, Blank(), ThisItem.ItemNumber))
+        - lblProductName:
+            Control: Label@2.5.1
+            Properties:
+              Color: =RGBA(20, 27, 45, 1)
+              FontWeight: =FontWeight.Semibold
+              Height: =32
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Size: =18
+              Text: =Coalesce(ThisItem.ProductName, ThisItem.ItemNumber, "Ürün")
+              Width: =Parent.TemplateWidth - 104
+              X: =24
+              Y: =18
+              AutoHeight: =true
+              OnSelect: =Select(btnProductCard)
+        - lblProductNumber:
+            Control: Label@2.5.1
+            Properties:
+              Color: =RGBA(107, 114, 128, 1)
+              FontWeight: =FontWeight.Semibold
+              Height: =28
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Size: =12
+              Text: =ThisItem.ItemNumber & "  •  " & CountRows(Distinct(ThisItem.WarehouseRows, InventoryWarehouseId))
+                & " ambar"
+              Width: =Parent.TemplateWidth - 48
+              X: =24
+              Y: =lblProductName.Y + lblProductName.Height + 6
+              OnSelect: =Select(btnProductCard)
+        - lblProductConflict:
+            Control: Label@2.5.1
+            Properties:
+              Color: =RGBA(146, 64, 14, 1)
+              Fill: =RGBA(255, 247, 237, 1)
+              FontWeight: =FontWeight.Semibold
+              Height: =If(varExpandedItemNumber = ThisItem.ItemNumber && ThisItem.HasNameConflict, 40, 0)
+              PaddingBottom: =0
+              PaddingLeft: =10
+              PaddingRight: =10
+              PaddingTop: =0
+              Size: =10
+              Text: ="Bu ürün kodu için tutarsız ürün adları döndü."
+              Visible: =varExpandedItemNumber = ThisItem.ItemNumber && ThisItem.HasNameConflict
+              Width: =Parent.TemplateWidth - 48
+              X: =24
+              Y: =lblProductNumber.Y + lblProductNumber.Height + 8
+        - galWarehouses:
+            Control: Gallery@2.15.0
+            Variant: Vertical
+            Properties:
+              Height: =If(varExpandedItemNumber = ThisItem.ItemNumber, Min(CountRows(ThisItem.WarehouseRows) * 80,
+                400), 0)
+              Items: =ThisItem.WarehouseRows
+              TemplatePadding: =0
+              TemplateSize: =80
+              Width: =Parent.TemplateWidth - 48
+              X: =24
+              Y: =lblProductConflict.Y + lblProductConflict.Height
+              AccessibleLabel: ="Ambar ve stok miktarları"
+              ShowScrollbar: =true
+              Visible: =varExpandedItemNumber = ThisItem.ItemNumber
+            Children:
+            - shpWarehouseDivider:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(235, 238, 244, 1)
+                  Height: =1
+                  Width: =Parent.TemplateWidth
+                  Y: =Parent.TemplateHeight - 1
+            - lblWarehouseName:
+                Control: Label@2.5.1
+                Properties:
+                  Color: =RGBA(35, 43, 59, 1)
+                  FontWeight: =FontWeight.Semibold
+                  Height: =32
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =15
+                  Text: =ThisItem.InventoryWarehouseId
+                  Width: =Parent.TemplateWidth * 0.57
+                  Y: =12
+                  Tooltip: =ThisItem.InventoryWarehouseId
+                  X: =0
+            - lblWarehouseReserved:
+                Control: Label@2.5.1
+                Properties:
+                  Color: =RGBA(194, 65, 12, 1)
+                  FontWeight: =FontWeight.Semibold
+                  Height: =26
+                  PaddingBottom: =0
+                  PaddingLeft: =8
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =11
+                  Text: '="Reserve: " & Text(ThisItem.ReservedOnHandQuantity, "[$-tr-TR]0.##")'
+                  Visible: =ThisItem.AvailableOnHandQuantity < 3 && ThisItem.ReservedOnHandQuantity <> 0
+                  Width: =Parent.TemplateWidth * 0.57
+                  Y: =46
+                  Fill: =RGBA(255, 247, 237, 1)
+                  X: =0
+            - lblWarehouseAvailableCaption:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Right
+                  Color: =RGBA(117, 127, 145, 1)
+                  Height: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: ="KULLANILABİLİR"
+                  Width: =146
+                  X: =Parent.TemplateWidth - Self.Width
+                  Y: =0
+                  Visible: =false
+            - lblWarehouseAvailable:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Right
+                  Color: =RGBA(20, 27, 45, 1)
+                  FontWeight: =FontWeight.Bold
+                  Height: =48
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =22
+                  Text: =Text(ThisItem.AvailableOnHandQuantity, "[$-tr-TR]0.##")
+                  Width: =Parent.TemplateWidth * 0.39
+                  X: =Parent.TemplateWidth * 0.61
+                  Y: =12
+        - lblProductChevron:
+            Control: Label@2.5.1
+            Properties:
+              Color: =RGBA(194, 65, 12, 1)
+              FontWeight: =FontWeight.Semibold
+              Height: =48
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Size: =24
+              Text: =If(varExpandedItemNumber = ThisItem.ItemNumber, "−", "+")
+              Width: =48
+              X: =Parent.TemplateWidth - 72
+              Y: =16
+              Align: =Align.Center
+              OnSelect: =Select(btnProductCard)
+              ZIndex: =10
+    - btnResultsEmptyCard:
+        Control: Button@0.0.45
+        Properties:
+          DisplayMode: =DisplayMode.Disabled
+          Height: =390
+          Text: =""
+          Visible: =CountRows(colProductGroups) = 0
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =(210) + 64
+          Appearance: ="Secondary"
+          BasePaletteColor: =RGBA(194, 65, 12, 1)
+    - btnResultsEmptyMark:
+        Control: Button@0.0.45
+        Properties:
+          DisplayMode: =DisplayMode.Disabled
+          Height: =96
+          Text: ="⌕"
+          Visible: =CountRows(colProductGroups) = 0
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =(266) + 64
+          Appearance: ="Secondary"
+          BasePaletteColor: =RGBA(194, 65, 12, 1)
+    - lblResultsEmptyTitle:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(20, 27, 45, 1)
+          FontWeight: =FontWeight.Semibold
+          Height: =40
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =19
+          Text: ="Eşleşen ürün bulunamadı"
+          Visible: =CountRows(colProductGroups) = 0
+          Width: =Parent.Width - 112
+          X: =56
+          Y: =(392) + 64
+    - lblResultsEmptyBody:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(91, 101, 120, 1)
+          Height: =64
+          PaddingBottom: =0
+          PaddingLeft: =12
+          PaddingRight: =12
+          PaddingTop: =0
+          Size: =13
+          Text: ="Etiketi yeniden konumlandırın veya daha net bir görüntüyle tekrar deneyin."
+          VerticalAlign: =VerticalAlign.Top
+          Visible: =CountRows(colProductGroups) = 0
+          Width: =Parent.Width - 112
+          X: =56
+          Y: =(448) + 64

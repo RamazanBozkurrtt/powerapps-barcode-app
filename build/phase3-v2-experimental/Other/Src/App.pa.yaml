@@ -15,6 +15,22 @@ App:
       Set(varFlowCallStarted, false);
       Set(varLoadingExecutionStarted, false);
       Set(varOcrEmpty, false);
-      Set(varResultJson, "")
+      Set(varResultJson, "");
+      ClearCollect(
+          colProductGroups,
+          {
+              ItemNumber: "",
+              ProductName: "",
+              HasNameConflict: false,
+              WarehouseRows: Table(
+                  {
+                      InventoryWarehouseId: "",
+                      AvailableOnHandQuantity: 0,
+                      ReservedOnHandQuantity: 0
+                  }
+              )
+          }
+      );
+      Clear(colProductGroups)
     StartScreen: =scrHome
     Theme: =PowerAppsTheme

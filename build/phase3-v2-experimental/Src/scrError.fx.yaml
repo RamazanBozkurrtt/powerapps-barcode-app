@@ -1,0 +1,176 @@
+scrError As screen:
+    ContentLanguage: =""
+    Fill: =RGBA(247, 249, 252, 1)
+    LoadingSpinnerColor: =RGBA(37, 99, 235, 1)
+
+    btnErrorCard As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Disabled
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =560
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =false
+        TabIndex: =0
+        Text: =""
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =Parent.Width - 64
+        X: =32
+        Y: =(Parent.Height - Self.Height) / 2
+        ZIndex: =1
+
+    btnErrorMark As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Disabled
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =104
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =false
+        TabIndex: =0
+        Text: ="!"
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =104
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =(Parent.Height - 560) / 2 + 62
+        ZIndex: =2
+
+    lblErrorTitle As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(20, 27, 45, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =52
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =23
+        Text: ="İşlem tamamlanamadı"
+        Width: =Parent.Width - 112
+        X: =56
+        Y: =(Parent.Height - 560) / 2 + 204
+        ZIndex: =3
+
+    lblErrorBody As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(91, 101, 120, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =82
+        PaddingBottom: =0
+        PaddingLeft: =12
+        PaddingRight: =12
+        PaddingTop: =0
+        Text: =If(IsBlank(varErrorMessage), "Bağlantınızı kontrol edin ve ürün etiketini yeniden tarayın.", varErrorMessage)
+        VerticalAlign: =VerticalAlign.Top
+        Width: =Parent.Width - 112
+        X: =56
+        Y: =(Parent.Height - 560) / 2 + 274
+        ZIndex: =4
+
+    btnErrorRetry As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: ="Ürün etiketini yeniden tara"
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =64
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: |-
+            =Set(varFlowCallStarted, false);
+            Navigate(scrScan, ScreenTransition.Fade)
+        TabIndex: =0
+        Text: ="Tekrar Dene"
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =Parent.Width - 144
+        X: =72
+        Y: =(Parent.Height - 560) / 2 + 384
+        ZIndex: =5
+
+    btnErrorHome As Düğme:
+        AcceptsFocus: =true
+        AccessibleLabel: ="Ana sayfaya dön"
+        Align: =""
+        Appearance: ="Primary"
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =56
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Navigate(scrHome, ScreenTransition.Fade)
+        TabIndex: =0
+        Text: ="Ana Sayfa"
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =Parent.Width - 144
+        X: =72
+        Y: =(Parent.Height - 560) / 2 + 464
+        ZIndex: =6
+

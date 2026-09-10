@@ -1,0 +1,322 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "check/1.0.0": {
+        "dependencies": {
+          "Microsoft.PowerFx.Core": "1.99.0.0",
+          "Microsoft.PowerFx.Interpreter": "1.99.0.0"
+        },
+        "runtime": {
+          "check.dll": {}
+        }
+      },
+      "Microsoft.PowerFx.Core/1.99.0.0": {
+        "runtime": {
+          "Microsoft.PowerFx.Core.dll": {
+            "assemblyVersion": "1.99.0.0",
+            "fileVersion": "1.99.0.0"
+          }
+        },
+        "resources": {
+          "bg-BG/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "bg-BG"
+          },
+          "ca-ES/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "ca-ES"
+          },
+          "cs-CZ/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "da-DK/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "da-DK"
+          },
+          "de-DE/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "de-DE"
+          },
+          "el-GR/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "el-GR"
+          },
+          "en-US/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "en-US"
+          },
+          "es-ES/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "es-ES"
+          },
+          "et-EE/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "et-EE"
+          },
+          "eu-ES/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "eu-ES"
+          },
+          "fi-FI/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "fi-FI"
+          },
+          "fr-FR/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "gl-ES/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "gl-ES"
+          },
+          "hi-IN/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "hi-IN"
+          },
+          "hr-HR/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "hr-HR"
+          },
+          "hu-HU/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "hu-HU"
+          },
+          "id-ID/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "id-ID"
+          },
+          "it-IT/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "it-IT"
+          },
+          "ja-JP/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "kk-KZ/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "kk-KZ"
+          },
+          "ko-KR/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "ko-KR"
+          },
+          "lt-LT/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "lt-LT"
+          },
+          "lv-LV/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "lv-LV"
+          },
+          "ms-MY/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "ms-MY"
+          },
+          "nb-NO/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "nb-NO"
+          },
+          "nl-NL/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "nl-NL"
+          },
+          "pl-PL/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "pl-PL"
+          },
+          "pt-BR/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "pt-PT/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "ro-RO/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "ro-RO"
+          },
+          "ru-RU/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "ru-RU"
+          },
+          "sk-SK/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "sk-SK"
+          },
+          "sl-SI/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "sl-SI"
+          },
+          "sr-Cyrl-RS/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "sr-Cyrl-RS"
+          },
+          "sr-Latn-RS/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "sr-Latn-RS"
+          },
+          "sv-SE/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "sv-SE"
+          },
+          "th-TH/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "th-TH"
+          },
+          "tr-TR/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "tr-TR"
+          },
+          "uk-UA/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "uk-UA"
+          },
+          "vi-VN/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "vi-VN"
+          },
+          "zh-CN/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "zh-TW/Microsoft.PowerFx.Core.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "Microsoft.PowerFx.Interpreter/1.99.0.0": {
+        "runtime": {
+          "Microsoft.PowerFx.Interpreter.dll": {
+            "assemblyVersion": "1.99.0.0",
+            "fileVersion": "1.99.0.0"
+          }
+        },
+        "resources": {
+          "bg-BG/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "bg-BG"
+          },
+          "ca-ES/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "ca-ES"
+          },
+          "cs-CZ/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "da-DK/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "da-DK"
+          },
+          "de-DE/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "de-DE"
+          },
+          "el-GR/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "el-GR"
+          },
+          "en-US/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "en-US"
+          },
+          "es-ES/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "es-ES"
+          },
+          "et-EE/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "et-EE"
+          },
+          "eu-ES/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "eu-ES"
+          },
+          "fi-FI/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "fi-FI"
+          },
+          "fr-FR/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "gl-ES/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "gl-ES"
+          },
+          "hi-IN/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "hi-IN"
+          },
+          "hr-HR/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "hr-HR"
+          },
+          "hu-HU/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "hu-HU"
+          },
+          "id-ID/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "id-ID"
+          },
+          "it-IT/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "it-IT"
+          },
+          "ja-JP/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "kk-KZ/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "kk-KZ"
+          },
+          "ko-KR/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "ko-KR"
+          },
+          "lt-LT/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "lt-LT"
+          },
+          "lv-LV/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "lv-LV"
+          },
+          "ms-MY/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "ms-MY"
+          },
+          "nb-NO/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "nb-NO"
+          },
+          "nl-NL/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "nl-NL"
+          },
+          "pl-PL/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "pl-PL"
+          },
+          "pt-BR/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "pt-PT/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "ro-RO/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "ro-RO"
+          },
+          "ru-RU/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "ru-RU"
+          },
+          "sk-SK/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "sk-SK"
+          },
+          "sl-SI/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "sl-SI"
+          },
+          "sr-Cyrl-RS/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "sr-Cyrl-RS"
+          },
+          "sr-Latn-RS/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "sr-Latn-RS"
+          },
+          "sv-SE/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "sv-SE"
+          },
+          "th-TH/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "th-TH"
+          },
+          "tr-TR/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "tr-TR"
+          },
+          "uk-UA/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "uk-UA"
+          },
+          "vi-VN/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "vi-VN"
+          },
+          "zh-CN/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "zh-TW/Microsoft.PowerFx.Interpreter.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "Microsoft.PowerFx.Transport.Attributes/1.99.0.0": {
+        "runtime": {
+          "Microsoft.PowerFx.Transport.Attributes.dll": {
+            "assemblyVersion": "1.99.0.0",
+            "fileVersion": "1.99.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "check/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.PowerFx.Core/1.99.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.PowerFx.Interpreter/1.99.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.PowerFx.Transport.Attributes/1.99.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

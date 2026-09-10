@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "unpack",
+    "--msapp",
+    "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase3-Orange-v2.msapp",
+    "--sources",
+    "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\build\\phase3-roundtrip-s6nnt8n6",
+    "--layout",
+    "SourceCode"
+  ],
+  "exit": 0,
+  "stdout": "Unpack from C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase3-Orange-v2.msapp --> C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\build\\phase3-roundtrip-s6nnt8n6\nUnpacking succeeded.\n",
+  "stderr": ""
+}
