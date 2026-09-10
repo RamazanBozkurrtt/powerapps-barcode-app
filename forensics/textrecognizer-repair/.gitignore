@@ -2,3 +2,4 @@ healthy/
 broken/
 repaired/
 roundtrip/
+__pycache__/

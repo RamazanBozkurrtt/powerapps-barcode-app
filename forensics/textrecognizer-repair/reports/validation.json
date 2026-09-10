@@ -1,0 +1,51 @@
+{
+  "package_validation": "PASS",
+  "runtime": "REQUIRES POWER APPS STUDIO",
+  "runtime_reason": "Computer-use inventory returned apps=[] and browsers=[]; getBrowser for https://make.powerapps.com/ returned No browser is available. No player session was executed.",
+  "output": "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase2-FIXED.msapp",
+  "bytes": 247142,
+  "sha256": "13be94e0e451bcb6232d9f3fb42299df8534a91e74ca6f05a403171ef62195a9",
+  "changed_package_entries": [
+    "Controls/15.json",
+    "packed.json"
+  ],
+  "schema_scans": [
+    {
+      "representation": "fixed",
+      "Results_Table_instances": 1,
+      "Results_Record_instances": 0
+    },
+    {
+      "representation": "repaired-msapr",
+      "Results_Table_instances": 1,
+      "Results_Record_instances": 0
+    },
+    {
+      "representation": "roundtrip-msapr",
+      "Results_Table_instances": 1,
+      "Results_Record_instances": 0
+    }
+  ],
+  "unchanged_phase2_screens": [
+    "scrHome",
+    "scrScan",
+    "scrLoading",
+    "scrResults",
+    "scrError"
+  ],
+  "all_yaml_byte_identical": true,
+  "variables_preserved": [
+    "varAcceptedText",
+    "varErrorMessage",
+    "varFlowCallStarted",
+    "varFlowResponse",
+    "varLoadingExecutionStarted",
+    "varOcrEmpty",
+    "varResultJson",
+    "varScanAccepted"
+  ],
+  "all_formulas_and_instance_ids_preserved": true,
+  "repaired_msapr_equals_reunpacked_msapr_except_pack_timestamp": true,
+  "original_input_hashes_unchanged": true,
+  "retained_historical_checker_report": "AppCheckerResult.sarif is unchanged historical analysis, not an executable schema or a fresh validation."
+}

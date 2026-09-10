@@ -32,6 +32,19 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def decode(value):
+    if isinstance(value, dict):
+        return {k: decode(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [decode(v) for v in value]
+    if isinstance(value, str) and value.startswith(('{', '[')):
+        try:
+            return decode(json.loads(value))
+        except ValueError:
+            pass
+    return value
+
+
 def archive(path):
     with zipfile.ZipFile(path) as z:
         assert z.testzip() is None
@@ -112,6 +125,12 @@ def compatible(healthy, broken):
         for _, node in walk(ht[f]):
             if isinstance(node, dict):
                 assert not set(node).intersection({'ControlUniqueId', 'Parent', 'ControlId', 'ModelId', 'ConnectionId'})
+    hp, bp = json.loads(healthy['Properties.json']), json.loads(broken['Properties.json'])
+    assert hp['LocalDatabaseReferences'] == bp['LocalDatabaseReferences']
+    ai = [next(v for v in json.loads(files['References/DataSources.json'])['DataSources']
+               if v.get('EntitySetName') == 'msdyn_aimodels') for files in (healthy, broken)]
+    for field in ('Name', 'Type', 'DatasetName', 'EntitySetName', 'LogicalName', 'ApiId', 'WadlMetadata', 'CdsActionInfo'):
+        assert ai[0][field] == ai[1][field], f'AI binding mismatch: {field}'
     return h, b
 
 
@@ -194,7 +213,8 @@ def repair():
         dest.comment = source.comment
         for info in source.infolist():
             dest.writestr(info, new_data if info.filename == entry else source.read(info.filename))
-    changes = differences(json.loads(contents[entry]), json.loads(new_data))
+    changes = [{k.replace('healthy', 'before').replace('broken', 'after'): v for k, v in d.items()}
+               for d in differences(json.loads(contents[entry]), json.loads(new_data))]
     dump('repair-changes.json', {'entry': entry, 'changed_containers': [b[1] + '/Template/' + f for f in FIELDS],
                                  'leaf_differences': changes})
     command('pack.json', ['pac', 'canvas', 'pack', '--sources', str(target), '--msapp', str(OUTPUT), '--layout', 'SourceCode'])
@@ -225,9 +245,11 @@ def verify():
     repaired = archive(next((BASE / 'repaired').glob('*.msapr')))
     roundtrip = archive(next((BASE / 'roundtrip').glob('*.msapr')))
     assert repaired.keys() == roundtrip.keys()
-    assert all(repaired[k] == roundtrip[k] for k in repaired), 'Re-unpack changed repaired snapshot'
+    assert all(repaired[k] == roundtrip[k] for k in repaired if k != 'msapp/packed.json'), 'Re-unpack changed repaired snapshot'
+    assert json.loads(roundtrip['msapp/packed.json']) == new_packed
+    assert json.loads(repaired['msapp/packed.json']) == old_packed
     for n, data in repaired.items():
-        if n.startswith('msapp/'):
+        if n.startswith('msapp/') and n != 'msapp/packed.json':
             assert fixed[n.removeprefix('msapp/')] == data
     scans = []
     for label, files in [('fixed', fixed), ('repaired-msapr', repaired), ('roundtrip-msapr', roundtrip)]:
@@ -257,11 +279,13 @@ def verify():
         if p.is_file():
             assert p.read_bytes() == (BASE / 'roundtrip' / 'Src' / p.relative_to(BASE / 'repaired' / 'Src')).read_bytes()
     dump('validation.json', {'package_validation': 'PASS', 'runtime': 'REQUIRES POWER APPS STUDIO',
-          'runtime_reason': 'Computer-use surface inventory returned apps=[] and browsers=[]; no player session was executed.',
+          'runtime_reason': 'Computer-use inventory returned apps=[] and browsers=[]; getBrowser for https://make.powerapps.com/ returned No browser is available. No player session was executed.',
           'output': str(OUTPUT), 'bytes': OUTPUT.stat().st_size, 'sha256': sha(OUTPUT.read_bytes()),
           'changed_package_entries': changed, 'schema_scans': scans,
           'unchanged_phase2_screens': screens, 'all_yaml_byte_identical': True,
-          'all_formulas_and_instance_ids_preserved': True, 'repaired_msapr_equals_reunpacked_msapr_members': True,
+          'variables_preserved': sorted(set(re.findall(r'\bvar[A-Za-z0-9_]+', '\n'.join(
+              data.decode('utf-8') for name, data in fixed.items() if name.endswith('.pa.yaml'))))),
+          'all_formulas_and_instance_ids_preserved': True, 'repaired_msapr_equals_reunpacked_msapr_except_pack_timestamp': True,
           'original_input_hashes_unchanged': True,
           'retained_historical_checker_report': 'AppCheckerResult.sarif is unchanged historical analysis, not an executable schema or a fresh validation.'})
     print('PACKAGE VALIDATION: PASS. Runtime was not executed.')

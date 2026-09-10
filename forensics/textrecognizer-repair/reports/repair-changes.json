@@ -1,0 +1,132 @@
+{
+  "entry": "msapp/Controls/15.json",
+  "changed_containers": [
+    "$/TopParent/Children/6/Template/OverridableProperties",
+    "$/TopParent/Children/6/Template/PCFDynamicSchemaForIRRetrieval"
+  ],
+  "leaf_differences": [
+    {
+      "path": "$/TopParent/Children/6/Template/OverridableProperties/Results/Type/Kind",
+      "before": "Record",
+      "after": "Table"
+    },
+    {
+      "path": "$/TopParent/Children/6/Template/OverridableProperties/Results/Type/Type",
+      "before": [],
+      "after": [
+        {
+          "Name": "BoundingBox",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": [
+            {
+              "Name": "Height",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Left",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Top",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Width",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            }
+          ]
+        },
+        {
+          "Name": "PageNumber",
+          "Kind": "Number",
+          "EnumString": "",
+          "Type": []
+        },
+        {
+          "Name": "Text",
+          "Kind": "String",
+          "EnumString": "",
+          "Type": []
+        }
+      ]
+    },
+    {
+      "path": "$/TopParent/Children/6/Template/OverridableProperties/Selected/Type/Type",
+      "before": [],
+      "after": [
+        {
+          "Name": "BoundingBox",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": [
+            {
+              "Name": "Height",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Left",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Top",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Width",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            }
+          ]
+        },
+        {
+          "Name": "PageNumber",
+          "Kind": "Number",
+          "EnumString": "",
+          "Type": []
+        },
+        {
+          "Name": "Text",
+          "Kind": "String",
+          "EnumString": "",
+          "Type": []
+        }
+      ]
+    },
+    {
+      "path": "$/TopParent/Children/6/Template/PCFDynamicSchemaForIRRetrieval/Results",
+      "before": null,
+      "after": {
+        "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}}",
+        "PCFSkipValidation": false
+      },
+      "before_present": false,
+      "after_present": true
+    },
+    {
+      "path": "$/TopParent/Children/6/Template/PCFDynamicSchemaForIRRetrieval/Selected",
+      "before": null,
+      "after": {
+        "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}",
+        "PCFSkipValidation": false
+      },
+      "before_present": false,
+      "after_present": true
+    }
+  ]
+}
