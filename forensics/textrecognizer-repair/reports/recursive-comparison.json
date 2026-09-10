@@ -1,0 +1,595 @@
+[
+  {
+    "entry": "AppCheckerResult.sarif",
+    "status": "changed",
+    "differences": [
+      {
+        "path": "$/runs/0/results",
+        "healthy": [
+          {
+            "ruleId": "acc-ReadableScreenNameNeeded",
+            "ruleIndex": 0,
+            "message": {
+              "id": "issue"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "address": {
+                    "relativeAddress": 0,
+                    "fullyQualifiedName": "Screen1"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Screen1"
+                  }
+                ],
+                "properties": {
+                  "module": "Screen1",
+                  "type": "Screen1"
+                }
+              }
+            ],
+            "properties": {
+              "level": "Low"
+            }
+          }
+        ],
+        "broken": {
+          "length": 45164,
+          "sha256": "2172f178ca39367860f5145925c5de0ab439eaaa172c24a1883c151b4313ce97",
+          "preview": "[{\"ruleId\": \"app-ErrBadType-ExpectedType-ProvidedType\", \"ruleIndex\": 0, \"message\": {\"id\": \"issue\", \"arguments\": [\"Table\", \"Record\"]}, \"locations\": [{\"physicalLocation\": {\"address\": {\"relativeAddress\": 0, \"fullyQualifiedName\": \"scrScan.TextRecognizer1.OnChange\"}, \"region\": {\"charOffset\": 54, \"charLen"
+        }
+      },
+      {
+        "path": "$/runs/0/tool/driver/rules",
+        "healthy": [
+          {
+            "id": "acc-ReadableScreenNameNeeded",
+            "messageStrings": {
+              "issue": {
+                "text": "Revise screen name"
+              }
+            },
+            "properties": {
+              "howToFix": [
+                "Give the screen  a title that describes what's on the screen or what it's used for."
+              ],
+              "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. ",
+              "level": "Low",
+              "componentType": "app",
+              "primaryCategory": "accessibility"
+            }
+          }
+        ],
+        "broken": {
+          "length": 2421,
+          "sha256": "c380b527edc306f92bc5f7f8f1bed201676011f5aad5d2ec44e71b53ef53e2e0",
+          "preview": "[{\"id\": \"app-ErrBadType-ExpectedType-ProvidedType\", \"messageStrings\": {\"issue\": {\"text\": \"Invalid argument type ({1}). Expecting a {0} value instead.\"}}, \"properties\": {\"whyFix\": \"\", \"level\": \"High\", \"componentType\": \"app\", \"primaryCategory\": \"formula\"}}, {\"id\": \"app-ErrBadType\", \"messageStrings\": {"
+        }
+      }
+    ]
+  },
+  {
+    "entry": "Controls/1.json",
+    "status": "changed",
+    "differences": [
+      {
+        "path": "$/TopParent/ControlPropertyState",
+        "healthy": [
+          "MinScreenHeight",
+          "MinScreenWidth",
+          "ConfirmExit",
+          "SizeBreakpoints",
+          "BackEnabled",
+          "Theme"
+        ],
+        "broken": [
+          "StartScreen",
+          "OnStart",
+          "MinScreenHeight",
+          "MinScreenWidth",
+          "ConfirmExit",
+          "SizeBreakpoints",
+          "BackEnabled",
+          "Theme"
+        ]
+      },
+      {
+        "path": "$/TopParent/Rules",
+        "healthy": [
+          {
+            "Property": "ConfirmExit",
+            "Category": "Data",
+            "InvariantScript": "false",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "BackEnabled",
+            "Category": "Data",
+            "InvariantScript": "true",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "MinScreenHeight",
+            "Category": "Design",
+            "InvariantScript": "640",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "MinScreenWidth",
+            "Category": "Design",
+            "InvariantScript": "640",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Theme",
+            "Category": "Design",
+            "InvariantScript": "PowerAppsTheme",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "SizeBreakpoints",
+            "Category": "ConstantData",
+            "InvariantScript": "[1200, 1800, 2400]",
+            "RuleProviderType": "Unknown"
+          }
+        ],
+        "broken": [
+          {
+            "Property": "ConfirmExit",
+            "Category": "Data",
+            "InvariantScript": "false",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "BackEnabled",
+            "Category": "Data",
+            "InvariantScript": "true",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "MinScreenHeight",
+            "Category": "Design",
+            "InvariantScript": "640",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "MinScreenWidth",
+            "Category": "Design",
+            "InvariantScript": "640",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Theme",
+            "Category": "Design",
+            "InvariantScript": "PowerAppsTheme",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "OnStart",
+            "Category": "Behavior",
+            "InvariantScript": "Set(varAcceptedText, \"\");\nSet(varErrorMessage, \"\");\nSet(varScanAccepted, false);\nSet(varOcrEmpty, false);\nClearCollect(\n    colProductGroups,\n    {\n        ItemNumber: \"\",\n        ProductName: \"\",\n        HasNameConflict: false,\n        WarehouseRows: Table(\n            {\n                InventoryWarehouseId: \"\",\n                AvailableOnHandQuantity: 0,\n                ReservedOnHandQuantity: 0\n            }\n        )\n    }\n);\nClear(colProductGroups)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "SizeBreakpoints",
+            "Category": "ConstantData",
+            "InvariantScript": "[1200, 1800, 2400]",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "StartScreen",
+            "Category": "OnDemandData",
+            "InvariantScript": "scrHome",
+            "RuleProviderType": "Unknown"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "entry": "Controls/15.json",
+    "status": "broken-only"
+  },
+  {
+    "entry": "Controls/30.json",
+    "status": "broken-only"
+  },
+  {
+    "entry": "Controls/36.json",
+    "status": "broken-only"
+  },
+  {
+    "entry": "Controls/4.json",
+    "status": "changed",
+    "differences": [
+      {
+        "path": "$/TopParent/Children",
+        "healthy": {
+          "length": 79242,
+          "sha256": "36d235c0179c60862aebc2e49b89e718adce9cacc1a51800dc2546122c2991ad",
+          "preview": "[{\"Type\": \"ControlInfo\", \"Name\": \"TextRecognizer1\", \"HasDynamicProperties\": false, \"Template\": {\"Id\": \"http://microsoft.com/appmagic/powercontrol/TextRecognizer\", \"Version\": \"1.0.112\", \"LastModifiedTimestamp\": \"0\", \"Name\": \"TextRecognizer\", \"FirstParty\": true, \"IsPremiumPcfControl\": false, \"IsCustom"
+        },
+        "broken": {
+          "length": 306273,
+          "sha256": "5480869cc48d482e4fc408e8c83d4329962f65bc1120e90df902bd67d40e391c",
+          "preview": "[{\"Type\": \"ControlInfo\", \"Name\": \"shpHomeTopGlow\", \"HasDynamicProperties\": false, \"Template\": {\"Id\": \"http://microsoft.com/appmagic/shapes/rectangle\", \"Version\": \"2.3.0\", \"LastModifiedTimestamp\": \"0\", \"Name\": \"rectangle\", \"FirstParty\": true, \"IsPremiumPcfControl\": false, \"IsCustomGroupControlTemplat"
+        }
+      },
+      {
+        "path": "$/TopParent/ControlPropertyState",
+        "healthy": [
+          "Fill",
+          "ImagePosition",
+          "Height",
+          "Width",
+          "Size",
+          "Orientation",
+          "LoadingSpinner",
+          "LoadingSpinnerColor"
+        ],
+        "broken": [
+          "Fill",
+          "ImagePosition",
+          "Height",
+          "Width",
+          "Size",
+          "Orientation",
+          "LoadingSpinner",
+          "LoadingSpinnerColor",
+          "ContentLanguage"
+        ]
+      },
+      {
+        "path": "$/TopParent/Name",
+        "healthy": "Screen1",
+        "broken": "scrHome"
+      },
+      {
+        "path": "$/TopParent/Rules",
+        "healthy": [
+          {
+            "Property": "Fill",
+            "Category": "Design",
+            "InvariantScript": "Color.White",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "ImagePosition",
+            "Category": "Design",
+            "InvariantScript": "ImagePosition.Fit",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Height",
+            "Category": "Design",
+            "InvariantScript": "Max(App.Height, App.MinScreenHeight)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Width",
+            "Category": "Design",
+            "InvariantScript": "Max(App.Width, App.MinScreenWidth)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Size",
+            "Category": "Design",
+            "InvariantScript": "1 + CountRows(App.SizeBreakpoints) - CountIf(App.SizeBreakpoints, Value >= Self.Width)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Orientation",
+            "Category": "Design",
+            "InvariantScript": "If(Self.Width < Self.Height, Layout.Vertical, Layout.Horizontal)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "LoadingSpinner",
+            "Category": "Design",
+            "InvariantScript": "LoadingSpinner.None",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "LoadingSpinnerColor",
+            "Category": "Design",
+            "InvariantScript": "RGBA(56, 96, 178, 1)",
+            "RuleProviderType": "Unknown"
+          }
+        ],
+        "broken": [
+          {
+            "Property": "ContentLanguage",
+            "Category": "Data",
+            "InvariantScript": "\"\"",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Fill",
+            "Category": "Design",
+            "InvariantScript": "RGBA(247, 249, 252, 1)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "ImagePosition",
+            "Category": "Design",
+            "InvariantScript": "ImagePosition.Fit",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Height",
+            "Category": "Design",
+            "InvariantScript": "Max(App.Height, App.MinScreenHeight)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Width",
+            "Category": "Design",
+            "InvariantScript": "Max(App.Width, App.MinScreenWidth)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Size",
+            "Category": "Design",
+            "InvariantScript": "1 + CountRows(App.SizeBreakpoints) - CountIf(App.SizeBreakpoints, Value >= Self.Width)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "Orientation",
+            "Category": "Design",
+            "InvariantScript": "If(Self.Width < Self.Height, Layout.Vertical, Layout.Horizontal)",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "LoadingSpinner",
+            "Category": "Design",
+            "InvariantScript": "LoadingSpinner.None",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "LoadingSpinnerColor",
+            "Category": "Design",
+            "InvariantScript": "RGBA(37, 99, 235, 1)",
+            "RuleProviderType": "Unknown"
+          }
+        ]
+      },
+      {
+        "path": "$/TopParent/StyleName",
+        "healthy": "defaultScreenStyle",
+        "broken": ""
+      }
+    ]
+  },
+  {
+    "entry": "Controls/58.json",
+    "status": "broken-only"
+  },
+  {
+    "entry": "Header.json",
+    "status": "changed",
+    "differences": [
+      {
+        "path": "$/LastSavedDateTimeUTC",
+        "healthy": "09/10/2026 08:05:38",
+        "broken": "09/10/2026 09:07:51"
+      }
+    ]
+  },
+  {
+    "entry": "Properties.json",
+    "status": "changed",
+    "differences": [
+      {
+        "path": "$/AnalysisLoadTime",
+        "healthy": 0.1020637,
+        "broken": 0.5334483
+      },
+      {
+        "path": "$/BindingErrorCount",
+        "healthy": 0,
+        "broken": 8
+      },
+      {
+        "path": "$/ControlCount/PowerApps_CoreControls_ButtonCanvas",
+        "healthy": null,
+        "broken": 16,
+        "healthy_present": false,
+        "broken_present": true
+      },
+      {
+        "path": "$/ControlCount/gallery",
+        "healthy": null,
+        "broken": 2,
+        "healthy_present": false,
+        "broken_present": true
+      },
+      {
+        "path": "$/ControlCount/galleryTemplate",
+        "healthy": null,
+        "broken": 2,
+        "healthy_present": false,
+        "broken_present": true
+      },
+      {
+        "path": "$/ControlCount/label",
+        "healthy": null,
+        "broken": 29,
+        "healthy_present": false,
+        "broken_present": true
+      },
+      {
+        "path": "$/ControlCount/rectangle",
+        "healthy": null,
+        "broken": 6,
+        "healthy_present": false,
+        "broken_present": true
+      },
+      {
+        "path": "$/ControlCount/screen",
+        "healthy": 1,
+        "broken": 5
+      },
+      {
+        "path": "$/DeserializationLoadTime",
+        "healthy": 0.974875,
+        "broken": 1.3493587
+      },
+      {
+        "path": "$/LocalConnectionReferences",
+        "healthy": {
+          "length": 2199,
+          "sha256": "a25ad59480447e648d93f9cd073f24fd625f51a9b0a176509239f2ded5b45579",
+          "preview": "\"{\\\"0fe629ef-e3a9-4891-958d-f2e67e6eb9eb\\\":{\\\"id\\\":\\\"0fe629ef-e3a9-4891-958d-f2e67e6eb9eb\\\",\\\"connectionInstanceId\\\":\\\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/2e02c7b6952c4b1380e889efcc9f474c-2300468d8b253b9d\\\",\\\"dataSources\\\":[\\\"barcode_flow\\\"],\\\"datasets\\\":{},\\\"dependenci"
+        },
+        "broken": "{\"cbc26220-f770-48b8-aac2-793a2a77f496\":{\"id\":\"cbc26220-f770-48b8-aac2-793a2a77f496\",\"connectionInstanceId\":\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/2E02C7B6952C4B1380E889EFCC9F474C-2300468D8B253B9D\",\"dataSources\":[\"barcode_flow\"],\"datasets\":{},\"dependencies\":{\"shared_dynamicsax-1\":\"3344f7b8-a747-4f06-80cf-b307eed73dd5\"},\"dependents\":[],\"connectionRef\":{\"id\":\"/providers/microsoft.powerapps/apis/shared_logicflows\",\"displayName\":\"Mantık akışları\",\"iconUri\":\"https://static.powerapps.com/resource/ppcr/releases/v1.0.1827/1.0.1827.4908/logicflows/icon.png\",\"parameterHints\":{\"workflowName\":{\"value\":\"2e02c7b6-952c-4b13-80e8-89efcc9f474c\"},\"workflowEntityId\":{\"value\":\"263ae41b-edac-f111-aaab-7ced8d125e8b\"},\"workflowDisplayName\":{\"value\":\"barcode_flow\"}},\"parameterHintsV2\":{\"workflowName\":{\"value\":\"2e02c7b6-952c-4b13-80e8-89efcc9f474c\"},\"workflowEntityId\":{\"value\":\"263ae41b-edac-f111-aaab-7ced8d125e8b\"},\"workflowDisplayName\":{\"value\":\"barcode_flow\"}}}},\"3344f7b8-a747-4f06-80cf-b307eed73dd5\":{\"id\":\"3344f7b8-a747-4f06-80cf-b307eed73dd5\",\"connectionInstanceId\":\"/providers/microsoft.powerapps/apis/shared_dynamicsax/connections/4b228587de59491e8021ed2e5cbfa75a\",\"dataSources\":[],\"datasets\":{},\"dependencies\":{},\"dependents\":[\"cbc26220-f770-48b8-aac2-793a2a77f496\"],\"connectionRef\":{\"id\":\"/providers/microsoft.powerapps/apis/shared_dynamicsax\",\"displayName\":\"Fin & Ops Apps (Dynamics 365)\",\"authenticationType\":\"Oauth\",\"iconUri\":\"https://static.powerapps.com/resource/ppcr/releases/v1.0.1827/1.0.1827.4902/dynamicsax/icon.png\",\"sharedConnectionId\":\"/providers/microsoft.powerapps/apis/shared_dynamicsax/connections/4b228587de59491e8021ed2e5cbfa75a\",\"xrmConnectionReferenceLogicalName\":\"crac0_shareddynamicsax_1baef\"}}}"
+      }
+    ]
+  },
+  {
+    "entry": "References/DataSources.json",
+    "status": "changed",
+    "differences": [
+      {
+        "path": "$/DataSources/0/WadlMetadata/WadlXml",
+        "healthy": {
+          "length": 2248,
+          "sha256": "468c7fbc323d376512a5e677c30249426f58ac7324b7c7ffe0761cb2eaa07761",
+          "preview": "\"<application xmlns:xml=\\\"http://www.w3.org/XML/1998/namespace\\\" xmlns:xs=\\\"http://www.w3.org/2001/XMLSchema\\\" xmlns:service=\\\"https://europe-001.azure-apim.net/apim/logicflows\\\" xmlns:siena=\\\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\\\" siena:serviceId=\\\"barcode_flow\\\" xmlns=\\\""
+        },
+        "broken": {
+          "length": 2646,
+          "sha256": "c3f7decb53369a40149ff0abee265738659d9d57cf5030f8e0ef91e884c43f97",
+          "preview": "\"<application xmlns:xml=\\\"http://www.w3.org/XML/1998/namespace\\\" xmlns:xs=\\\"http://www.w3.org/2001/XMLSchema\\\" xmlns:service=\\\"https://europe-001.azure-apim.net/apim/logicflows\\\" xmlns:siena=\\\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\\\" siena:serviceId=\\\"barcode_flow\\\" xmlns=\\\""
+        }
+      },
+      {
+        "path": "$/DataSources/1/MaxGetRowsCount",
+        "healthy": null,
+        "broken": 500,
+        "healthy_present": false,
+        "broken_present": true
+      },
+      {
+        "path": "$/DataSources/1/TableDefinition",
+        "healthy": {
+          "length": 237455,
+          "sha256": "06a5bf87f29b98847d8b12ce2978536a44791be036c44f4b37e41e3dfacafbba",
+          "preview": "\"{\\\"TableName\\\":\\\"msdyn_aimodel\\\",\\\"EntityMetadata\\\":\\\"{\\\\\\\"@odata.context\\\\\\\":\\\\\\\"https://org81ed1142.crm4.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions(MetadataId,LogicalName,DisplayCollectionName,EntitySetName,Description,HasNotes,IsActivity,IsIntersect,IsManaged,TableType,IsPrivate,IsLo"
+        },
+        "broken": {
+          "length": 237455,
+          "sha256": "41d4e97886dd9a99be3837df30c26f1cf36d16c86def76d902ecc5b7f127119a",
+          "preview": "\"{\\\"TableName\\\":\\\"msdyn_aimodel\\\",\\\"EntityMetadata\\\":\\\"{\\\\\\\"@odata.context\\\\\\\":\\\\\\\"https://org81ed1142.crm4.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions(MetadataId,LogicalName,DisplayCollectionName,EntitySetName,Description,HasNotes,IsActivity,IsIntersect,IsManaged,TableType,IsPrivate,IsLo"
+        }
+      }
+    ]
+  },
+  {
+    "entry": "References/ModernThemes.json",
+    "status": "identical"
+  },
+  {
+    "entry": "References/Resources.json",
+    "status": "identical"
+  },
+  {
+    "entry": "References/Templates.json",
+    "status": "changed",
+    "differences": [
+      {
+        "path": "$/PcfTemplates",
+        "healthy": [
+          {
+            "Name": "TextRecognizer",
+            "Version": "1.0.112",
+            "PcfConversions": [
+              {
+                "From": "1.0.106",
+                "To": "1.0.107",
+                "Action": [
+                  {
+                    "Name": "FullText",
+                    "Type": "add"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "broken": {
+          "length": 2294,
+          "sha256": "ec25017e9a52cb4bfeabe6384f109c36181289d22954bd6dda3e117de2942151",
+          "preview": "[{\"Name\": \"PowerApps_CoreControls_ButtonCanvas\", \"Version\": \"0.0.45\", \"PcfConversions\": [{\"From\": \"0.0.13\", \"To\": \"0.0.14\", \"Action\": [{\"Name\": \"OnChange\", \"Type\": \"remove\"}]}, {\"From\": \"0.0.17\", \"To\": \"0.0.18\", \"Action\": [{\"Name\": \"BasePaletteColor\", \"Type\": \"add\"}]}, {\"From\": \"0.0.20\", \"To\": \"0.0."
+        }
+      },
+      {
+        "path": "$/UsedTemplates",
+        "healthy": [],
+        "broken": {
+          "length": 71465,
+          "sha256": "8d7e7b483cf83e65fd206efa494345172773348b8ed78ebdf0b6f344af293b85",
+          "preview": "[{\"Name\": \"rectangle\", \"Version\": \"2.3.0\", \"Template\": \"<widget xmlns=\\\"http://openajax.org/metadata\\\" spec=\\\"1.0\\\" id=\\\"http://microsoft.com/appmagic/shapes/rectangle\\\" name=\\\"rectangle\\\" jsClass=\\\"AppMagic.Controls.Shapes.Rectangle\\\" version=\\\"2.3.0\\\" styleable=\\\"true\\\" runtimeCost=\\\"1\\\" xmlns:app"
+        }
+      }
+    ]
+  },
+  {
+    "entry": "References/Themes.json",
+    "status": "identical"
+  },
+  {
+    "entry": "Resources/PublishInfo.json",
+    "status": "identical"
+  },
+  {
+    "entry": "Src/App.pa.yaml",
+    "status": "changed",
+    "differences": [
+      {
+        "healthy_sha256": "4daa2e26e59666973b8353895ce8cef667f73fa115905240f154175f8a453ed5",
+        "broken_sha256": "9d75a5c60beee8e4026c9f83e57c5e5b88c91027f61c613e04cd1140b447978d"
+      }
+    ]
+  },
+  {
+    "entry": "Src/Screen1.pa.yaml",
+    "status": "healthy-only"
+  },
+  {
+    "entry": "Src/_EditorState.pa.yaml",
+    "status": "changed",
+    "differences": [
+      {
+        "healthy_sha256": "20d09f94d85526416e46a233a68dfce5e05268902370a6ef744eb0bbf473f2f3",
+        "broken_sha256": "561a264b2247b6182b94f61b3ddcc29287171d534ea693d3e104918884eedbe6"
+      }
+    ]
+  },
+  {
+    "entry": "Src/scrError.pa.yaml",
+    "status": "broken-only"
+  },
+  {
+    "entry": "Src/scrHome.pa.yaml",
+    "status": "broken-only"
+  },
+  {
+    "entry": "Src/scrLoading.pa.yaml",
+    "status": "broken-only"
+  },
+  {
+    "entry": "Src/scrResults.pa.yaml",
+    "status": "broken-only"
+  },
+  {
+    "entry": "Src/scrScan.pa.yaml",
+    "status": "broken-only"
+  },
+  {
+    "entry": "packed.json",
+    "status": "broken-only"
+  }
+]

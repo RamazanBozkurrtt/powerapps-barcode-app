@@ -1,0 +1,6 @@
+{
+  "command": "pac canvas unpack --msapp forensics\\textrecognizer-repair\\healthy\\input.msapp --sources forensics\\textrecognizer-repair\\healthy\\unpacked --layout SourceCode",
+  "exit_code": 0,
+  "stdout": "Unpack from C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\forensics\\textrecognizer-repair\\healthy\\input.msapp --> C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\forensics\\textrecognizer-repair\\healthy\\unpacked\nUnpacking succeeded.\n",
+  "stderr": ""
+}

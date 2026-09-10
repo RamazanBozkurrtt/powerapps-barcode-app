@@ -1,0 +1,339 @@
+[
+  {
+    "package": "healthy",
+    "entry": "Properties.json",
+    "term_counts": {
+      "dynamic": 10,
+      "Dynamic": 1,
+      "Type": 3,
+      "type": 4,
+      "table": 3,
+      "aibuilder": 1,
+      "schema": 2,
+      "record": 1,
+      "TextRecognizer": 1
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "Controls/4.json",
+    "term_counts": {
+      "Type": 278,
+      "TextRecognizer": 109,
+      "Dynamic": 5,
+      "type": 19,
+      "Results": 11,
+      "Selected": 13,
+      "Schema": 10,
+      "Object": 6,
+      "schema": 10,
+      "table": 66,
+      "AI Builder": 6,
+      "AIBuilder": 8,
+      "Table": 2,
+      "Kind": 50,
+      "Record": 3,
+      "array": 1,
+      "object": 4
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "Src/Screen1.pa.yaml",
+    "term_counts": {
+      "schema": 1,
+      "TextRecognizer": 2
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "Controls/1.json",
+    "term_counts": {
+      "Type": 14,
+      "Dynamic": 1
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "Src/App.pa.yaml",
+    "term_counts": {
+      "schema": 1
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "Src/_EditorState.pa.yaml",
+    "term_counts": {
+      "schema": 1
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "References/Themes.json",
+    "term_counts": {
+      "type": 73,
+      "Table": 7,
+      "Selected": 6,
+      "table": 1,
+      "Type": 1
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "References/DataSources.json",
+    "term_counts": {
+      "Type": 616,
+      "Kind": 1,
+      "Schema": 148,
+      "schema": 26,
+      "object": 1470,
+      "type": 6573,
+      "table": 142,
+      "dynamic": 6,
+      "Dynamic": 7986,
+      "Object": 103,
+      "array": 712,
+      "record": 112,
+      "selected": 4,
+      "Record": 108,
+      "Table": 76,
+      "results": 4,
+      "RecognizeText": 2,
+      "Results": 43,
+      "AI Builder": 2
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "References/Templates.json",
+    "term_counts": {
+      "TextRecognizer": 1,
+      "Type": 1
+    }
+  },
+  {
+    "package": "healthy",
+    "entry": "AppCheckerResult.sarif",
+    "term_counts": {
+      "schema": 3,
+      "results": 1,
+      "type": 1,
+      "Type": 1,
+      "Kind": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Properties.json",
+    "term_counts": {
+      "dynamic": 8,
+      "Dynamic": 1,
+      "Type": 3,
+      "type": 3,
+      "table": 3,
+      "aibuilder": 1,
+      "schema": 2,
+      "record": 1,
+      "TextRecognizer": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Controls/4.json",
+    "term_counts": {
+      "Type": 1189,
+      "Dynamic": 13,
+      "type": 6,
+      "table": 234,
+      "Kind": 93
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Controls/15.json",
+    "term_counts": {
+      "Type": 1543,
+      "Dynamic": 19,
+      "type": 8,
+      "table": 300,
+      "Kind": 129,
+      "TextRecognizer": 109,
+      "Results": 12,
+      "Selected": 12,
+      "Schema": 10,
+      "Object": 6,
+      "schema": 4,
+      "AI Builder": 6,
+      "AIBuilder": 8,
+      "Table": 1,
+      "Record": 2
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Controls/30.json",
+    "term_counts": {
+      "Type": 726,
+      "Dynamic": 7,
+      "type": 4,
+      "table": 156,
+      "Kind": 62
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Controls/36.json",
+    "term_counts": {
+      "Type": 1877,
+      "Results": 18,
+      "Dynamic": 25,
+      "type": 8,
+      "table": 316,
+      "Kind": 124
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Controls/58.json",
+    "term_counts": {
+      "Type": 1234,
+      "Dynamic": 10,
+      "type": 8,
+      "table": 312,
+      "Kind": 124
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Controls/1.json",
+    "term_counts": {
+      "Type": 16,
+      "Table": 1,
+      "Dynamic": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "References/Themes.json",
+    "term_counts": {
+      "type": 73,
+      "Table": 7,
+      "Selected": 6,
+      "table": 1,
+      "Type": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "References/DataSources.json",
+    "term_counts": {
+      "Type": 617,
+      "Kind": 1,
+      "Schema": 148,
+      "schema": 26,
+      "object": 1473,
+      "type": 6574,
+      "table": 142,
+      "dynamic": 6,
+      "Dynamic": 7986,
+      "Object": 103,
+      "array": 712,
+      "record": 112,
+      "selected": 4,
+      "Record": 108,
+      "Table": 76,
+      "results": 4,
+      "RecognizeText": 2,
+      "Results": 43,
+      "AI Builder": 2
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "References/Templates.json",
+    "term_counts": {
+      "schema": 3,
+      "type": 74,
+      "array": 1,
+      "table": 13,
+      "Type": 53,
+      "Selected": 10,
+      "Array": 2,
+      "record": 2,
+      "object": 2,
+      "TextRecognizer": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "AppCheckerResult.sarif",
+    "term_counts": {
+      "schema": 3,
+      "results": 1,
+      "Type": 19,
+      "Table": 1,
+      "Record": 2,
+      "TextRecognizer": 24,
+      "Results": 170,
+      "type": 95,
+      "Kind": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Src/App.pa.yaml",
+    "term_counts": {
+      "schema": 1,
+      "Table": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Src/scrError.pa.yaml",
+    "term_counts": {
+      "schema": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Src/scrHome.pa.yaml",
+    "term_counts": {
+      "schema": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Src/scrLoading.pa.yaml",
+    "term_counts": {
+      "schema": 1,
+      "Table": 1,
+      "Results": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Src/scrResults.pa.yaml",
+    "term_counts": {
+      "schema": 1,
+      "Results": 9
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Src/scrScan.pa.yaml",
+    "term_counts": {
+      "schema": 1,
+      "TextRecognizer": 4,
+      "Selected": 3,
+      "Type": 1
+    }
+  },
+  {
+    "package": "broken",
+    "entry": "Src/_EditorState.pa.yaml",
+    "term_counts": {
+      "schema": 1,
+      "Results": 1
+    }
+  }
+]

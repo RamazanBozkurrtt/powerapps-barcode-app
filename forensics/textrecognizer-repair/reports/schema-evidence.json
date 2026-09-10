@@ -1,0 +1,284 @@
+{
+  "healthy": {
+    "entry": "Controls/4.json",
+    "path": "$/TopParent/Children/0",
+    "identity": "5",
+    "parent": "Screen1",
+    "metadata": {
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Table",
+            "EnumString": "",
+            "Type": [
+              {
+                "Name": "BoundingBox",
+                "Kind": "Record",
+                "EnumString": "",
+                "Type": [
+                  {
+                    "Name": "Height",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Left",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Top",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Width",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "Name": "PageNumber",
+                "Kind": "Number",
+                "EnumString": "",
+                "Type": []
+              },
+              {
+                "Name": "Text",
+                "Kind": "String",
+                "EnumString": "",
+                "Type": []
+              }
+            ]
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": [
+              {
+                "Name": "BoundingBox",
+                "Kind": "Record",
+                "EnumString": "",
+                "Type": [
+                  {
+                    "Name": "Height",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Left",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Top",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Width",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "Name": "PageNumber",
+                "Kind": "Number",
+                "EnumString": "",
+                "Type": []
+              },
+              {
+                "Name": "Text",
+                "Kind": "String",
+                "EnumString": "",
+                "Type": []
+              }
+            ]
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {
+        "Results": {
+          "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}}",
+          "PCFSkipValidation": false
+        },
+        "Selected": {
+          "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}",
+          "PCFSkipValidation": false
+        }
+      }
+    }
+  },
+  "broken": {
+    "entry": "Controls/15.json",
+    "path": "$/TopParent/Children/6",
+    "identity": "21",
+    "parent": "scrScan",
+    "metadata": {
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {}
+    }
+  },
+  "all_other_template_fields_identical": true,
+  "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+  "template_differences": [
+    {
+      "path": "$/OverridableProperties/Results/Type/Kind",
+      "healthy": "Table",
+      "broken": "Record"
+    },
+    {
+      "path": "$/OverridableProperties/Results/Type/Type",
+      "healthy": [
+        {
+          "Name": "BoundingBox",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": [
+            {
+              "Name": "Height",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Left",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Top",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Width",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            }
+          ]
+        },
+        {
+          "Name": "PageNumber",
+          "Kind": "Number",
+          "EnumString": "",
+          "Type": []
+        },
+        {
+          "Name": "Text",
+          "Kind": "String",
+          "EnumString": "",
+          "Type": []
+        }
+      ],
+      "broken": []
+    },
+    {
+      "path": "$/OverridableProperties/Selected/Type/Type",
+      "healthy": [
+        {
+          "Name": "BoundingBox",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": [
+            {
+              "Name": "Height",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Left",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Top",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Width",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            }
+          ]
+        },
+        {
+          "Name": "PageNumber",
+          "Kind": "Number",
+          "EnumString": "",
+          "Type": []
+        },
+        {
+          "Name": "Text",
+          "Kind": "String",
+          "EnumString": "",
+          "Type": []
+        }
+      ],
+      "broken": []
+    },
+    {
+      "path": "$/PCFDynamicSchemaForIRRetrieval/Results",
+      "healthy": {
+        "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}}",
+        "PCFSkipValidation": false
+      },
+      "broken": null,
+      "healthy_present": true,
+      "broken_present": false
+    },
+    {
+      "path": "$/PCFDynamicSchemaForIRRetrieval/Selected",
+      "healthy": {
+        "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}",
+        "PCFSkipValidation": false
+      },
+      "broken": null,
+      "healthy_present": true,
+      "broken_present": false
+    }
+  ]
+}

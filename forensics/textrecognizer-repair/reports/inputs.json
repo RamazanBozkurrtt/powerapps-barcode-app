@@ -1,0 +1,14 @@
+[
+  {
+    "label": "healthy",
+    "path": "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod Uygulaması V2.msapp",
+    "bytes": 111022,
+    "sha256": "25ecb30774cde9350a8384f676e1f63a5d4cc74c1bcb83f70ab3f55fc5cfdc97"
+  },
+  {
+    "label": "broken",
+    "path": "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Phase2.msapp",
+    "bytes": 247950,
+    "sha256": "5e6a2af3c7e6d5f1e962e966a56e975ee23e84ba904dd3fedc1dc9dac3fd5bea"
+  }
+]
