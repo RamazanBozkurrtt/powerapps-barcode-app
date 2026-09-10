@@ -1,0 +1,2459 @@
+[
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Table",
+          "Record"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 54,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType",
+      "ruleIndex": 1,
+      "message": {
+        "id": "issue"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 275,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Sort"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 245,
+              "charLength": 4,
+              "snippet": {
+                "text": "Sort"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "BoundingBox"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 305,
+              "charLength": 11,
+              "snippet": {
+                "text": "BoundingBox"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidDot",
+      "ruleIndex": 4,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Error"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 316,
+              "charLength": 4,
+              "snippet": {
+                "text": ".Top"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Text"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 393,
+              "charLength": 5,
+              "snippet": {
+                "text": ".Text"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Record",
+          "Boolean"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 617,
+              "charLength": 2,
+              "snippet": {
+                "text": ";;"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "IfError"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 473,
+              "charLength": 7,
+              "snippet": {
+                "text": "IfError"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Table",
+          "Record"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 54,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType",
+      "ruleIndex": 1,
+      "message": {
+        "id": "issue"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 275,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Sort"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 245,
+              "charLength": 4,
+              "snippet": {
+                "text": "Sort"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "BoundingBox"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 305,
+              "charLength": 11,
+              "snippet": {
+                "text": "BoundingBox"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidDot",
+      "ruleIndex": 4,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Error"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 316,
+              "charLength": 4,
+              "snippet": {
+                "text": ".Top"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Text"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 393,
+              "charLength": 5,
+              "snippet": {
+                "text": ".Text"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Record",
+          "Boolean"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 617,
+              "charLength": 2,
+              "snippet": {
+                "text": ";;"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "IfError"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 473,
+              "charLength": 7,
+              "snippet": {
+                "text": "IfError"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Table",
+          "Record"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 54,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType",
+      "ruleIndex": 1,
+      "message": {
+        "id": "issue"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 275,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Sort"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 245,
+              "charLength": 4,
+              "snippet": {
+                "text": "Sort"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "BoundingBox"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 305,
+              "charLength": 11,
+              "snippet": {
+                "text": "BoundingBox"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidDot",
+      "ruleIndex": 4,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Error"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 316,
+              "charLength": 4,
+              "snippet": {
+                "text": ".Top"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Text"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 393,
+              "charLength": 5,
+              "snippet": {
+                "text": ".Text"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Record",
+          "Boolean"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 617,
+              "charLength": 2,
+              "snippet": {
+                "text": ";;"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "IfError"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 473,
+              "charLength": 7,
+              "snippet": {
+                "text": "IfError"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Table",
+          "Record"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 54,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType",
+      "ruleIndex": 1,
+      "message": {
+        "id": "issue"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 275,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Sort"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 245,
+              "charLength": 4,
+              "snippet": {
+                "text": "Sort"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "BoundingBox"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 305,
+              "charLength": 11,
+              "snippet": {
+                "text": "BoundingBox"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidDot",
+      "ruleIndex": 4,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Error"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 316,
+              "charLength": 4,
+              "snippet": {
+                "text": ".Top"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Text"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 393,
+              "charLength": 5,
+              "snippet": {
+                "text": ".Text"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Record",
+          "Boolean"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 617,
+              "charLength": 2,
+              "snippet": {
+                "text": ";;"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "IfError"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 473,
+              "charLength": 7,
+              "snippet": {
+                "text": "IfError"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Table",
+          "Record"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 54,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType",
+      "ruleIndex": 1,
+      "message": {
+        "id": "issue"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 275,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Sort"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 245,
+              "charLength": 4,
+              "snippet": {
+                "text": "Sort"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "BoundingBox"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 305,
+              "charLength": 11,
+              "snippet": {
+                "text": "BoundingBox"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidDot",
+      "ruleIndex": 4,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Error"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 316,
+              "charLength": 4,
+              "snippet": {
+                "text": ".Top"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Text"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 393,
+              "charLength": 5,
+              "snippet": {
+                "text": ".Text"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Record",
+          "Boolean"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 617,
+              "charLength": 2,
+              "snippet": {
+                "text": ";;"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "IfError"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 473,
+              "charLength": 7,
+              "snippet": {
+                "text": "IfError"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Table",
+          "Record"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 54,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType",
+      "ruleIndex": 1,
+      "message": {
+        "id": "issue"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 275,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Sort"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 245,
+              "charLength": 4,
+              "snippet": {
+                "text": "Sort"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "BoundingBox"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 305,
+              "charLength": 11,
+              "snippet": {
+                "text": "BoundingBox"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidDot",
+      "ruleIndex": 4,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Error"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 316,
+              "charLength": 4,
+              "snippet": {
+                "text": ".Top"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Text"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 393,
+              "charLength": 5,
+              "snippet": {
+                "text": ".Text"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Record",
+          "Boolean"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 617,
+              "charLength": 2,
+              "snippet": {
+                "text": ";;"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "IfError"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 473,
+              "charLength": 7,
+              "snippet": {
+                "text": "IfError"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Table",
+          "Record"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 54,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType",
+      "ruleIndex": 1,
+      "message": {
+        "id": "issue"
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 275,
+              "charLength": 8,
+              "snippet": {
+                "text": ".Results"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Sort"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 245,
+              "charLength": 4,
+              "snippet": {
+                "text": "Sort"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "BoundingBox"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 305,
+              "charLength": 11,
+              "snippet": {
+                "text": "BoundingBox"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidDot",
+      "ruleIndex": 4,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Error"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 316,
+              "charLength": 4,
+              "snippet": {
+                "text": ".Top"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidName",
+      "ruleIndex": 3,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Text"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 393,
+              "charLength": 5,
+              "snippet": {
+                "text": ".Text"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+      "ruleIndex": 0,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "Record",
+          "Boolean"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 617,
+              "charLength": 2,
+              "snippet": {
+                "text": ";;"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "AppCheckerResult.sarif",
+    "rule": {
+      "ruleId": "app-ErrInvalidArgs-Func",
+      "ruleIndex": 2,
+      "message": {
+        "id": "issue",
+        "arguments": [
+          "IfError"
+        ]
+      },
+      "locations": [
+        {
+          "physicalLocation": {
+            "address": {
+              "relativeAddress": 0,
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            },
+            "region": {
+              "charOffset": 473,
+              "charLength": 7,
+              "snippet": {
+                "text": "IfError"
+              }
+            }
+          },
+          "logicalLocations": [
+            {
+              "fullyQualifiedName": "scrScan.TextRecognizer1.OnChange"
+            }
+          ],
+          "properties": {
+            "module": "scrScan",
+            "type": "scrScan.TextRecognizer1",
+            "member": "OnChange"
+          }
+        }
+      ],
+      "properties": {
+        "level": "High"
+      }
+    }
+  }
+]

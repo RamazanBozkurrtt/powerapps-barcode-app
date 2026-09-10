@@ -1,0 +1,270 @@
+[
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 09:07:51",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "Barkod Uygulaması V2.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 08:05:38",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase1-Fixed.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 08:05:38",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase1-Fixed.msapp",
+    "entry": "packed.json",
+    "value": {
+      "PackedStructureVersion": "0.1",
+      "LastPackedDateTimeUtc": "2026-09-10 09:06:03Z",
+      "PackingClient": {
+        "Name": "Pac CLI",
+        "Version": "2.11.2"
+      },
+      "LoadConfiguration": {
+        "LoadFromYaml": true
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 09:07:51",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "packed.json",
+    "value": {
+      "PackedStructureVersion": "0.1",
+      "LastPackedDateTimeUtc": "2026-09-10 10:35:43Z",
+      "PackingClient": {
+        "Name": "Pac CLI",
+        "Version": "2.11.2"
+      },
+      "LoadConfiguration": {
+        "LoadFromYaml": true
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 09:07:51",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "packed.json",
+    "value": {
+      "PackedStructureVersion": "0.1",
+      "LastPackedDateTimeUtc": "2026-09-10 10:56:34Z",
+      "PackingClient": {
+        "Name": "Pac CLI",
+        "Version": "2.11.2"
+      },
+      "LoadConfiguration": {
+        "LoadFromYaml": true
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 09:07:51",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "packed.json",
+    "value": {
+      "PackedStructureVersion": "0.1",
+      "LastPackedDateTimeUtc": "2026-09-10 10:56:04Z",
+      "PackingClient": {
+        "Name": "Pac CLI",
+        "Version": "2.11.2"
+      },
+      "LoadConfiguration": {
+        "LoadFromYaml": true
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapr-header.json",
+    "value": {
+      "MsaprStructureVersion": "0.1",
+      "UnpackedConfiguration": {
+        "ContentTypes": [
+          "PaYamlSourceCode"
+        ]
+      }
+    }
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 09:07:51",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\extracted\\git-head-artifacts\\Barkod Uygulaması V2.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 07:35:25",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\extracted\\git-head-artifacts\\Barkod Uygulaması V2.msapr",
+    "entry": "msapr-header.json",
+    "value": {
+      "MsaprStructureVersion": "0.1",
+      "UnpackedConfiguration": {
+        "ContentTypes": [
+          "PaYamlSourceCode"
+        ]
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\extracted\\git-head-artifacts\\Barkod Uygulaması V2.msapr",
+    "entry": "msapp/Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 07:35:25",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 09:07:51",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "packed.json",
+    "value": {
+      "PackedStructureVersion": "0.1",
+      "LastPackedDateTimeUtc": "2026-09-10 11:24:05Z",
+      "PackingClient": {
+        "Name": "Pac CLI",
+        "Version": "2.11.2"
+      },
+      "LoadConfiguration": {
+        "LoadFromYaml": true
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "Header.json",
+    "value": {
+      "DocVersion": "1.349",
+      "MinVersionToLoad": "1.349",
+      "MSAppStructureVersion": "2.4.0",
+      "LastSavedDateTimeUTC": "09/10/2026 09:07:51",
+      "AnalysisOptions": {
+        "DataflowAnalysisEnabled": true,
+        "DataflowAnalysisFlagStateToggledByUser": false
+      }
+    }
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "packed.json",
+    "value": {
+      "PackedStructureVersion": "0.1",
+      "LastPackedDateTimeUtc": "2026-09-10 11:22:27Z",
+      "PackingClient": {
+        "Name": "Pac CLI",
+        "Version": "2.11.2"
+      },
+      "LoadConfiguration": {
+        "LoadFromYaml": true
+      }
+    }
+  }
+]

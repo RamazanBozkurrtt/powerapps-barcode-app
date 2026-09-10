@@ -1,0 +1,1927 @@
+[
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "Controls/15.json",
+    "pointer": "$/TopParent/Children/6",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {}
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Text",
+        "Category": "Data",
+        "InvariantScript": "\"Görüntü çek veya seç\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DefaultImage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ImageDisplayed",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowControls",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowBoundingBoxes",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ButtonHeight",
+        "Category": "Data",
+        "InvariantScript": "70",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "LoadSchema",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShouldReset",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarIconSize",
+        "Category": "Data",
+        "InvariantScript": "24",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarFontSize",
+        "Category": "Data",
+        "InvariantScript": "20",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ContentLanguage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "6",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Tooltip",
+        "Category": "Design",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "Parent.Width - 96",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "610",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(191, 205, 232, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderStyle",
+        "Category": "Design",
+        "InvariantScript": "\"solid\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderThickness",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(37, 99, 235, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "48",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "234",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Visible",
+        "Category": "Design",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "TabIndex",
+        "Category": "Design",
+        "InvariantScript": "0",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "OnChange",
+        "Category": "Behavior",
+        "InvariantScript": "If(\n    !varScanAccepted,\n    If(\n        IsEmpty(Self.Results),\n        Set(varOcrEmpty, true),\n        Set(varScanAccepted, true);\n        Set(varOcrEmpty, false);\n        Set(\n            varAcceptedText,\n            First(\n                Sort(\n                    Self.Results,\n                    BoundingBox.Top,\n                    SortOrder.Ascending\n                )\n            ).Text\n        );\n        Navigate(scrLoading, ScreenTransition.Fade);\n        IfError(\n            barcode_flow.Run(varAcceptedText),\n            Set(varErrorMessage, \"Stok bilgileri alınırken bir bağlantı hatası oluştu.\");\n            Navigate(scrError, ScreenTransition.Fade)\n        )\n    )\n)",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  },
+  {
+    "package": "Barkod Uygulaması V2.msapp",
+    "entry": "Controls/4.json",
+    "pointer": "$/TopParent/Children/0",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Table",
+            "EnumString": "",
+            "Type": [
+              {
+                "Name": "BoundingBox",
+                "Kind": "Record",
+                "EnumString": "",
+                "Type": [
+                  {
+                    "Name": "Height",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Left",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Top",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Width",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "Name": "PageNumber",
+                "Kind": "Number",
+                "EnumString": "",
+                "Type": []
+              },
+              {
+                "Name": "Text",
+                "Kind": "String",
+                "EnumString": "",
+                "Type": []
+              }
+            ]
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": [
+              {
+                "Name": "BoundingBox",
+                "Kind": "Record",
+                "EnumString": "",
+                "Type": [
+                  {
+                    "Name": "Height",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Left",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Top",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Width",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "Name": "PageNumber",
+                "Kind": "Number",
+                "EnumString": "",
+                "Type": []
+              },
+              {
+                "Name": "Text",
+                "Kind": "String",
+                "EnumString": "",
+                "Type": []
+              }
+            ]
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {
+        "Results": {
+          "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}}",
+          "PCFSkipValidation": false
+        },
+        "Selected": {
+          "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}",
+          "PCFSkipValidation": false
+        }
+      }
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "600",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "1096",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(210, 208, 206, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(61, 95, 174, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "12",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "12",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase1-Fixed.msapp",
+    "entry": "Controls/4.json",
+    "pointer": "$/TopParent/Children/0",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Table",
+            "EnumString": "",
+            "Type": [
+              {
+                "Name": "BoundingBox",
+                "Kind": "Record",
+                "EnumString": "",
+                "Type": [
+                  {
+                    "Name": "Height",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Left",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Top",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Width",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "Name": "PageNumber",
+                "Kind": "Number",
+                "EnumString": "",
+                "Type": []
+              },
+              {
+                "Name": "Text",
+                "Kind": "String",
+                "EnumString": "",
+                "Type": []
+              }
+            ]
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": [
+              {
+                "Name": "BoundingBox",
+                "Kind": "Record",
+                "EnumString": "",
+                "Type": [
+                  {
+                    "Name": "Height",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Left",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Top",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  },
+                  {
+                    "Name": "Width",
+                    "Kind": "Number",
+                    "EnumString": "",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "Name": "PageNumber",
+                "Kind": "Number",
+                "EnumString": "",
+                "Type": []
+              },
+              {
+                "Name": "Text",
+                "Kind": "String",
+                "EnumString": "",
+                "Type": []
+              }
+            ]
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {
+        "Results": {
+          "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}}",
+          "PCFSkipValidation": false
+        },
+        "Selected": {
+          "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}",
+          "PCFSkipValidation": false
+        }
+      }
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "600",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "1096",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(210, 208, 206, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(61, 95, 174, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "12",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "12",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "Controls/15.json",
+    "pointer": "$/TopParent/Children/6",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {}
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Text",
+        "Category": "Data",
+        "InvariantScript": "\"Görüntü çek veya seç\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DefaultImage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ImageDisplayed",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowControls",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowBoundingBoxes",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ButtonHeight",
+        "Category": "Data",
+        "InvariantScript": "70",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "LoadSchema",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShouldReset",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarIconSize",
+        "Category": "Data",
+        "InvariantScript": "24",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarFontSize",
+        "Category": "Data",
+        "InvariantScript": "20",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ContentLanguage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "6",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Tooltip",
+        "Category": "Design",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "Parent.Width - 96",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "610",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(191, 205, 232, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderStyle",
+        "Category": "Design",
+        "InvariantScript": "\"solid\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderThickness",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(37, 99, 235, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "48",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "234",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Visible",
+        "Category": "Design",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "TabIndex",
+        "Category": "Design",
+        "InvariantScript": "0",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "OnChange",
+        "Category": "Behavior",
+        "InvariantScript": "If(\n    !varScanAccepted,\n    If(\n        IsEmpty(Self.Results),\n        Set(varOcrEmpty, true),\n        Set(varScanAccepted, true);\n        Set(varOcrEmpty, false);\n        Set(\n            varAcceptedText,\n            First(\n                Sort(\n                    Self.Results,\n                    BoundingBox.Top,\n                    SortOrder.Ascending\n                )\n            ).Text\n        );\n        Navigate(scrLoading, ScreenTransition.Fade);\n        IfError(\n            barcode_flow.Run(varAcceptedText),\n            Set(varErrorMessage, \"Stok bilgileri alınırken bir bağlantı hatası oluştu.\");\n            Navigate(scrError, ScreenTransition.Fade)\n        )\n    )\n)",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "Controls/15.json",
+    "pointer": "$/TopParent/Children/6",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {}
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Text",
+        "Category": "Data",
+        "InvariantScript": "\"Görüntü çek veya seç\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DefaultImage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ImageDisplayed",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowControls",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowBoundingBoxes",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ButtonHeight",
+        "Category": "Data",
+        "InvariantScript": "70",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "LoadSchema",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShouldReset",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarIconSize",
+        "Category": "Data",
+        "InvariantScript": "24",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarFontSize",
+        "Category": "Data",
+        "InvariantScript": "20",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ContentLanguage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "6",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Tooltip",
+        "Category": "Design",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "Parent.Width - 96",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "610",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(191, 205, 232, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderStyle",
+        "Category": "Design",
+        "InvariantScript": "\"solid\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderThickness",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(37, 99, 235, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "48",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "234",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Visible",
+        "Category": "Design",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "TabIndex",
+        "Category": "Design",
+        "InvariantScript": "0",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "OnChange",
+        "Category": "Behavior",
+        "InvariantScript": "If(\n    !varScanAccepted,\n    If(\n        IsEmpty(Self.Results),\n        Set(varOcrEmpty, true),\n        Set(varScanAccepted, true);\n        Set(varOcrEmpty, false);\n        Set(\n            varAcceptedText,\n            First(\n                Sort(\n                    Self.Results,\n                    BoundingBox.Top,\n                    SortOrder.Ascending\n                )\n            ).Text\n        );\n        Navigate(scrLoading, ScreenTransition.Fade);\n        IfError(\n            barcode_flow.Run(varAcceptedText),\n            Set(varErrorMessage, \"Stok bilgileri alınırken bir bağlantı hatası oluştu.\");\n            Navigate(scrError, ScreenTransition.Fade)\n        )\n    )\n)",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "Controls/15.json",
+    "pointer": "$/TopParent/Children/6",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {}
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Text",
+        "Category": "Data",
+        "InvariantScript": "\"Görüntü çek veya seç\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DefaultImage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ImageDisplayed",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowControls",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowBoundingBoxes",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ButtonHeight",
+        "Category": "Data",
+        "InvariantScript": "70",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "LoadSchema",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShouldReset",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarIconSize",
+        "Category": "Data",
+        "InvariantScript": "24",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarFontSize",
+        "Category": "Data",
+        "InvariantScript": "20",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ContentLanguage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "6",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Tooltip",
+        "Category": "Design",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "Parent.Width - 96",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "610",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(191, 205, 232, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderStyle",
+        "Category": "Design",
+        "InvariantScript": "\"solid\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderThickness",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(37, 99, 235, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "48",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "234",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Visible",
+        "Category": "Design",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "TabIndex",
+        "Category": "Design",
+        "InvariantScript": "0",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "OnChange",
+        "Category": "Behavior",
+        "InvariantScript": "If(\n    !varScanAccepted,\n    If(\n        IsEmpty(Self.Results),\n        Set(varOcrEmpty, true),\n        Set(varScanAccepted, true);\n        Set(varOcrEmpty, false);\n        Set(\n            varAcceptedText,\n            First(\n                Sort(\n                    Self.Results,\n                    BoundingBox.Top,\n                    SortOrder.Ascending\n                )\n            ).Text\n        );\n        Navigate(scrLoading, ScreenTransition.Fade);\n        IfError(\n            barcode_flow.Run(varAcceptedText),\n            Set(varErrorMessage, \"Stok bilgileri alınırken bir bağlantı hatası oluştu.\");\n            Navigate(scrError, ScreenTransition.Fade)\n        )\n    )\n)",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/Controls/15.json",
+    "pointer": "$/TopParent/Children/6",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {}
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Text",
+        "Category": "Data",
+        "InvariantScript": "\"Görüntü çek veya seç\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DefaultImage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ImageDisplayed",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowControls",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowBoundingBoxes",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ButtonHeight",
+        "Category": "Data",
+        "InvariantScript": "70",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "LoadSchema",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShouldReset",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarIconSize",
+        "Category": "Data",
+        "InvariantScript": "24",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarFontSize",
+        "Category": "Data",
+        "InvariantScript": "20",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ContentLanguage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "6",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Tooltip",
+        "Category": "Design",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "Parent.Width - 96",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "610",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(191, 205, 232, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderStyle",
+        "Category": "Design",
+        "InvariantScript": "\"solid\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderThickness",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(37, 99, 235, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "48",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "234",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Visible",
+        "Category": "Design",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "TabIndex",
+        "Category": "Design",
+        "InvariantScript": "0",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "OnChange",
+        "Category": "Behavior",
+        "InvariantScript": "If(\n    !varScanAccepted,\n    If(\n        IsEmpty(Self.Results),\n        Set(varOcrEmpty, true),\n        Set(varScanAccepted, true);\n        Set(varOcrEmpty, false);\n        Set(\n            varAcceptedText,\n            First(\n                Sort(\n                    Self.Results,\n                    BoundingBox.Top,\n                    SortOrder.Ascending\n                )\n            ).Text\n        );\n        Navigate(scrLoading, ScreenTransition.Fade);\n        IfError(\n            barcode_flow.Run(varAcceptedText),\n            Set(varErrorMessage, \"Stok bilgileri alınırken bir bağlantı hatası oluştu.\");\n            Navigate(scrError, ScreenTransition.Fade)\n        )\n    )\n)",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "Controls/15.json",
+    "pointer": "$/TopParent/Children/6",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {}
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Text",
+        "Category": "Data",
+        "InvariantScript": "\"Görüntü çek veya seç\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DefaultImage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ImageDisplayed",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowControls",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowBoundingBoxes",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ButtonHeight",
+        "Category": "Data",
+        "InvariantScript": "70",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "LoadSchema",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShouldReset",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarIconSize",
+        "Category": "Data",
+        "InvariantScript": "24",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarFontSize",
+        "Category": "Data",
+        "InvariantScript": "20",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ContentLanguage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "6",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Tooltip",
+        "Category": "Design",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "Parent.Width - 96",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "610",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(191, 205, 232, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderStyle",
+        "Category": "Design",
+        "InvariantScript": "\"solid\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderThickness",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(37, 99, 235, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "48",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "234",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Visible",
+        "Category": "Design",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "TabIndex",
+        "Category": "Design",
+        "InvariantScript": "0",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "OnChange",
+        "Category": "Behavior",
+        "InvariantScript": "If(\n    !varScanAccepted,\n    If(\n        IsEmpty(Self.Results),\n        Set(varOcrEmpty, true),\n        Set(varScanAccepted, true);\n        Set(varOcrEmpty, false);\n        Set(\n            varAcceptedText,\n            First(\n                Sort(\n                    Self.Results,\n                    BoundingBox.Top,\n                    SortOrder.Ascending\n                )\n            ).Text\n        );\n        Navigate(scrLoading, ScreenTransition.Fade);\n        IfError(\n            barcode_flow.Run(varAcceptedText),\n            Set(varErrorMessage, \"Stok bilgileri alınırken bir bağlantı hatası oluştu.\");\n            Navigate(scrError, ScreenTransition.Fade)\n        )\n    )\n)",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "Controls/15.json",
+    "pointer": "$/TopParent/Children/6",
+    "template": {
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "Version": "1.0.112",
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "FirstParty": true,
+      "IsPremiumPcfControl": false,
+      "IsCustomGroupControlTemplate": false,
+      "CustomGroupControlTemplateName": "",
+      "IsComponentDefinition": false,
+      "TemplateDisplayName": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        },
+        "Selected": {
+          "Version": "1.349",
+          "Type": {
+            "Name": "Root",
+            "Kind": "Record",
+            "EnumString": "",
+            "Type": []
+          }
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {}
+    },
+    "definition_sha256": "c4cd6080dfca98ee5287d5bdff1398be0e9bdcf1a0d88f0186950f8b7bb3f27c",
+    "rules": [
+      {
+        "Property": "Text",
+        "Category": "Data",
+        "InvariantScript": "\"Görüntü çek veya seç\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DefaultImage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ImageDisplayed",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowControls",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShowBoundingBoxes",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ButtonHeight",
+        "Category": "Data",
+        "InvariantScript": "70",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "LoadSchema",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ShouldReset",
+        "Category": "Data",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarIconSize",
+        "Category": "Data",
+        "InvariantScript": "24",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "CommandBarFontSize",
+        "Category": "Data",
+        "InvariantScript": "20",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ContentLanguage",
+        "Category": "Data",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "ZIndex",
+        "Category": "Design",
+        "InvariantScript": "6",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Tooltip",
+        "Category": "Design",
+        "InvariantScript": "\"\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Width",
+        "Category": "Design",
+        "InvariantScript": "Parent.Width - 96",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Height",
+        "Category": "Design",
+        "InvariantScript": "610",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(191, 205, 232, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderStyle",
+        "Category": "Design",
+        "InvariantScript": "\"solid\"",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "BorderThickness",
+        "Category": "Design",
+        "InvariantScript": "1",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FontColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "FillColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(37, 99, 235, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledBorderColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledColor",
+        "Category": "Design",
+        "InvariantScript": "RGBA(166, 166, 166, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisabledFill",
+        "Category": "Design",
+        "InvariantScript": "RGBA(244, 244, 244, 1)",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "X",
+        "Category": "Design",
+        "InvariantScript": "48",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Y",
+        "Category": "Design",
+        "InvariantScript": "234",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "Visible",
+        "Category": "Design",
+        "InvariantScript": "true",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "DisplayMode",
+        "Category": "Design",
+        "InvariantScript": "DisplayMode.Edit",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "TabIndex",
+        "Category": "Design",
+        "InvariantScript": "0",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Property": "OnChange",
+        "Category": "Behavior",
+        "InvariantScript": "If(\n    !varScanAccepted,\n    If(\n        IsEmpty(Self.Results),\n        Set(varOcrEmpty, true),\n        Set(varScanAccepted, true);\n        Set(varOcrEmpty, false);\n        Set(\n            varAcceptedText,\n            First(\n                Sort(\n                    Self.Results,\n                    BoundingBox.Top,\n                    SortOrder.Ascending\n                )\n            ).Text\n        );\n        Navigate(scrLoading, ScreenTransition.Fade);\n        IfError(\n            barcode_flow.Run(varAcceptedText),\n            Set(varErrorMessage, \"Stok bilgileri alınırken bir bağlantı hatası oluştu.\");\n            Navigate(scrError, ScreenTransition.Fade)\n        )\n    )\n)",
+        "RuleProviderType": "Unknown"
+      }
+    ]
+  }
+]

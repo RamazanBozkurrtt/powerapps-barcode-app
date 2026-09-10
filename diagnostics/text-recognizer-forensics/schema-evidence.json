@@ -1,0 +1,536 @@
+[
+  {
+    "package": "Barkod Uygulaması V2 3.msapp",
+    "entry": "Controls/15.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      }
+    },
+    "dynamic_schemas": {}
+  },
+  {
+    "package": "Barkod Uygulaması V2.msapp",
+    "entry": "Controls/4.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Table",
+          "EnumString": "",
+          "Type": [
+            {
+              "Name": "BoundingBox",
+              "Kind": "Record",
+              "EnumString": "",
+              "Type": [
+                {
+                  "Name": "Height",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Left",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Top",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Width",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                }
+              ]
+            },
+            {
+              "Name": "PageNumber",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Text",
+              "Kind": "String",
+              "EnumString": "",
+              "Type": []
+            }
+          ]
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": [
+            {
+              "Name": "BoundingBox",
+              "Kind": "Record",
+              "EnumString": "",
+              "Type": [
+                {
+                  "Name": "Height",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Left",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Top",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Width",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                }
+              ]
+            },
+            {
+              "Name": "PageNumber",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Text",
+              "Kind": "String",
+              "EnumString": "",
+              "Type": []
+            }
+          ]
+        }
+      }
+    },
+    "dynamic_schemas": {
+      "Results": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "BoundingBox": {
+              "type": "object",
+              "properties": {
+                "Left": {
+                  "type": "number"
+                },
+                "Top": {
+                  "type": "number"
+                },
+                "Width": {
+                  "type": "number"
+                },
+                "Height": {
+                  "type": "number"
+                }
+              }
+            },
+            "Text": {
+              "type": "string"
+            },
+            "PageNumber": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "Selected": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+          "BoundingBox": {
+            "type": "object",
+            "properties": {
+              "Left": {
+                "type": "number"
+              },
+              "Top": {
+                "type": "number"
+              },
+              "Width": {
+                "type": "number"
+              },
+              "Height": {
+                "type": "number"
+              }
+            }
+          },
+          "Text": {
+            "type": "string"
+          },
+          "PageNumber": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase1-Fixed.msapp",
+    "entry": "Controls/4.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Table",
+          "EnumString": "",
+          "Type": [
+            {
+              "Name": "BoundingBox",
+              "Kind": "Record",
+              "EnumString": "",
+              "Type": [
+                {
+                  "Name": "Height",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Left",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Top",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Width",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                }
+              ]
+            },
+            {
+              "Name": "PageNumber",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Text",
+              "Kind": "String",
+              "EnumString": "",
+              "Type": []
+            }
+          ]
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": [
+            {
+              "Name": "BoundingBox",
+              "Kind": "Record",
+              "EnumString": "",
+              "Type": [
+                {
+                  "Name": "Height",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Left",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Top",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                },
+                {
+                  "Name": "Width",
+                  "Kind": "Number",
+                  "EnumString": "",
+                  "Type": []
+                }
+              ]
+            },
+            {
+              "Name": "PageNumber",
+              "Kind": "Number",
+              "EnumString": "",
+              "Type": []
+            },
+            {
+              "Name": "Text",
+              "Kind": "String",
+              "EnumString": "",
+              "Type": []
+            }
+          ]
+        }
+      }
+    },
+    "dynamic_schemas": {
+      "Results": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "BoundingBox": {
+              "type": "object",
+              "properties": {
+                "Left": {
+                  "type": "number"
+                },
+                "Top": {
+                  "type": "number"
+                },
+                "Width": {
+                  "type": "number"
+                },
+                "Height": {
+                  "type": "number"
+                }
+              }
+            },
+            "Text": {
+              "type": "string"
+            },
+            "PageNumber": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "Selected": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+          "BoundingBox": {
+            "type": "object",
+            "properties": {
+              "Left": {
+                "type": "number"
+              },
+              "Top": {
+                "type": "number"
+              },
+              "Width": {
+                "type": "number"
+              },
+              "Height": {
+                "type": "number"
+              }
+            }
+          },
+          "Text": {
+            "type": "string"
+          },
+          "PageNumber": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  {
+    "package": "Barkod-Uygulamasi-Phase2.msapp",
+    "entry": "Controls/15.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      }
+    },
+    "dynamic_schemas": {}
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "entry": "Controls/15.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      }
+    },
+    "dynamic_schemas": {}
+  },
+  {
+    "package": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "entry": "Controls/15.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      }
+    },
+    "dynamic_schemas": {}
+  },
+  {
+    "package": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "entry": "msapp/Controls/15.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      }
+    },
+    "dynamic_schemas": {}
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "entry": "Controls/15.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      }
+    },
+    "dynamic_schemas": {}
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "entry": "Controls/15.json",
+    "version": "1.0.112",
+    "overrides": {
+      "Results": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      },
+      "Selected": {
+        "Version": "1.349",
+        "Type": {
+          "Name": "Root",
+          "Kind": "Record",
+          "EnumString": "",
+          "Type": []
+        }
+      }
+    },
+    "dynamic_schemas": {}
+  }
+]

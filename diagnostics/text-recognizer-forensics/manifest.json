@@ -1,0 +1,1119 @@
+[
+  {
+    "index": 0,
+    "path": "Barkod Uygulaması V2 3.msapp",
+    "sha256": "df9f20fcff4b3b265b44ed0521d56547e2caa22a892b91d97f50e73ac2c256d5",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "9f922e61b191a28a2cef93ed9666f5342fc8b619da05c4a040a9a46a0f00a666",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "380917b83e010516663f8ccd65842468c8eb485a489f2456ad95f5e4ff0093db",
+        "bytes": 6593
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "15f56d23e37d7ff2acc20d162632e801911bd4dfa060da4fbb955e84f760306e",
+        "bytes": 351200
+      },
+      {
+        "entry": "Src/scrHome.pa.yaml",
+        "sha256": "00e5b8ccc091b513de7340daff8dcbe150f51f1005fb01f508072ac8df61ba5c",
+        "bytes": 4787
+      },
+      {
+        "entry": "Controls/15.json",
+        "sha256": "1aea7c74fa523f6a4954c244d2a3cf32742617471a2b8cd21ad80594a989b885",
+        "bytes": 455861
+      },
+      {
+        "entry": "Src/scrScan.pa.yaml",
+        "sha256": "4e741bee264964b6ba28ce9f0a5dafbc48ede9bec2be07049c9212da69393448",
+        "bytes": 6987
+      },
+      {
+        "entry": "Controls/30.json",
+        "sha256": "4555c13d1fdbf774d22067647f0b27827eb758e7d92c224b286a6f0acb6bfcaf",
+        "bytes": 218621
+      },
+      {
+        "entry": "Src/scrLoading.pa.yaml",
+        "sha256": "fc2172cda8430afff3c589a23b17a6c1c67735867d995a7a235148a7437961f2",
+        "bytes": 2956
+      },
+      {
+        "entry": "Controls/36.json",
+        "sha256": "62af0a02601477760f9623bb84afbb91e0d2408b7cd5658aa1282792a194d47b",
+        "bytes": 560688
+      },
+      {
+        "entry": "Src/scrResults.pa.yaml",
+        "sha256": "3497e74c755e6ab4d214b38d43340fff28f277dd95e24a9a68631df5ed5542c1",
+        "bytes": 10125
+      },
+      {
+        "entry": "Controls/58.json",
+        "sha256": "d26e6f1e11fbcee1fce55a9accc4076baf2579f063beb9cc20dafebae26022ed",
+        "bytes": 385947
+      },
+      {
+        "entry": "Src/scrError.pa.yaml",
+        "sha256": "770e20582fb8ce5722ab21e3c568857d2d3d10353bde8a11b62662371dfd0951",
+        "bytes": 3105
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "09a920a2014cd0b5a21a81b1e5fb48fa9483f68bf58ac59b5ea01e66aa7ceb07",
+        "bytes": 5246
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "91be19451a6c8dfae60d7ccb11e1141067084d1873f281b9fd386421acb30ca9",
+        "bytes": 1249
+      },
+      {
+        "entry": "Src/_EditorState.pa.yaml",
+        "sha256": "561a264b2247b6182b94f61b3ddcc29287171d534ea693d3e104918884eedbe6",
+        "bytes": 688
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "becf479900d63405809cb680071b7678a4e4df1d7ce901c23b74dd8704e7a673",
+        "bytes": 1125764
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "f8e6c608c8a999fccf9291db355ab6d261a822c0fef697522448c57a69515183",
+        "bytes": 76904
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "b1b24432effba8a4ec06804422bc6595cea85eb78507b48e623bc1539c3b9440",
+        "bytes": 45187
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "path": "Barkod Uygulaması V2.msapp",
+    "sha256": "25ecb30774cde9350a8384f676e1f63a5d4cc74c1bcb83f70ab3f55fc5cfdc97",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "bde4065bce189df76b92de11aa5587e354aa3cb59aaf813d7aed38d2d0247a5b",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "5fc2b303ccff0db4e2921d066d40841af10a9bb4c41164587fe812692fd562dd",
+        "bytes": 6786
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "164b4e7bbe9d67cd9f2139fecc46909f440194802c2b94192df8a8e77b48d2a3",
+        "bytes": 86520
+      },
+      {
+        "entry": "Src/Screen1.pa.yaml",
+        "sha256": "20807e27e79e2668a4af2672666435992ce9e66be1bab1c78b0c83eae4e89a4a",
+        "bytes": 858
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "e50cab48493499b79fbe8385a40e5d75aa284027e7561484e790fffc0fcc737e",
+        "bytes": 4395
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "4daa2e26e59666973b8353895ce8cef667f73fa115905240f154175f8a453ed5",
+        "bytes": 628
+      },
+      {
+        "entry": "Src/_EditorState.pa.yaml",
+        "sha256": "20d09f94d85526416e46a233a68dfce5e05268902370a6ef744eb0bbf473f2f3",
+        "bytes": 625
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "d57b786dc2e73bc2069446e886d5434f84ef08dd33b1356fbe7f097211dece1f",
+        "bytes": 1125335
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "c6ab94281529a53a9f2aa22ceeb95b789e443851366e1c66530a3461675350f9",
+        "bytes": 376
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "839184a8ffac1117d5648ca16906148ded92487f1983dbb6930b9b12decabe7e",
+        "bytes": 1045
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "path": "Barkod-Uygulamasi-Phase1-Fixed.msapp",
+    "sha256": "c4ebd1574b3c3636a36d91a6ae60f59b6acde8e3a844cbdc2257920e5dccb288",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "bde4065bce189df76b92de11aa5587e354aa3cb59aaf813d7aed38d2d0247a5b",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "5fc2b303ccff0db4e2921d066d40841af10a9bb4c41164587fe812692fd562dd",
+        "bytes": 6786
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "164b4e7bbe9d67cd9f2139fecc46909f440194802c2b94192df8a8e77b48d2a3",
+        "bytes": 86520
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "e50cab48493499b79fbe8385a40e5d75aa284027e7561484e790fffc0fcc737e",
+        "bytes": 4395
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "d57b786dc2e73bc2069446e886d5434f84ef08dd33b1356fbe7f097211dece1f",
+        "bytes": 1125335
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "c6ab94281529a53a9f2aa22ceeb95b789e443851366e1c66530a3461675350f9",
+        "bytes": 376
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "839184a8ffac1117d5648ca16906148ded92487f1983dbb6930b9b12decabe7e",
+        "bytes": 1045
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "91be19451a6c8dfae60d7ccb11e1141067084d1873f281b9fd386421acb30ca9",
+        "bytes": 1249
+      },
+      {
+        "entry": "Src/scrError.pa.yaml",
+        "sha256": "f261a98fc0043e67daf9d1c597b6296427927f1f814ce206acc47c1c5ff3e3d0",
+        "bytes": 3093
+      },
+      {
+        "entry": "Src/scrHome.pa.yaml",
+        "sha256": "030265a06ce6993c8049fcc307fdf3800cc6da557147298ed1d334bd23a9735b",
+        "bytes": 4781
+      },
+      {
+        "entry": "Src/scrLoading.pa.yaml",
+        "sha256": "b92733e821dc370501ea251e3e0f8bd2bbb37f3be7b8b10349232a87325a885c",
+        "bytes": 2938
+      },
+      {
+        "entry": "Src/scrResults.pa.yaml",
+        "sha256": "10accf9e77a5d5aa0375b9a9368e798990da37fc5517dc6e92b7fee6b2672584",
+        "bytes": 10179
+      },
+      {
+        "entry": "Src/scrScan.pa.yaml",
+        "sha256": "50bd64b6417a2b04969f02d2aafdfdf26d2c50449bbfae23aa5bc54fa0476a48",
+        "bytes": 6974
+      },
+      {
+        "entry": "Src/_EditorState.pa.yaml",
+        "sha256": "561a264b2247b6182b94f61b3ddcc29287171d534ea693d3e104918884eedbe6",
+        "bytes": 688
+      },
+      {
+        "entry": "packed.json",
+        "sha256": "2ecf6a2e53ec434f432b2f14ac54a8cb495629197bd20d2707290f31cb593ded",
+        "bytes": 226
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "path": "Barkod-Uygulamasi-Phase2.msapp",
+    "sha256": "5e6a2af3c7e6d5f1e962e966a56e975ee23e84ba904dd3fedc1dc9dac3fd5bea",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "9f922e61b191a28a2cef93ed9666f5342fc8b619da05c4a040a9a46a0f00a666",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "380917b83e010516663f8ccd65842468c8eb485a489f2456ad95f5e4ff0093db",
+        "bytes": 6593
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "15f56d23e37d7ff2acc20d162632e801911bd4dfa060da4fbb955e84f760306e",
+        "bytes": 351200
+      },
+      {
+        "entry": "Controls/15.json",
+        "sha256": "1aea7c74fa523f6a4954c244d2a3cf32742617471a2b8cd21ad80594a989b885",
+        "bytes": 455861
+      },
+      {
+        "entry": "Controls/30.json",
+        "sha256": "4555c13d1fdbf774d22067647f0b27827eb758e7d92c224b286a6f0acb6bfcaf",
+        "bytes": 218621
+      },
+      {
+        "entry": "Controls/36.json",
+        "sha256": "62af0a02601477760f9623bb84afbb91e0d2408b7cd5658aa1282792a194d47b",
+        "bytes": 560688
+      },
+      {
+        "entry": "Controls/58.json",
+        "sha256": "d26e6f1e11fbcee1fce55a9accc4076baf2579f063beb9cc20dafebae26022ed",
+        "bytes": 385947
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "09a920a2014cd0b5a21a81b1e5fb48fa9483f68bf58ac59b5ea01e66aa7ceb07",
+        "bytes": 5246
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "becf479900d63405809cb680071b7678a4e4df1d7ce901c23b74dd8704e7a673",
+        "bytes": 1125764
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "f8e6c608c8a999fccf9291db355ab6d261a822c0fef697522448c57a69515183",
+        "bytes": 76904
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "b1b24432effba8a4ec06804422bc6595cea85eb78507b48e623bc1539c3b9440",
+        "bytes": 45187
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "9d75a5c60beee8e4026c9f83e57c5e5b88c91027f61c613e04cd1140b447978d",
+        "bytes": 1363
+      },
+      {
+        "entry": "Src/scrError.pa.yaml",
+        "sha256": "e5be08fa1473b3bef2a894e7b20945807c63ef15a967d52491ab0d2a42d9c133",
+        "bytes": 3168
+      },
+      {
+        "entry": "Src/scrHome.pa.yaml",
+        "sha256": "07b03e3c5f55f261c06eda3f483e16829fd03cb9b3d03886e468d2db8304b7dd",
+        "bytes": 4850
+      },
+      {
+        "entry": "Src/scrLoading.pa.yaml",
+        "sha256": "cdab246785021e71574c45ec1e7f5b1ec4987f2a3fb6f4c19218d010651eff78",
+        "bytes": 6344
+      },
+      {
+        "entry": "Src/scrResults.pa.yaml",
+        "sha256": "3e679c1cb091648ba793d749a9fad0e8a29a0c9c789899fb4172a524e0a75e6c",
+        "bytes": 10188
+      },
+      {
+        "entry": "Src/scrScan.pa.yaml",
+        "sha256": "d91cbdda9adc3a9c8fdaf539c30ef7f7c1096fbc7bfdf55dd6b56948e028a233",
+        "bytes": 6773
+      },
+      {
+        "entry": "Src/_EditorState.pa.yaml",
+        "sha256": "561a264b2247b6182b94f61b3ddcc29287171d534ea693d3e104918884eedbe6",
+        "bytes": 688
+      },
+      {
+        "entry": "packed.json",
+        "sha256": "cc34496103a0656eb5167dc8df1103992f5a6a4bf6a7a2127e432532908ee98f",
+        "bytes": 226
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "path": "PowerApps-Barcode-Diagnostic-1-Flow-Isolated.msapp",
+    "sha256": "884229c0b542be77f594b9a898c49d6f8cc72549e6596e905831557d4e112bfe",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "9f922e61b191a28a2cef93ed9666f5342fc8b619da05c4a040a9a46a0f00a666",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "380917b83e010516663f8ccd65842468c8eb485a489f2456ad95f5e4ff0093db",
+        "bytes": 6593
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "15f56d23e37d7ff2acc20d162632e801911bd4dfa060da4fbb955e84f760306e",
+        "bytes": 351200
+      },
+      {
+        "entry": "Controls/15.json",
+        "sha256": "1aea7c74fa523f6a4954c244d2a3cf32742617471a2b8cd21ad80594a989b885",
+        "bytes": 455861
+      },
+      {
+        "entry": "Controls/30.json",
+        "sha256": "4555c13d1fdbf774d22067647f0b27827eb758e7d92c224b286a6f0acb6bfcaf",
+        "bytes": 218621
+      },
+      {
+        "entry": "Controls/36.json",
+        "sha256": "62af0a02601477760f9623bb84afbb91e0d2408b7cd5658aa1282792a194d47b",
+        "bytes": 560688
+      },
+      {
+        "entry": "Controls/58.json",
+        "sha256": "d26e6f1e11fbcee1fce55a9accc4076baf2579f063beb9cc20dafebae26022ed",
+        "bytes": 385947
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "09a920a2014cd0b5a21a81b1e5fb48fa9483f68bf58ac59b5ea01e66aa7ceb07",
+        "bytes": 5246
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "becf479900d63405809cb680071b7678a4e4df1d7ce901c23b74dd8704e7a673",
+        "bytes": 1125764
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "f8e6c608c8a999fccf9291db355ab6d261a822c0fef697522448c57a69515183",
+        "bytes": 76904
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "b1b24432effba8a4ec06804422bc6595cea85eb78507b48e623bc1539c3b9440",
+        "bytes": 45187
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "9d75a5c60beee8e4026c9f83e57c5e5b88c91027f61c613e04cd1140b447978d",
+        "bytes": 1363
+      },
+      {
+        "entry": "Src/scrError.pa.yaml",
+        "sha256": "e5be08fa1473b3bef2a894e7b20945807c63ef15a967d52491ab0d2a42d9c133",
+        "bytes": 3168
+      },
+      {
+        "entry": "Src/scrHome.pa.yaml",
+        "sha256": "b988f050e1eb32ced7650595e2c0b416c0943d1aaaceb9a3924edafcfc706e4f",
+        "bytes": 4876
+      },
+      {
+        "entry": "Src/scrLoading.pa.yaml",
+        "sha256": "588227f83bdcd0c396db75cf39e959845e7fc9e598d20f81f8fcd22bdb4b891d",
+        "bytes": 3229
+      },
+      {
+        "entry": "Src/scrResults.pa.yaml",
+        "sha256": "358e0c9268e35d20cb7d7000f2e6d7b5d52de898beff539bd3e52c44a7918e19",
+        "bytes": 9632
+      },
+      {
+        "entry": "Src/scrScan.pa.yaml",
+        "sha256": "9e48740f9fe44511061e56fa43633c7dd1bd6849c538abfa2b3484739c8c6767",
+        "bytes": 6896
+      },
+      {
+        "entry": "Src/_EditorState.pa.yaml",
+        "sha256": "561a264b2247b6182b94f61b3ddcc29287171d534ea693d3e104918884eedbe6",
+        "bytes": 688
+      },
+      {
+        "entry": "packed.json",
+        "sha256": "23ba3303151dd2d9b3804c8f0b90f42612f7dd32f674808364d8252d3505319a",
+        "bytes": 226
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "path": "PowerApps-Barcode-Diagnostic-2-Scalar-OnStart.msapp",
+    "sha256": "7acb1958186946313c7b2a9c5777ad15866cd252733c4aad3c7a61d1ad1b36b5",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "9f922e61b191a28a2cef93ed9666f5342fc8b619da05c4a040a9a46a0f00a666",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "380917b83e010516663f8ccd65842468c8eb485a489f2456ad95f5e4ff0093db",
+        "bytes": 6593
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "15f56d23e37d7ff2acc20d162632e801911bd4dfa060da4fbb955e84f760306e",
+        "bytes": 351200
+      },
+      {
+        "entry": "Controls/15.json",
+        "sha256": "1aea7c74fa523f6a4954c244d2a3cf32742617471a2b8cd21ad80594a989b885",
+        "bytes": 455861
+      },
+      {
+        "entry": "Controls/30.json",
+        "sha256": "4555c13d1fdbf774d22067647f0b27827eb758e7d92c224b286a6f0acb6bfcaf",
+        "bytes": 218621
+      },
+      {
+        "entry": "Controls/36.json",
+        "sha256": "62af0a02601477760f9623bb84afbb91e0d2408b7cd5658aa1282792a194d47b",
+        "bytes": 560688
+      },
+      {
+        "entry": "Controls/58.json",
+        "sha256": "d26e6f1e11fbcee1fce55a9accc4076baf2579f063beb9cc20dafebae26022ed",
+        "bytes": 385947
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "09a920a2014cd0b5a21a81b1e5fb48fa9483f68bf58ac59b5ea01e66aa7ceb07",
+        "bytes": 5246
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "becf479900d63405809cb680071b7678a4e4df1d7ce901c23b74dd8704e7a673",
+        "bytes": 1125764
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "f8e6c608c8a999fccf9291db355ab6d261a822c0fef697522448c57a69515183",
+        "bytes": 76904
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "b1b24432effba8a4ec06804422bc6595cea85eb78507b48e623bc1539c3b9440",
+        "bytes": 45187
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "23aef8806066d8ecfd5fcfa0bb3f785d07fc570459b4fa44efad21c323c4d24e",
+        "bytes": 914
+      },
+      {
+        "entry": "Src/scrError.pa.yaml",
+        "sha256": "e5be08fa1473b3bef2a894e7b20945807c63ef15a967d52491ab0d2a42d9c133",
+        "bytes": 3168
+      },
+      {
+        "entry": "Src/scrHome.pa.yaml",
+        "sha256": "b988f050e1eb32ced7650595e2c0b416c0943d1aaaceb9a3924edafcfc706e4f",
+        "bytes": 4876
+      },
+      {
+        "entry": "Src/scrLoading.pa.yaml",
+        "sha256": "588227f83bdcd0c396db75cf39e959845e7fc9e598d20f81f8fcd22bdb4b891d",
+        "bytes": 3229
+      },
+      {
+        "entry": "Src/scrResults.pa.yaml",
+        "sha256": "358e0c9268e35d20cb7d7000f2e6d7b5d52de898beff539bd3e52c44a7918e19",
+        "bytes": 9632
+      },
+      {
+        "entry": "Src/scrScan.pa.yaml",
+        "sha256": "9e48740f9fe44511061e56fa43633c7dd1bd6849c538abfa2b3484739c8c6767",
+        "bytes": 6896
+      },
+      {
+        "entry": "Src/_EditorState.pa.yaml",
+        "sha256": "561a264b2247b6182b94f61b3ddcc29287171d534ea693d3e104918884eedbe6",
+        "bytes": 688
+      },
+      {
+        "entry": "packed.json",
+        "sha256": "2bee33e1ae74156074c86d19c4e92c2d3fa3487479734f89568c0517ca584204",
+        "bytes": 226
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "path": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "sha256": "571a703b6f011f0abe8cd8e5c905c63052895e6917664a1e51ccfe04418daa6a",
+    "entries": [
+      {
+        "entry": "msapr-header.json",
+        "sha256": "9f0894649e7010d5c30c4646f7682a0792e2feffd65f3a214050bde468f53479",
+        "bytes": 130
+      },
+      {
+        "entry": "msapp/Header.json",
+        "sha256": "9f922e61b191a28a2cef93ed9666f5342fc8b619da05c4a040a9a46a0f00a666",
+        "bytes": 224
+      },
+      {
+        "entry": "msapp/Properties.json",
+        "sha256": "380917b83e010516663f8ccd65842468c8eb485a489f2456ad95f5e4ff0093db",
+        "bytes": 6593
+      },
+      {
+        "entry": "msapp/Controls/4.json",
+        "sha256": "15f56d23e37d7ff2acc20d162632e801911bd4dfa060da4fbb955e84f760306e",
+        "bytes": 351200
+      },
+      {
+        "entry": "msapp/Controls/15.json",
+        "sha256": "1aea7c74fa523f6a4954c244d2a3cf32742617471a2b8cd21ad80594a989b885",
+        "bytes": 455861
+      },
+      {
+        "entry": "msapp/Controls/30.json",
+        "sha256": "4555c13d1fdbf774d22067647f0b27827eb758e7d92c224b286a6f0acb6bfcaf",
+        "bytes": 218621
+      },
+      {
+        "entry": "msapp/Controls/36.json",
+        "sha256": "62af0a02601477760f9623bb84afbb91e0d2408b7cd5658aa1282792a194d47b",
+        "bytes": 560688
+      },
+      {
+        "entry": "msapp/Controls/58.json",
+        "sha256": "d26e6f1e11fbcee1fce55a9accc4076baf2579f063beb9cc20dafebae26022ed",
+        "bytes": 385947
+      },
+      {
+        "entry": "msapp/Controls/1.json",
+        "sha256": "09a920a2014cd0b5a21a81b1e5fb48fa9483f68bf58ac59b5ea01e66aa7ceb07",
+        "bytes": 5246
+      },
+      {
+        "entry": "msapp/References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "msapp/References/DataSources.json",
+        "sha256": "becf479900d63405809cb680071b7678a4e4df1d7ce901c23b74dd8704e7a673",
+        "bytes": 1125764
+      },
+      {
+        "entry": "msapp/References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "msapp/References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "msapp/References/Templates.json",
+        "sha256": "f8e6c608c8a999fccf9291db355ab6d261a822c0fef697522448c57a69515183",
+        "bytes": 76904
+      },
+      {
+        "entry": "msapp/AppCheckerResult.sarif",
+        "sha256": "b1b24432effba8a4ec06804422bc6595cea85eb78507b48e623bc1539c3b9440",
+        "bytes": 45187
+      },
+      {
+        "entry": "msapp/Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "path": "diagnostics\\text-recognizer-forensics\\extracted\\git-head-artifacts\\Barkod Uygulaması V2.msapp",
+    "sha256": "277eed2bf6e0461c875fb87cd47fa555b3f3bfd74ab7d65e8007e9b5d5f3cd72",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "965b38189f38ee6277e93fc1072ecb986e44a114f2986eb4247c3f6c993139cb",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "b92bae47a0c1ff5fddf8305bf20d6854ba469cdb4a5218971ab608433850c665",
+        "bytes": 4267
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "54766252a65598090b1c019e48a5b222cb991b48d6f16b04d91cb3d29da6feee",
+        "bytes": 2711
+      },
+      {
+        "entry": "Src/Screen1.pa.yaml",
+        "sha256": "febc402aba3af2fa56fefb92e247f421089a85362b45ef4f66418623db73ded9",
+        "bytes": 667
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "e50cab48493499b79fbe8385a40e5d75aa284027e7561484e790fffc0fcc737e",
+        "bytes": 4395
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "4daa2e26e59666973b8353895ce8cef667f73fa115905240f154175f8a453ed5",
+        "bytes": 628
+      },
+      {
+        "entry": "Src/_EditorState.pa.yaml",
+        "sha256": "20d09f94d85526416e46a233a68dfce5e05268902370a6ef744eb0bbf473f2f3",
+        "bytes": 625
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "03787a41516fb0201dff6694348d7f19b74802685ac19fb6d3698a9b5c13259e",
+        "bytes": 25
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "44913dca86ad183f45bf65a004ee7e6156959d90ca82b67c89ecfeeb4bbb27bc",
+        "bytes": 27
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "839184a8ffac1117d5648ca16906148ded92487f1983dbb6930b9b12decabe7e",
+        "bytes": 1045
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "path": "diagnostics\\text-recognizer-forensics\\extracted\\git-head-artifacts\\Barkod Uygulaması V2.msapr",
+    "sha256": "9e71a2bf9ebcfd4e31d4713e518786a8451920cc06a2cd7c5ed366fee078aefe",
+    "entries": [
+      {
+        "entry": "msapr-header.json",
+        "sha256": "9f0894649e7010d5c30c4646f7682a0792e2feffd65f3a214050bde468f53479",
+        "bytes": 130
+      },
+      {
+        "entry": "msapp/Header.json",
+        "sha256": "965b38189f38ee6277e93fc1072ecb986e44a114f2986eb4247c3f6c993139cb",
+        "bytes": 224
+      },
+      {
+        "entry": "msapp/Properties.json",
+        "sha256": "b92bae47a0c1ff5fddf8305bf20d6854ba469cdb4a5218971ab608433850c665",
+        "bytes": 4267
+      },
+      {
+        "entry": "msapp/Controls/4.json",
+        "sha256": "54766252a65598090b1c019e48a5b222cb991b48d6f16b04d91cb3d29da6feee",
+        "bytes": 2711
+      },
+      {
+        "entry": "msapp/Controls/1.json",
+        "sha256": "e50cab48493499b79fbe8385a40e5d75aa284027e7561484e790fffc0fcc737e",
+        "bytes": 4395
+      },
+      {
+        "entry": "msapp/References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "msapp/References/DataSources.json",
+        "sha256": "03787a41516fb0201dff6694348d7f19b74802685ac19fb6d3698a9b5c13259e",
+        "bytes": 25
+      },
+      {
+        "entry": "msapp/References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "msapp/References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "msapp/References/Templates.json",
+        "sha256": "44913dca86ad183f45bf65a004ee7e6156959d90ca82b67c89ecfeeb4bbb27bc",
+        "bytes": 27
+      },
+      {
+        "entry": "msapp/AppCheckerResult.sarif",
+        "sha256": "839184a8ffac1117d5648ca16906148ded92487f1983dbb6930b9b12decabe7e",
+        "bytes": 1045
+      },
+      {
+        "entry": "msapp/Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "path": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "sha256": "6a326440aa3a3cd0c557ba6f0cc12d72dec7b9ee8a5cccd7a1cb3ff1a7a1f12b",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "9f922e61b191a28a2cef93ed9666f5342fc8b619da05c4a040a9a46a0f00a666",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "380917b83e010516663f8ccd65842468c8eb485a489f2456ad95f5e4ff0093db",
+        "bytes": 6593
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "15f56d23e37d7ff2acc20d162632e801911bd4dfa060da4fbb955e84f760306e",
+        "bytes": 351200
+      },
+      {
+        "entry": "Controls/15.json",
+        "sha256": "1aea7c74fa523f6a4954c244d2a3cf32742617471a2b8cd21ad80594a989b885",
+        "bytes": 455861
+      },
+      {
+        "entry": "Controls/30.json",
+        "sha256": "4555c13d1fdbf774d22067647f0b27827eb758e7d92c224b286a6f0acb6bfcaf",
+        "bytes": 218621
+      },
+      {
+        "entry": "Controls/36.json",
+        "sha256": "62af0a02601477760f9623bb84afbb91e0d2408b7cd5658aa1282792a194d47b",
+        "bytes": 560688
+      },
+      {
+        "entry": "Controls/58.json",
+        "sha256": "d26e6f1e11fbcee1fce55a9accc4076baf2579f063beb9cc20dafebae26022ed",
+        "bytes": 385947
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "09a920a2014cd0b5a21a81b1e5fb48fa9483f68bf58ac59b5ea01e66aa7ceb07",
+        "bytes": 5246
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "becf479900d63405809cb680071b7678a4e4df1d7ce901c23b74dd8704e7a673",
+        "bytes": 1125764
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "f8e6c608c8a999fccf9291db355ab6d261a822c0fef697522448c57a69515183",
+        "bytes": 76904
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "b1b24432effba8a4ec06804422bc6595cea85eb78507b48e623bc1539c3b9440",
+        "bytes": 45187
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "d60dc899c7a6838dd17049abfbc365c65f4a0963566066a0e74cef15b9b37abb",
+        "bytes": 76
+      },
+      {
+        "entry": "Src/scrHome.pa.yaml",
+        "sha256": "9ea782a115b8aa4914bea0550cd54f191cd7506c2a65837c70dd256620d8655a",
+        "bytes": 208
+      },
+      {
+        "entry": "Src/scrScan.pa.yaml",
+        "sha256": "af519a9376d0c4bdbef64904f32613c760cba25a4ee445a57ada40bc852d06fc",
+        "bytes": 208
+      },
+      {
+        "entry": "packed.json",
+        "sha256": "a6431b6aa4580946d7a4e72b7b14f08e3b0f40e997f412a57b56fb9f7c3b4122",
+        "bytes": 226
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "path": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "sha256": "65145ab49cb95c176fb3f95e970b9b266f3ca7cf309f44040cdb76828a594651",
+    "entries": [
+      {
+        "entry": "Header.json",
+        "sha256": "9f922e61b191a28a2cef93ed9666f5342fc8b619da05c4a040a9a46a0f00a666",
+        "bytes": 224
+      },
+      {
+        "entry": "Properties.json",
+        "sha256": "380917b83e010516663f8ccd65842468c8eb485a489f2456ad95f5e4ff0093db",
+        "bytes": 6593
+      },
+      {
+        "entry": "Controls/4.json",
+        "sha256": "15f56d23e37d7ff2acc20d162632e801911bd4dfa060da4fbb955e84f760306e",
+        "bytes": 351200
+      },
+      {
+        "entry": "Controls/15.json",
+        "sha256": "1aea7c74fa523f6a4954c244d2a3cf32742617471a2b8cd21ad80594a989b885",
+        "bytes": 455861
+      },
+      {
+        "entry": "Controls/30.json",
+        "sha256": "4555c13d1fdbf774d22067647f0b27827eb758e7d92c224b286a6f0acb6bfcaf",
+        "bytes": 218621
+      },
+      {
+        "entry": "Controls/36.json",
+        "sha256": "62af0a02601477760f9623bb84afbb91e0d2408b7cd5658aa1282792a194d47b",
+        "bytes": 560688
+      },
+      {
+        "entry": "Controls/58.json",
+        "sha256": "d26e6f1e11fbcee1fce55a9accc4076baf2579f063beb9cc20dafebae26022ed",
+        "bytes": 385947
+      },
+      {
+        "entry": "Controls/1.json",
+        "sha256": "09a920a2014cd0b5a21a81b1e5fb48fa9483f68bf58ac59b5ea01e66aa7ceb07",
+        "bytes": 5246
+      },
+      {
+        "entry": "References/Themes.json",
+        "sha256": "6919965a1c975ab4835a1c4b526dc175701481fd68aea5599c858e87da28ab3e",
+        "bytes": 147650
+      },
+      {
+        "entry": "References/DataSources.json",
+        "sha256": "becf479900d63405809cb680071b7678a4e4df1d7ce901c23b74dd8704e7a673",
+        "bytes": 1125764
+      },
+      {
+        "entry": "References/ModernThemes.json",
+        "sha256": "051c0a7dbcedfd9b5475333ff331233b0e941f2dccc3c7bbba1b6e4bfc008e7f",
+        "bytes": 114
+      },
+      {
+        "entry": "References/Resources.json",
+        "sha256": "dc3ef3deb2a186af634446545b3dfcfd25844994a50ec30d4898194c7bfe85dc",
+        "bytes": 23
+      },
+      {
+        "entry": "References/Templates.json",
+        "sha256": "f8e6c608c8a999fccf9291db355ab6d261a822c0fef697522448c57a69515183",
+        "bytes": 76904
+      },
+      {
+        "entry": "AppCheckerResult.sarif",
+        "sha256": "b1b24432effba8a4ec06804422bc6595cea85eb78507b48e623bc1539c3b9440",
+        "bytes": 45187
+      },
+      {
+        "entry": "Resources/PublishInfo.json",
+        "sha256": "cd1127093e0201f02845328097d43dd54475f6897e7a9430072a68bf792359d4",
+        "bytes": 248
+      },
+      {
+        "entry": "Src/App.pa.yaml",
+        "sha256": "23aef8806066d8ecfd5fcfa0bb3f785d07fc570459b4fa44efad21c323c4d24e",
+        "bytes": 914
+      },
+      {
+        "entry": "Src/scrError.pa.yaml",
+        "sha256": "e5be08fa1473b3bef2a894e7b20945807c63ef15a967d52491ab0d2a42d9c133",
+        "bytes": 3168
+      },
+      {
+        "entry": "Src/scrHome.pa.yaml",
+        "sha256": "b988f050e1eb32ced7650595e2c0b416c0943d1aaaceb9a3924edafcfc706e4f",
+        "bytes": 4876
+      },
+      {
+        "entry": "Src/scrLoading.pa.yaml",
+        "sha256": "588227f83bdcd0c396db75cf39e959845e7fc9e598d20f81f8fcd22bdb4b891d",
+        "bytes": 3229
+      },
+      {
+        "entry": "Src/scrResults.pa.yaml",
+        "sha256": "358e0c9268e35d20cb7d7000f2e6d7b5d52de898beff539bd3e52c44a7918e19",
+        "bytes": 9632
+      },
+      {
+        "entry": "Src/scrScan.pa.yaml",
+        "sha256": "9e48740f9fe44511061e56fa43633c7dd1bd6849c538abfa2b3484739c8c6767",
+        "bytes": 6896
+      },
+      {
+        "entry": "Src/_EditorState.pa.yaml",
+        "sha256": "561a264b2247b6182b94f61b3ddcc29287171d534ea693d3e104918884eedbe6",
+        "bytes": 688
+      },
+      {
+        "entry": "packed.json",
+        "sha256": "feb742059ae0e49e95499b32b1cd28bee44367bc5c2be2997712ad6b0f656be2",
+        "bytes": 226
+      }
+    ]
+  }
+]

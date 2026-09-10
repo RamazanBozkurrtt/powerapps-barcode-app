@@ -1,0 +1,84 @@
+[
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\source-removal-probe-NOT-ISOLATED.msapp",
+    "baseline_msapr": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "baseline_entries": 15,
+    "byte_identical_entries": [
+      "Header.json",
+      "Properties.json",
+      "Controls/4.json",
+      "Controls/15.json",
+      "Controls/30.json",
+      "Controls/36.json",
+      "Controls/58.json",
+      "Controls/1.json",
+      "References/Themes.json",
+      "References/DataSources.json",
+      "References/ModernThemes.json",
+      "References/Resources.json",
+      "References/Templates.json",
+      "AppCheckerResult.sarif",
+      "Resources/PublishInfo.json"
+    ],
+    "packed": {
+      "PackedStructureVersion": "0.1",
+      "LastPackedDateTimeUtc": "2026-09-10 11:24:05Z",
+      "PackingClient": {
+        "Name": "Pac CLI",
+        "Version": "2.11.2"
+      },
+      "LoadConfiguration": {
+        "LoadFromYaml": true
+      }
+    },
+    "source_files": [
+      "Src/App.pa.yaml",
+      "Src/scrHome.pa.yaml",
+      "Src/scrScan.pa.yaml"
+    ],
+    "source_has_ocr": false
+  },
+  {
+    "package": "diagnostics\\text-recognizer-forensics\\experiments\\unchanged-repack.msapp",
+    "baseline_msapr": "app-src\\Barkod Uygulaması V2 3.msapr",
+    "baseline_entries": 15,
+    "byte_identical_entries": [
+      "Header.json",
+      "Properties.json",
+      "Controls/4.json",
+      "Controls/15.json",
+      "Controls/30.json",
+      "Controls/36.json",
+      "Controls/58.json",
+      "Controls/1.json",
+      "References/Themes.json",
+      "References/DataSources.json",
+      "References/ModernThemes.json",
+      "References/Resources.json",
+      "References/Templates.json",
+      "AppCheckerResult.sarif",
+      "Resources/PublishInfo.json"
+    ],
+    "packed": {
+      "PackedStructureVersion": "0.1",
+      "LastPackedDateTimeUtc": "2026-09-10 11:22:27Z",
+      "PackingClient": {
+        "Name": "Pac CLI",
+        "Version": "2.11.2"
+      },
+      "LoadConfiguration": {
+        "LoadFromYaml": true
+      }
+    },
+    "source_files": [
+      "Src/App.pa.yaml",
+      "Src/scrError.pa.yaml",
+      "Src/scrHome.pa.yaml",
+      "Src/scrLoading.pa.yaml",
+      "Src/scrResults.pa.yaml",
+      "Src/scrScan.pa.yaml",
+      "Src/_EditorState.pa.yaml"
+    ],
+    "source_has_ocr": true
+  }
+]
