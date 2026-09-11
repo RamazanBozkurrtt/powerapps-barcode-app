@@ -1,0 +1,70 @@
+{
+  "3344f7b8-a747-4f06-80cf-b307eed73dd5": {
+    "connectionRef": {
+      "authenticationType": "Oauth",
+      "displayName": "Fin & Ops Apps (Dynamics 365)",
+      "executionRestrictions": {
+        "apiId": "unknown",
+        "appVer": "3.26084.7",
+        "modifiedOn": "2026-09-10 12:22:56",
+        "policy": "{\"type\":\"unused\"}",
+        "version": 1
+      },
+      "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1827/1.0.1827.4902/dynamicsax/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_dynamicsax",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_dynamicsax/connections/4b228587de59491e8021ed2e5cbfa75a",
+      "xrmConnectionReferenceLogicalName": "crac0_shareddynamicsax_1baef"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "cbc26220-f770-48b8-aac2-793a2a77f496"
+    ],
+    "id": "3344f7b8-a747-4f06-80cf-b307eed73dd5"
+  },
+  "cbc26220-f770-48b8-aac2-793a2a77f496": {
+    "connectionRef": {
+      "displayName": "Mantık akışları",
+      "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1827/1.0.1827.4908/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "3344f7b8-a747-4f06-80cf-b307eed73dd5": {
+          "value": "shared_dynamicsax-1"
+        },
+        "workflowDisplayName": {
+          "value": "barcode_flow"
+        },
+        "workflowEntityId": {
+          "value": "263ae41b-edac-f111-aaab-7ced8d125e8b"
+        },
+        "workflowName": {
+          "value": "2e02c7b6-952c-4b13-80e8-89efcc9f474c"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_dynamicsax-1": {
+          "value": "3344f7b8-a747-4f06-80cf-b307eed73dd5"
+        },
+        "workflowDisplayName": {
+          "value": "barcode_flow"
+        },
+        "workflowEntityId": {
+          "value": "263ae41b-edac-f111-aaab-7ced8d125e8b"
+        },
+        "workflowName": {
+          "value": "2e02c7b6-952c-4b13-80e8-89efcc9f474c"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "barcode_flow"
+    ],
+    "dependencies": {
+      "shared_dynamicsax-1": "3344f7b8-a747-4f06-80cf-b307eed73dd5"
+    },
+    "dependents": [],
+    "id": "cbc26220-f770-48b8-aac2-793a2a77f496"
+  }
+}

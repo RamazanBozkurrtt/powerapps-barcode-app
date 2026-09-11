@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "unpack",
+    "--msapp",
+    "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Mobile-Light-v3-1.msapp",
+    "--sources",
+    "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\build\\phase3-roundtrip-svyhhzf0",
+    "--layout",
+    "SourceCode"
+  ],
+  "exit": 0,
+  "stdout": "Unpack from C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Mobile-Light-v3-1.msapp --> C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\build\\phase3-roundtrip-svyhhzf0\nUnpacking succeeded.\n",
+  "stderr": ""
+}

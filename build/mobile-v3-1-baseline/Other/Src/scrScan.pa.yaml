@@ -1,0 +1,324 @@
+Screens:
+  scrScan:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+      OnHidden: =Set(varScanReady, false)
+      OnVisible: |-
+        =Set(varScanReady, false);
+        Set(varScanAccepted, false);
+        Set(varFlowCallStarted, false);
+        Set(varLoadingExecutionStarted, false);
+        Set(varOcrEmpty, false);
+        Set(varAcceptedText, "");
+        Set(varErrorMessage, "");
+        Set(varResultJson, "");
+        Set(varScanEntryImage, TextRecognizer1.OriginalImage);
+        Reset(TextRecognizer1);
+        Set(varScanReady, true)
+    Children:
+    - btnScanBack:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: ="Ana sayfaya dön"
+          BorderColor: =RGBA(194, 65, 12, 1)
+          BorderThickness: =1
+          Color: =RGBA(255, 255, 255, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(55, 65, 81, 1)
+          DisabledFill: =RGBA(255, 255, 255, 1)
+          DisplayMode: =DisplayMode.Edit
+          Fill: =RGBA(194, 65, 12, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =48
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(255, 255, 255, 1)
+          HoverFill: =RGBA(154, 52, 18, 1)
+          OnSelect: =Navigate(scrHome, ScreenTransition.Fade)
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(255, 255, 255, 1)
+          PressedFill: =RGBA(124, 45, 18, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =0
+          Text: ="‹"
+          Visible: =true
+          Width: =48
+          X: =24
+          Y: =24
+          ZIndex: =1
+    - lblScanTitle:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(20, 27, 45, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Bold
+          Height: =48
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =24
+          Text: ="Ürün etiketini tara"
+          Width: =Parent.Width - 120
+          X: =88
+          Y: =24
+    - lblScanInstruction:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(91, 101, 120, 1)
+          Font: =Font.OpenSans
+          Height: =58
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =14
+          Text: ="Etiketi çekin veya bir görsel seçin. En üstteki metin ürün adı olarak otomatik alınır."
+          VerticalAlign: =VerticalAlign.Top
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =96
+    - lblScanGuideCaption:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(194, 65, 12, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =34
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =11
+          Text: ="ETİKETİ BU ALANA HİZALAYIN"
+          Width: =Parent.Width - 80
+          X: =40
+          Y: =174
+    - btnScanSurface:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(55, 65, 81, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(55, 65, 81, 1)
+          DisabledFill: =RGBA(255, 255, 255, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =180
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(55, 65, 81, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(55, 65, 81, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =-1
+          Text: =""
+          Visible: =true
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =214
+          ZIndex: =5
+    - TextRecognizer1:
+        Control: TextRecognizer@1.0.112
+        Properties:
+          BorderColor: =RGBA(254, 215, 170, 1)
+          DefaultImage: =""
+          DisabledColor: =RGBA(55, 65, 81, 1)
+          DisabledFill: =RGBA(255, 255, 255, 1)
+          FillColor: =RGBA(194, 65, 12, 1)
+          FontColor: =RGBA(255, 255, 255, 1)
+          Height: =96
+          ImageDisplayed: =false
+          OnChange: |-
+            =If(
+                varScanReady && App.ActiveScreen = scrScan && IsBlank(TextRecognizer1.OriginalImage),
+                Set(varScanEntryImage, "")
+            );
+            If(
+                varScanReady && App.ActiveScreen = scrScan && !varScanAccepted && !varFlowCallStarted &&
+                !IsBlank(TextRecognizer1.OriginalImage) && TextRecognizer1.OriginalImage <> varScanEntryImage,
+                IfError(
+                    With(
+                        {
+                            candidates: SortByColumns(
+                                AddColumns(
+                                    Filter(
+                                        TextRecognizer1.Results,
+                                        !IsBlank(TrimEnds(Text)) &&
+                                        !IsBlank(BoundingBox.Top) && BoundingBox.Top >= 0
+                                    ),
+                                    OcrTop, BoundingBox.Top,
+                                    OcrLeft, Coalesce(BoundingBox.Left, 0),
+                                    OcrPage, Coalesce(PageNumber, 1)
+                                ),
+                                "OcrTop", SortOrder.Ascending,
+                                "OcrPage", SortOrder.Ascending,
+                                "OcrLeft", SortOrder.Ascending,
+                                "Text", SortOrder.Ascending
+                            )
+                        },
+                        If(
+                            IsEmpty(candidates),
+                            Set(varAcceptedText, "");
+                            Set(varOcrEmpty, true);
+                            Notify("Okunabilir bir ürün adı bulunamadı. Etiketi netleştirip yeniden tarayın.", NotificationType.Warning),
+                            Set(varAcceptedText, TrimEnds(First(candidates).Text));
+                            Set(varOcrEmpty, false);
+                            Set(varScanAccepted, true);
+                            Navigate(scrLoading, ScreenTransition.Fade)
+                        )
+                    ),
+                    Set(varAcceptedText, "");
+                    Set(varOcrEmpty, true);
+                    Notify("Görüntüdeki metin okunamadı. Lütfen yeniden tarayın.", NotificationType.Warning)
+                )
+            )
+          ShowBoundingBoxes: =false
+          Text: ="Görüntü çek veya seç"
+          Width: =Parent.Width - 96
+          X: =48
+          Y: =246
+    - shpScanGuideTopLeft:
+        Control: Rectangle@2.3.0
+        Properties:
+          Fill: =RGBA(194, 65, 12, 1)
+          Height: =4
+          Visible: =false
+          Width: =76
+          X: =48
+          Y: =234
+    - shpScanGuideTopRight:
+        Control: Rectangle@2.3.0
+        Properties:
+          Fill: =RGBA(194, 65, 12, 1)
+          Height: =4
+          Visible: =false
+          Width: =76
+          X: =Parent.Width - 124
+          Y: =234
+    - shpScanGuideBottomLeft:
+        Control: Rectangle@2.3.0
+        Properties:
+          Fill: =RGBA(194, 65, 12, 1)
+          Height: =4
+          Visible: =false
+          Width: =76
+          X: =48
+          Y: =840
+    - shpScanGuideBottomRight:
+        Control: Rectangle@2.3.0
+        Properties:
+          Fill: =RGBA(194, 65, 12, 1)
+          Height: =4
+          Visible: =false
+          Width: =76
+          X: =Parent.Width - 124
+          Y: =840
+    - btnScanEmptyCard:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(55, 65, 81, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(55, 65, 81, 1)
+          DisabledFill: =RGBA(255, 255, 255, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =104
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(55, 65, 81, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(55, 65, 81, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =-1
+          Text: =""
+          Visible: =varOcrEmpty
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =418
+          ZIndex: =13
+    - lblScanHint:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(91, 101, 120, 1)
+          Font: =Font.OpenSans
+          Height: =80
+          PaddingBottom: =0
+          PaddingLeft: =16
+          PaddingRight: =16
+          PaddingTop: =0
+          Size: =13
+          Text: ="Seçim yapmanız gerekmez. Metin okunduğunda stok sorgusu otomatik başlar."
+          VerticalAlign: =VerticalAlign.Top
+          Visible: =!varOcrEmpty
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =418
+    - lblScanEmptyTitle:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(185, 28, 28, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =32
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =14
+          Text: ="Metin algılanamadı"
+          Visible: =varOcrEmpty
+          Width: =Parent.Width - 112
+          X: =56
+          Y: =430
+    - lblScanEmptyBody:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(127, 29, 29, 1)
+          Font: =Font.OpenSans
+          Height: =42
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =12
+          Text: ="Etiketi kılavuz alanına hizalayıp yeniden görüntü alın."
+          VerticalAlign: =VerticalAlign.Top
+          Visible: =varOcrEmpty
+          Width: =Parent.Width - 112
+          X: =56
+          Y: =468

@@ -13,12 +13,28 @@ import subprocess
 import tempfile
 import zipfile
 import yaml
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / 'Barkod-Uygulamasi-Phase2-FIXED-v2.msapp'
 SOURCE = ROOT / 'app-src-phase3-v2'
 REPORT = ROOT / 'validation/phase3-v2'
 OUTPUT = ROOT / 'Barkod-Uygulamasi-Phase3-Orange-v2.msapp'
+MOBILE_V4 = '--mobile-v4' in sys.argv
+REPAIR_V31 = '--mobile-v3-1' in sys.argv or MOBILE_V4
+MOBILE = '--mobile-v3' in sys.argv or REPAIR_V31
+if MOBILE:
+    SOURCE = ROOT / 'app-src-mobile-v3'
+    REPORT = ROOT / 'validation/mobile-v3'
+    OUTPUT = ROOT / 'Barkod-Uygulamasi-Mobile-Light-v3.msapp'
+if REPAIR_V31:
+    SOURCE = ROOT / 'app-src-mobile-v3-1'
+    REPORT = ROOT / 'validation/mobile-v3-1'
+    OUTPUT = ROOT / 'Barkod-Uygulamasi-Mobile-Light-v3-1.msapp'
+if MOBILE_V4:
+    SOURCE = ROOT / 'app-src-mobile-v4'
+    REPORT = ROOT / 'validation/mobile-v4'
+    OUTPUT = ROOT / 'Barkod-Uygulamasi-Mobile-Light-v4.msapp'
 REPORT.mkdir(parents=True, exist_ok=True)
 base_source = ROOT/'build/phase3-base'
 if not base_source.exists():
@@ -192,6 +208,15 @@ setp('lblProductChevron', Text=f'If({expanded}, "−", "+")', X='Parent.Template
 
 from phase3_v2_fixes import apply_fixes
 apply_fixes(controls, docs, setp, get, changed)
+if MOBILE:
+    from mobile_v3_fixes import apply_mobile
+    apply_mobile(controls, setp, get, changed)
+    # A SourceCode roundtrip copies the snapshot without loading its control
+    # graph, so byte equality alone cannot detect missing required arrays.
+    assert all(isinstance(c.get('Children'), list) for c in controls.values())
+if MOBILE_V4:
+    from mobile_v4_ui import apply_ui
+    apply_ui(controls, setp, get, changed, original)
 
 class Dumper(yaml.SafeDumper):
     pass
@@ -204,7 +229,15 @@ templates = json.loads(original['References/Templates.json'])
 templates['UsedTemplates'].append({'Name':'button','Version':'2.2.0',
     'Template':(ROOT/'scripts/button_2.2.0.xml').read_text(encoding='utf8')})
 updated['References/Templates.json'] = json.dumps(templates,ensure_ascii=False,separators=(',',':')).encode('utf8')
+if MOBILE:
+    templates['UsedTemplates'].append({'Name':'text','Version':'2.3.2',
+        'Template':(ROOT/'scripts/text_2.3.2.xml').read_text(encoding='utf8')})
+    updated['References/Templates.json'] = json.dumps(templates,ensure_ascii=False,separators=(',',':')).encode('utf8')
 properties = json.loads(original['Properties.json'])
+if MOBILE:
+    properties.update(DocumentLayoutWidth=390, DocumentLayoutHeight=844,
+        DocumentLayoutScaleToFit=False, DocumentLayoutMaintainAspectRatio=False,
+        DocumentLayoutLockOrientation=False)
 counts = Counter(c['Template']['Name'] for c in controls.values())
 properties['ControlCount'] = {name: count for name,count in counts.items() if name not in ['appinfo','hostControl']}
 updated['Properties.json'] = json.dumps(properties,ensure_ascii=False,separators=(',',':')).encode('utf8')
@@ -230,8 +263,11 @@ for n,b in original.items():
         node.pop('Children',None)
         node.pop('Variant',None)
         types={'button':'Classic/Button@2.2.0','label':'Label@2.5.1','rectangle':'Rectangle@2.3.0','gallery':'Gallery@2.15.0'}
+        types['text']='Classic/TextInput@2.3.2'
+        types['groupContainer']='GroupContainer@1.3.0'
         if c['Template']['Name'] in types: node['Control']=types[c['Template']['Name']]
-        if c['Template']['Name']=='gallery': node['Variant']='Vertical'
+        if c['Template']['Name']=='gallery': node['Variant']='VariableHeight' if c.get('VariantName') == 'galleryVariableTemplateHeight' else 'Vertical'
+        if c['Template']['Name']=='groupContainer': node['Variant']='AutoLayout'
         rules={r['Property']:r['InvariantScript'] for r in c['Rules']}
         keys=(set(node.get('Properties',{})) | changed.get(name,set()))
         if c['Template']['Name']=='button': keys=set(rules)
@@ -273,7 +309,11 @@ assert json.loads(result['packed.json'])['LoadConfiguration']['LoadFromYaml'] is
 assert all(result[n]==b for n,b in updated.items() if n!='packed.json')
 assert controls['TextRecognizer1']['Template']==next(v for v in walk(json.loads(original['Controls/15.json'])) if v.get('Name')=='TextRecognizer1')['Template']
 assert all(result[n]==b for n,b in original.items() if (n.startswith('References/') and n!='References/Templates.json') or n=='Header.json')
-assert {k:v for k,v in properties.items() if k!='ControlCount'} == {k:v for k,v in json.loads(original['Properties.json']).items() if k!='ControlCount'}
+allowed_properties = {'ControlCount'}
+if MOBILE:
+    allowed_properties.update(['DocumentLayoutWidth','DocumentLayoutHeight','DocumentLayoutScaleToFit',
+        'DocumentLayoutMaintainAspectRatio','DocumentLayoutLockOrientation'])
+assert {k:v for k,v in properties.items() if k not in allowed_properties} == {k:v for k,v in json.loads(original['Properties.json']).items() if k not in allowed_properties}
 rules='\n'.join(r['InvariantScript'] for c in controls.values() for r in c['Rules'])
 assert rules.count('barcode_flow.Run(')==1
 assert 'TextRecognizer1.Selected' not in rules
@@ -284,6 +324,12 @@ with tempfile.TemporaryDirectory(prefix='phase3-roundtrip-',dir=ROOT/'build') as
     run('roundtrip.json',['pac','canvas','unpack','--msapp',str(OUTPUT),'--sources',temp,'--layout','SourceCode'])
     roundtrip=archive(next(Path(temp).glob('*.msapr')))
     assert all(result[n.removeprefix('msapp/')]==b for n,b in roundtrip.items() if n.startswith('msapp/'))
+if MOBILE:
+    # Read-only secondary check: this loader actually traverses ControlInfo.
+    # Do not repack its deprecated Experimental output or use it as the source.
+    with tempfile.TemporaryDirectory(prefix='mobile-document-load-', dir=ROOT/'build') as temp:
+        run('document-load.json', ['pac','canvas','unpack','--msapp',str(OUTPUT),
+            '--sources',temp,'--layout','Experimental'])
 (REPORT/'validation.json').write_text(json.dumps({
     'package':'PASS','runtime':'NOT EXECUTED: no connected apps or browsers',
     'sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),'bytes':OUTPUT.stat().st_size,

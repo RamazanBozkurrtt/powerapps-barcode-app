@@ -1,0 +1,209 @@
+Screens:
+  scrLoading:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      Height: =Max(App.Height, App.MinScreenHeight)
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+      OnVisible: =false
+      Width: =Max(App.Width, App.MinScreenWidth)
+    Children:
+    - btnLoadingHalo:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =72
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =24
+          TabIndex: =-1
+          Text: ="•••"
+          Visible: =true
+          Width: =72
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =Max(24, (Parent.Height - 330) / 2)
+          ZIndex: =2
+    - tmrLoadingFlow:
+        Control: Timer@2.1.0
+        Properties:
+          AutoPause: =true
+          AutoStart: =false
+          Duration: =250
+          OnTimerEnd: |-
+            =If(
+                App.ActiveScreen = scrLoading && varScanAccepted && !IsBlank(varAcceptedText) && !varFlowCallStarted && !varLoadingExecutionStarted,
+                Set(varLoadingExecutionStarted, true);
+                Set(varFlowCallStarted, true);
+                IfError(
+                    Set(varFlowResponse, barcode_flow.Run(varAcceptedText));
+                    Set(varResultJson, varFlowResponse.result_json);
+                    IfError(
+                        ClearCollect(
+                            colParsedRows,
+                            ForAll(
+                                Table(ParseJSON(varResultJson)) As row,
+                                {
+                                    ItemNumber: Text(row.Value.ItemNumber),
+                                    ProductName: Text(row.Value.ProductName),
+                                    InventoryWarehouseId: Text(row.Value.InventoryWarehouseId),
+                                    AvailableOnHandQuantity: Coalesce(
+                                        IfError(
+                                            Value(row.Value.AvailableOnHandQuantity),
+                                            Blank()
+                                        ),
+                                        0
+                                    ),
+                                    ReservedOnHandQuantity: Coalesce(
+                                        IfError(
+                                            Value(row.Value.ReservedOnHandQuantity),
+                                            Blank()
+                                        ),
+                                        0
+                                    )
+                                }
+                            )
+                        );
+                        ClearCollect(
+                            colProductGroups,
+                            AddColumns(
+                                GroupBy(
+                                    colParsedRows,
+                                    ItemNumber,
+                                    WarehouseRows
+                                ) As ProductGroup,
+                                ProductName,
+                                First(ProductGroup.WarehouseRows).ProductName,
+                                HasNameConflict,
+                                CountRows(
+                                    Distinct(
+                                        ProductGroup.WarehouseRows,
+                                        ProductName
+                                    )
+                                ) > 1
+                            )
+                        );
+                        Navigate(scrResults, ScreenTransition.Fade),
+                        Set(varErrorMessage, "Stok verisi işlenirken bir hata oluştu.");
+                        Navigate(scrError, ScreenTransition.Fade)
+                    ),
+                    Set(varErrorMessage, "Stok bilgileri alınırken bir bağlantı hatası oluştu.");
+                    Navigate(scrError, ScreenTransition.Fade)
+                )
+            )
+          Repeat: =false
+          Reset: =App.ActiveScreen <> scrLoading
+          Start: =App.ActiveScreen = scrLoading && varScanAccepted && !IsBlank(varAcceptedText) && !varFlowCallStarted
+            && !varLoadingExecutionStarted
+          Visible: =false
+    - btnLoadingCard:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =520
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =-1
+          Text: =""
+          Visible: =false
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =(Parent.Height - Self.Height) / 2
+          ZIndex: =1
+    - lblLoadingTitle:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Bold
+          Height: =60
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =18
+          Text: ="Stok bilgileri hazırlanıyor"
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =btnLoadingHalo.Y + 88
+    - lblLoadingBody:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Font: =Font.OpenSans
+          Height: =68
+          PaddingBottom: =0
+          PaddingLeft: =16
+          PaddingRight: =16
+          PaddingTop: =0
+          Size: =14
+          Text: ="Depolardaki kullanılabilir ve rezerve miktarlar kontrol ediliyor."
+          VerticalAlign: =VerticalAlign.Top
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =lblLoadingTitle.Y + 68
+    - lblLoadingProduct:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Fill: =RGBA(255, 247, 237, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =64
+          PaddingBottom: =0
+          PaddingLeft: =12
+          PaddingRight: =12
+          PaddingTop: =0
+          Size: =15
+          Text: =varAcceptedText
+          Visible: =!IsBlank(varAcceptedText)
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =lblLoadingBody.Y + 80

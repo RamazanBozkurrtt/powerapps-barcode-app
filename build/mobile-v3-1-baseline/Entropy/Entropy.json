@@ -1,0 +1,500 @@
+{
+  "AppTestsMissingStepsMetadata": [],
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "88def012-48cb-408e-b4d4-89c84a4ef262": 44,
+    "App": 1,
+    "btnErrorCard": 61,
+    "btnErrorHome": 66,
+    "btnErrorMark": 62,
+    "btnErrorRetry": 65,
+    "btnHomeHeroCard": 8,
+    "btnHomeScanMark": 9,
+    "btnLoadingCard": 32,
+    "btnLoadingHalo": 33,
+    "btnProductCard": 45,
+    "btnProductToggle": 2002,
+    "btnResultsEmptyCard": 56,
+    "btnResultsEmptyMark": 57,
+    "btnResultsScanAgain": 42,
+    "btnScan": 13,
+    "btnScanBack": 16,
+    "btnScanEmptyCard": 28,
+    "btnScanSurface": 20,
+    "galProducts": 43,
+    "Host": 3,
+    "lblErrorBody": 64,
+    "lblErrorTitle": 63,
+    "lblHomeCardBody": 11,
+    "lblHomeCardHint": 12,
+    "lblHomeCardTitle": 10,
+    "lblHomeEyebrow": 6,
+    "lblHomeFooter": 14,
+    "lblHomeTitle": 7,
+    "lblLoadingBody": 35,
+    "lblLoadingProduct": 36,
+    "lblLoadingTitle": 34,
+    "lblProductChevron": 2001,
+    "lblProductConflict": 48,
+    "lblProductName": 46,
+    "lblProductNumber": 47,
+    "lblResultsCount": 41,
+    "lblResultsEmptyBody": 59,
+    "lblResultsEmptyTitle": 58,
+    "lblResultsEyebrow": 39,
+    "lblResultsTitle": 40,
+    "lblScanEmptyBody": 30,
+    "lblScanEmptyTitle": 29,
+    "lblScanGuideCaption": 19,
+    "lblScanHint": 27,
+    "lblScanInstruction": 18,
+    "lblScanTitle": 17,
+    "lblWarehouseAvailable": 55,
+    "lblWarehouseName": 52,
+    "lblWarehouseReserved": 53,
+    "scrError": 60,
+    "scrHome": 4,
+    "scrLoading": 31,
+    "scrResults": 38,
+    "scrScan": 15,
+    "shpHomeTopGlow": 5,
+    "shpScanGuideBottomLeft": 25,
+    "shpScanGuideBottomRight": 26,
+    "shpScanGuideTopLeft": 23,
+    "shpScanGuideTopRight": 24,
+    "shpWarehouseDivider": 51,
+    "TextRecognizer1": 21,
+    "tmrLoadingFlow": 37
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "09/10/2026 12:36:20",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {
+    "3344f7b8-a747-4f06-80cf-b307eed73dd5": "\"/providers/microsoft.powerapps/apis/shared_dynamicsax/connections/4b228587de59491e8021ed2e5cbfa75a\"",
+    "cbc26220-f770-48b8-aac2-793a2a77f496": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/2e02c7b6952c4b1380e889efcc9f474c-2300468d8b253b9d\""
+  },
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "43b0dc67-68af-47ae-9a9c-9e69d396ba3e": 1,
+    "barcode_flow": 0
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {
+    "PowerApps_CoreControls_ButtonCanvas": 0,
+    "TextRecognizer": 1
+  },
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 4,
+    "gallery": 3,
+    "label": 1,
+    "rectangle": 0,
+    "timer": 2
+  },
+  "OverridablePropertiesEntry": {
+    "88def012-48cb-408e-b4d4-89c84a4ef262": {},
+    "App": {},
+    "btnErrorCard": {},
+    "btnErrorHome": {},
+    "btnErrorMark": {},
+    "btnErrorRetry": {},
+    "btnHomeHeroCard": {},
+    "btnHomeScanMark": {},
+    "btnLoadingCard": {},
+    "btnLoadingHalo": {},
+    "btnProductCard": {},
+    "btnProductToggle": {},
+    "btnResultsEmptyCard": {},
+    "btnResultsEmptyMark": {},
+    "btnResultsScanAgain": {},
+    "btnScan": {},
+    "btnScanBack": {},
+    "btnScanEmptyCard": {},
+    "btnScanSurface": {},
+    "galProducts": {},
+    "Host": {},
+    "lblErrorBody": {},
+    "lblErrorTitle": {},
+    "lblHomeCardBody": {},
+    "lblHomeCardHint": {},
+    "lblHomeCardTitle": {},
+    "lblHomeEyebrow": {},
+    "lblHomeFooter": {},
+    "lblHomeTitle": {},
+    "lblLoadingBody": {},
+    "lblLoadingProduct": {},
+    "lblLoadingTitle": {},
+    "lblProductChevron": {},
+    "lblProductConflict": {},
+    "lblProductName": {},
+    "lblProductNumber": {},
+    "lblResultsCount": {},
+    "lblResultsEmptyBody": {},
+    "lblResultsEmptyTitle": {},
+    "lblResultsEyebrow": {},
+    "lblResultsTitle": {},
+    "lblScanEmptyBody": {},
+    "lblScanEmptyTitle": {},
+    "lblScanGuideCaption": {},
+    "lblScanHint": {},
+    "lblScanInstruction": {},
+    "lblScanTitle": {},
+    "lblWarehouseAvailable": {},
+    "lblWarehouseName": {},
+    "lblWarehouseReserved": {},
+    "scrError": {},
+    "scrHome": {},
+    "scrLoading": {},
+    "scrResults": {},
+    "scrScan": {},
+    "shpHomeTopGlow": {},
+    "shpScanGuideBottomLeft": {},
+    "shpScanGuideBottomRight": {},
+    "shpScanGuideTopLeft": {},
+    "shpScanGuideTopRight": {},
+    "shpWarehouseDivider": {},
+    "TextRecognizer1": {
+      "Results": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Table",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Record",
+              "Name": "BoundingBox",
+              "Type": [
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Height",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Left",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Top",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Width",
+                  "Type": []
+                }
+              ]
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "PageNumber",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Text",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.349"
+      },
+      "Selected": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Record",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Record",
+              "Name": "BoundingBox",
+              "Type": [
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Height",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Left",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Top",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Width",
+                  "Type": []
+                }
+              ]
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "PageNumber",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Text",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.349"
+      }
+    },
+    "tmrLoadingFlow": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {
+    "TextRecognizer1": {
+      "Results": {
+        "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}}",
+        "PCFSkipValidation": false
+      },
+      "Selected": {
+        "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}",
+        "PCFSkipValidation": false
+      }
+    }
+  },
+  "PCFTemplateEntry": {
+    "TextRecognizer1": {
+      "CustomGroupControlTemplateName": "",
+      "DynamicControlDefinitionJson": "{\"ControlNamespace\":\"Intelligence.TextRecognizerControl\",\"ControlConstructor\":\"TextRecognizer\",\"DisplayNameKey\":\"TextRecognizer\",\"Resources\":\"[{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/prop-types.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":1,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/react-fela.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":2,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/fela.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":3,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/fela-dom.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":4,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/ctrllib/common/js/container.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":5,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/ctrllib/PCFControls/js/PCFControlWrapper.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":6,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":7,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"ManifestTemplate\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"ConstructorName\\\\\\\":\\\\\\\"Intelligence.TextRecognizerControl.TextRecognizer\\\\\\\",\\\\\\\"CustomControlId\\\\\\\":\\\\\\\"Intelligence.TextRecognizerControl.TextRecognizer\\\\\\\",\\\\\\\"IsVirtual\\\\\\\":true,\\\\\\\"Properties\\\\\\\":{\\\\\\\"Resources\\\\\\\":[{\\\\\\\"Name\\\\\\\":\\\\\\\"/PCF/prop-types.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":1,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/PCF/react-fela.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":2,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/PCF/fela.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":3,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/PCF/fela-dom.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":4,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/ctrllib/common/js/container.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":5,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/ctrllib/PCFControls/js/PCFControlWrapper.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":6,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":7,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null}],\\\\\\\"GroupDefinitions\\\\\\\":null,\\\\\\\"DataSetDefinitions\\\\\\\":{},\\\\\\\"Properties\\\\\\\":{\\\\\\\"Text\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"+ Yeni görüntü\\\\\\\"},\\\\\\\"OriginalImage\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"DefaultImage\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ImageDisplayed\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"ShowControls\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"Tooltip\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"Width\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"350\\\\\\\"},\\\\\\\"Height\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"500\\\\\\\"},\\\\\\\"Results\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"Selected\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"FullText\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ShowBoundingBoxes\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"BorderColor\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"#D2D0CE\\\\\\\"},\\\\\\\"BorderStyle\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"solid\\\\\\\"},\\\\\\\"BorderThickness\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"1\\\\\\\"},\\\\\\\"FontColor\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"#FFF\\\\\\\"},\\\\\\\"FillColor\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"#3D5FAE\\\\\\\"},\\\\\\\"DisabledBorderColor\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"#A6A6A6\\\\\\\"},\\\\\\\"DisabledColor\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"#A6A6A6\\\\\\\"},\\\\\\\"DisabledFill\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"#F4F4F4\\\\\\\"},\\\\\\\"ButtonHeight\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"40\\\\\\\"},\\\\\\\"LoadSchema\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"ShouldReset\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"CommandBarIconSize\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"16\\\\\\\"},\\\\\\\"CommandBarFontSize\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"14\\\\\\\"},\\\\\\\"OcrObjects\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"}},\\\\\\\"FeatureUsage\\\\\\\":null},\\\\\\\"Events\\\\\\\":null,\\\\\\\"CommonEvents\\\\\\\":null,\\\\\\\"DesignMap\\\\\\\":null,\\\\\\\"PropertyDependencies\\\\\\\":[{\\\\\\\"Input\\\\\\\":\\\\\\\"LoadSchema\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"Results\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"LoadSchema\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"Selected\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"}],\\\\\\\"Children\\\\\\\":null}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":8,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"ManifestPropertyTypes\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"Properties\\\\\\\":[{\\\\\\\"Name\\\\\\\":\\\\\\\"Text\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"OriginalImage\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Multiple\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DefaultImage\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Multiple\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ImageDisplayed\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Boolean\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShowControls\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Tooltip\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Width\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Height\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Results\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Selected\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"FullText\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Multiple\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShowBoundingBoxes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Boolean\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"BorderColor\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"Color\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"BorderStyle\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"BorderStyle\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"BorderThickness\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Whole_None\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"FontColor\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"FontColor\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"FillColor\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"FillColor\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DisabledBorderColor\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"Color\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DisabledColor\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"FontColor\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DisabledFill\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"FillColor\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ButtonHeight\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"LoadSchema\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Boolean\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShouldReset\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"CommandBarIconSize\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"CommandBarFontSize\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"OcrObjects\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"PCFTeamsTheme\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"X\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"Y\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"Visible\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Boolean\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"DisplayMode\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"DisplayMode\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"TabIndex\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true}]}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":9,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"PowerAppsControlInfo\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"TemplateVersion\\\\\\\":1,\\\\\\\"Version\\\\\\\":\\\\\\\"1.0.112\\\\\\\",\\\\\\\"IsFirstParty\\\\\\\":true}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":10,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/TextRecognizer.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":16,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/libs/exif.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":12,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/libs/PDF/pdf.worker.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":13,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/libs/PDF/pdf.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":14,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/libs/PDF/react-pdf.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":15,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":2,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1033.resx\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":10,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1025.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1026.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1027.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1028.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1029.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1030.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1031.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1032.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1033.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1035.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1036.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1037.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1038.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1040.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1041.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1042.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1043.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1044.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1045.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1046.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1048.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1049.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1050.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1051.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1053.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1054.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1055.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1057.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1058.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1060.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1061.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1062.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1063.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1066.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1069.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1081.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1086.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1087.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.1110.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.2052.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.2070.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.2074.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.3076.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.3082.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/TextRecognizer/strings/TextRecognizerControl.3098.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"LocalizedStrings\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"LocStrings\\\\\\\":{\\\\\\\"ControlName\\\\\\\":\\\\\\\"Metin tanıyıcısı\\\\\\\",\\\\\\\"Default_Button_Text\\\\\\\":\\\\\\\"+ Yeni görüntü\\\\\\\",\\\\\\\"First_Scan_Image_Accessibility_Label\\\\\\\":\\\\\\\"Henüz görüntü seçilmedi.\\\\\\\",\\\\\\\"Loading_Accessibility_Label\\\\\\\":\\\\\\\"Görüntü işleniyor.\\\\\\\",\\\\\\\"Loading_Tooltip_Label\\\\\\\":\\\\\\\"Görüntü işleniyor\\\\\\\",\\\\\\\"NoTextDetected_Accessibility_Label\\\\\\\":\\\\\\\"Tanınan metin yok.\\\\\\\",\\\\\\\"Disabled_NoTextDetected_Accessibility_Label\\\\\\\":\\\\\\\"Tanınan metin yok\\\\\\\",\\\\\\\"OneLineDetected_Tooltip_Label\\\\\\\":\\\\\\\"1 metin satırı tanındı.\\\\\\\",\\\\\\\"Disabled_OneLineDetected_Tooltip_Label\\\\\\\":\\\\\\\"1 metin satırı tanındı\\\\\\\",\\\\\\\"OneLineDetected_Accessibility_Label\\\\\\\":\\\\\\\"1 metin satırı tanındı. {0}.\\\\\\\",\\\\\\\"Disabled_OneLineDetected_Accessibility_Label\\\\\\\":\\\\\\\"1 metin satırı tanındı. {0}\\\\\\\",\\\\\\\"ManyLinesDetected_Tooltip_Label\\\\\\\":\\\\\\\"{0} metin satırı tanındı.\\\\\\\",\\\\\\\"Disabled_ManyLinesDetected_Tooltip_Label\\\\\\\":\\\\\\\"{0} metin satırı tanındı.\\\\\\\",\\\\\\\"ManyLinesDetected_Accessibility_Label\\\\\\\":\\\\\\\"{0} metin satırı tanındı. {1}.\\\\\\\",\\\\\\\"Disabled_ManyLinesDetected_Accessibility_Label\\\\\\\":\\\\\\\"{0} metin satırı tanındı. {1}\\\\\\\",\\\\\\\"Button_Accessibility_Label\\\\\\\":\\\\\\\"Metin Tanıyıcı için bir görüntü seçin.\\\\\\\",\\\\\\\"Button_Tooltip_Label\\\\\\\":\\\\\\\"Görüntü seç\\\\\\\",\\\\\\\"Accessibility_Line_Content\\\\\\\":\\\\\\\"{0} satırı {1}\\\\\\\",\\\\\\\"Accessibility_BoundingBox_Selected\\\\\\\":\\\\\\\"{0}, seçili satır\\\\\\\",\\\\\\\"Accessibility_BoundingBox_Not_Selected\\\\\\\":\\\\\\\"{0}, satır seçilmedi\\\\\\\",\\\\\\\"Accessibility_BoundingBox_Not_Selectable\\\\\\\":\\\\\\\"{0}\\\\\\\",\\\\\\\"Text_Property_Name\\\\\\\":\\\\\\\"Metin\\\\\\\",\\\\\\\"Text_Property_Description\\\\\\\":\\\\\\\"Görüntülenecek metin.\\\\\\\",\\\\\\\"Tooltip_Property_Name\\\\\\\":\\\\\\\"Araç İpucu\\\\\\\",\\\\\\\"Tooltip_Property_Description\\\\\\\":\\\\\\\"Görsel üzerine gelindiğinde görüntülenecek metin.\\\\\\\",\\\\\\\"DefaultImage_Property_Name\\\\\\\":\\\\\\\"Varsayılan görüntü\\\\\\\",\\\\\\\"DefaultImage_Property_Description\\\\\\\":\\\\\\\"Varsayılan olarak görünen görüntü\\\\\\\",\\\\\\\"ImageDisplayed_Property_Name\\\\\\\":\\\\\\\"Görüntüyü göster\\\\\\\",\\\\\\\"ImageDisplayed_Property_Description\\\\\\\":\\\\\\\"Görüntüyü göster veya gizle\\\\\\\",\\\\\\\"ShowControls_Property_Name\\\\\\\":\\\\\\\"Denetimleri göster\\\\\\\",\\\\\\\"ShowControls_Property_Description\\\\\\\":\\\\\\\"Görselle etkileşim için denetimleri göster veya gizle\\\\\\\",\\\\\\\"Error_Offline\\\\\\\":\\\\\\\"Çevrimdışı olduğunuz görülüyor. İnternet bağlantınızı denetleyin ve yeniden deneyin.\\\\\\\",\\\\\\\"Error_ServerError\\\\\\\":\\\\\\\"Bir sorun oluştu ve bu görüntüyü işleyemedik. Daha sonra yeniden deneyin.\\\\\\\",\\\\\\\"Error_WrongFormat\\\\\\\":\\\\\\\"Bu görüntü türünü kullanamayız. JPEG, PNG veya BMP ile yeniden deneyin.\\\\\\\",\\\\\\\"Error_WrongDocumentFormat\\\\\\\":\\\\\\\"Belge türü desteklenmiyor. Lütfen JPEG, PNG, BMP veya PDF dosyası kullanın.\\\\\\\",\\\\\\\"Error_EmptyFile\\\\\\\":\\\\\\\"Görüntü boş gibi görünüyor. Başka bir tane deneyin.\\\\\\\",\\\\\\\"Error_WrongFileRequirements\\\\\\\":\\\\\\\"Dosyanızın bir özelliği (örneğin boyutu veya güvenlik ayarı) bunu kullanmamıza engel oluyor. AI Builder belgelerindeki dosya gereksinimlerini denetleyip değişiklikleri yapın ve yeniden deneyin.\\\\\\\",\\\\\\\"Error_AIBuilder_Setup\\\\\\\":\\\\\\\"AI Builder'ın doğru şekilde ayarlanmadığı görülüyor. Yöneticinizden durumu araştırmasını isteyin.\\\\\\\",\\\\\\\"Error_AIBuilder_Disabled\\\\\\\":\\\\\\\"Bu ortamda AI Builder'ın açık olmadığı görülüyor. Yöneticinizden bunu etkinleştirmesini isteyin.\\\\\\\",\\\\\\\"Error_AIBuilder_NotLoaded\\\\\\\":\\\\\\\"Bu modele erişiminizin olmadığı görülüyor. Sahibinden modeli sizinle paylaşmasını isteyin.\\\\\\\",\\\\\\\"Error_No_Security_Role\\\\\\\":\\\\\\\"Bu ortama erişiminizin olmadığı görülüyor. İhtiyacınız olan erişime sahip olmak için yöneticinize başvurun.\\\\\\\",\\\\\\\"Error_Missing_Privilege\\\\\\\":\\\\\\\"Bu ortamda AI Builder erişiminizin olmadığı görülüyor. İhtiyacınız olan erişime sahip olmak için yöneticinize başvurun.\\\\\\\",\\\\\\\"Error_Model_Not_Found\\\\\\\":\\\\\\\"Bu ortamda bu modelin kullanılamadığı görünüyor.\\\\\\\",\\\\\\\"Error_AIBuilder_PreviewScenarioNotAvailable\\\\\\\":\\\\\\\"Yöneticiniz önizleme modellerine erişimi kapattı. Yöneticinizden bu erişimi etkinleştirmesini isteyin.\\\\\\\",\\\\\\\"Error_AIBuilder_NoTrialCapacity\\\\\\\":\\\\\\\"Şu anda AI Builder kullanmak için yeterli kapasitenizin olmadığı görülüyor. Yükseltmek için yöneticinize başvurun.\\\\\\\",\\\\\\\"Error_AIBuilder_NoLicence\\\\\\\":\\\\\\\"Bu bileşeni kullanmak için bir AI Builder lisansınızın olması gerekiyor. Bir deneme sürümü başlatın veya genişletin ya da yükseltmek için yöneticinize başvurun.\\\\\\\",\\\\\\\"Error_AIBuilder_WrongDocumentSize\\\\\\\":\\\\\\\"Bu belgenin boyutu yanlış. 50 x 50 ile 10000 x 10000 piksel arasında bir belge ile tekrar deneyin.\\\\\\\",\\\\\\\"Error_AIBuilder_Generic\\\\\\\":\\\\\\\"Bir sorun oluştu. Daha sonra tekrar deneyin.\\\\\\\",\\\\\\\"Error_DestroyWhileLoading\\\\\\\":\\\\\\\"Üzgünüz, görüntü karşıya yükleme işlemi yarıda kesildi, lütfen yeniden deneyin ve karşıya yükleme işlemi bitene kadar çıkmayın.\\\\\\\",\\\\\\\"Error_NotConfigured\\\\\\\":\\\\\\\"Bu ortamda CDS veri kaynağı yok.\\\\\\\",\\\\\\\"Error_NoCameraPermission\\\\\\\":\\\\\\\"Kameranıza erişemedik. Kameranın uygulama iznini denetleyin ve tekrar deneyin.\\\\\\\",\\\\\\\"Error_FileSizeAboveOrgMaxSize\\\\\\\":\\\\\\\"Yakalanan dosya boyutu, kuruluşunuz için tanımlanan maksimum dosya boyutundan büyük. İzin verilen dosya boyutunu artırmak için kamera ayarınızı değiştirin veya yöneticinize başvurun.\\\\\\\",\\\\\\\"BorderColor_Property_Name\\\\\\\":\\\\\\\"Kenarlık rengi\\\\\\\",\\\\\\\"BorderColor_Property_Description\\\\\\\":\\\\\\\"Denetim sınırının rengi\\\\\\\",\\\\\\\"BorderStyle_Property_Name\\\\\\\":\\\\\\\"Kenarlık stili\\\\\\\",\\\\\\\"BorderStyle_Property_Description\\\\\\\":\\\\\\\"Denetim sınırının stili\\\\\\\",\\\\\\\"BorderThickness_Property_Name\\\\\\\":\\\\\\\"Kenarlık kalınlığı\\\\\\\",\\\\\\\"BorderThickness_Property_Description\\\\\\\":\\\\\\\"Denetim sınırının kalınlığı\\\\\\\",\\\\\\\"Color_Property_Name\\\\\\\":\\\\\\\"Renk\\\\\\\",\\\\\\\"Color_Property_Description\\\\\\\":\\\\\\\"Yazı tipi rengi\\\\\\\",\\\\\\\"Fill_Property_Name\\\\\\\":\\\\\\\"Dolgu\\\\\\\",\\\\\\\"Fill_Property_Description\\\\\\\":\\\\\\\"Dolgu rengi\\\\\\\",\\\\\\\"FocusedBorderColor_Property_Name\\\\\\\":\\\\\\\"Odaklanılan kenarlık rengi\\\\\\\",\\\\\\\"FocusedBorderColor_Property_Description\\\\\\\":\\\\\\\"Odaklandığında denetim sınırının rengi\\\\\\\",\\\\\\\"FocusedBorderThickness_Property_Name\\\\\\\":\\\\\\\"Odaklanılan kenarlık kalınlığı\\\\\\\",\\\\\\\"FocusedBorderThickness_Property_Description\\\\\\\":\\\\\\\"Odaklandığında denetim sınırının kalınlığı\\\\\\\",\\\\\\\"DisabledBorderColor_Property_Name\\\\\\\":\\\\\\\"Devre dışı bırakılan kenarlık rengi\\\\\\\",\\\\\\\"DisabledBorderColor_Property_Description\\\\\\\":\\\\\\\"Devre dışı bırakıldığında denetim sınırının rengi\\\\\\\",\\\\\\\"DisabledColor_Property_Name\\\\\\\":\\\\\\\"Devre dışı bırakılan renk\\\\\\\",\\\\\\\"DisabledColor_Property_Description\\\\\\\":\\\\\\\"Denetim devre dışı bırakıldığında yazı tipi rengi\\\\\\\",\\\\\\\"DisabledFill_Property_Name\\\\\\\":\\\\\\\"Devre dışı bırakılan dolgu\\\\\\\",\\\\\\\"DisabledFill_Property_Description\\\\\\\":\\\\\\\"Denetim devre dışı bırakıldığında dolgu rengi\\\\\\\",\\\\\\\"OriginalImage_Property_Name\\\\\\\":\\\\\\\"Özgün görüntü\\\\\\\",\\\\\\\"OriginalImage_Property_Description\\\\\\\":\\\\\\\"Metin Tanıyıcı denetiminin özgün görüntüsü\\\\\\\",\\\\\\\"Width_Property_Name\\\\\\\":\\\\\\\"Genişlik\\\\\\\",\\\\\\\"Width_Property_Description\\\\\\\":\\\\\\\"Görselin genişliği.\\\\\\\",\\\\\\\"Height_Property_Name\\\\\\\":\\\\\\\"Yükseklik\\\\\\\",\\\\\\\"Height_Property_Description\\\\\\\":\\\\\\\"Görselin yüksekliği.\\\\\\\",\\\\\\\"Alt_Accessibility_Image\\\\\\\":\\\\\\\"Metin tanıyıcı için giriş görüntüsü\\\\\\\",\\\\\\\"Results_Property_Name\\\\\\\":\\\\\\\"Sonuçlar\\\\\\\",\\\\\\\"Results_Property_Description\\\\\\\":\\\\\\\"Görüntü taraması sonrasında ayıklanan metnin satırlarını içeren özellik.\\\\\\\",\\\\\\\"Selected_Property_Name\\\\\\\":\\\\\\\"Seçili satır\\\\\\\",\\\\\\\"Selected_Property_Description\\\\\\\":\\\\\\\"Seçili kutunun metnini, sınırlama kutusunu ve sayfa numarasını içeren özellik.\\\\\\\",\\\\\\\"FullText_Property_Name\\\\\\\":\\\\\\\"Tam metin\\\\\\\",\\\\\\\"FullText_Property_Description\\\\\\\":\\\\\\\"Belgeden ayıklanan tam metni içeren özellik.\\\\\\\",\\\\\\\"ShowBoundingBoxes_Property_Name\\\\\\\":\\\\\\\"Sınırlama kutularını göster\\\\\\\",\\\\\\\"ShowBoundingBoxes_Property_Description\\\\\\\":\\\\\\\"Sınırlama kutusunun görüntülenip görüntülenmeyeceğini seçin\\\\\\\",\\\\\\\"ShowOverlay_Property_Name\\\\\\\":\\\\\\\"Katmanı göster\\\\\\\",\\\\\\\"ShowOverlay_Property_Description\\\\\\\":\\\\\\\"Sınırlama kutusu katmanının görüntülenip görüntülenmeyeceğini seçin\\\\\\\",\\\\\\\"CommandBar_Accessibility_PreviousPage\\\\\\\":\\\\\\\"Önceki sayfa\\\\\\\",\\\\\\\"CommandBar_Accessibility_NextPage\\\\\\\":\\\\\\\"Sonraki sayfa\\\\\\\",\\\\\\\"CommandBar_Accessibility_Page\\\\\\\":\\\\\\\"Sayfa\\\\\\\",\\\\\\\"CommandBar_Accessibility_ChooseImage\\\\\\\":\\\\\\\"Görüntü seç\\\\\\\",\\\\\\\"CommandBar_Accessibility_ZoomOut\\\\\\\":\\\\\\\"Uzaklaştırın.\\\\\\\",\\\\\\\"CommandBar_Tooltip_ZoomOut\\\\\\\":\\\\\\\"Uzaklaştır\\\\\\\",\\\\\\\"CommandBar_Accessibility_ZoomIn\\\\\\\":\\\\\\\"Yakınlaştırın.\\\\\\\",\\\\\\\"CommandBar_Tooltip_ZoomIn\\\\\\\":\\\\\\\"Yakınlaştır\\\\\\\",\\\\\\\"Error_ModelWithUnsupportedTableColumnType\\\\\\\":\\\\\\\"\\\\\\\\\\\\\\\"{1}\\\\\\\\\\\\\\\" veri türüne sahip \\\\\\\\\\\\\\\"{0}\\\\\\\\\\\\\\\" sütunu desteklenmiyor. Yok sayılacak.\\\\\\\"}}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/fluentui-react.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":5,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":4,\\\"Path\\\":\\\"React/16.14.0/16.14.0\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":0,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":4,\\\"Path\\\":\\\"Fluent/8.121.1/8.121.1\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":0,\\\"IsControlSpecific\\\":false}]\",\"Properties\":\"[{\\\"Name\\\":\\\"Text\\\",\\\"DisplayName\\\":\\\"Metin\\\",\\\"Description\\\":\\\"Görüntülenecek metin.\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"+ Yeni görüntü\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Text_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"Text_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"OriginalImage\\\",\\\"DisplayName\\\":\\\"Özgün görüntü\\\",\\\"Description\\\":\\\"Metin Tanıyıcı denetiminin özgün görüntüsü\\\",\\\"Type\\\":12,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"OriginalImage_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"OriginalImage_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"DefaultImage\\\",\\\"DisplayName\\\":\\\"Varsayılan görüntü\\\",\\\"Description\\\":\\\"Varsayılan olarak görünen görüntü\\\",\\\"Type\\\":12,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"Data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DefaultImage_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"DefaultImage_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"ImageDisplayed\\\",\\\"DisplayName\\\":\\\"Görüntüyü göster\\\",\\\"Description\\\":\\\"Görüntüyü göster veya gizle\\\",\\\"Type\\\":4,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ImageDisplayed_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"ImageDisplayed_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"ShowControls\\\",\\\"DisplayName\\\":\\\"Denetimleri göster\\\",\\\"Description\\\":\\\"Görselle etkileşim için denetimleri göster veya gizle\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ShowControls_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"ShowControls_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"Tooltip\\\",\\\"DisplayName\\\":\\\"Araç İpucu\\\",\\\"Description\\\":\\\"Görsel üzerine gelindiğinde görüntülenecek metin.\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Tooltip_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"Tooltip_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"Width\\\",\\\"DisplayName\\\":\\\"Genişlik\\\",\\\"Description\\\":\\\"Görselin genişliği.\\\",\\\"Type\\\":2,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"350\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Width_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"Width_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"Height\\\",\\\"DisplayName\\\":\\\"Yükseklik\\\",\\\"Description\\\":\\\"Görselin yüksekliği.\\\",\\\"Type\\\":2,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"500\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Height_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"Height_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"Results\\\",\\\"DisplayName\\\":\\\"Sonuçlar\\\",\\\"Description\\\":\\\"Görüntü taraması sonrasında ayıklanan metnin satırlarını içeren özellik.\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Results_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"Results_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"Selected\\\",\\\"DisplayName\\\":\\\"Seçili satır\\\",\\\"Description\\\":\\\"Seçili kutunun metnini, sınırlama kutusunu ve sayfa numarasını içeren özellik.\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Selected_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"Selected_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"FullText\\\",\\\"DisplayName\\\":\\\"Tam metin\\\",\\\"Description\\\":\\\"Belgeden ayıklanan tam metni içeren özellik.\\\",\\\"Type\\\":12,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"FullText_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"FullText_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"ShowBoundingBoxes\\\",\\\"DisplayName\\\":\\\"Sınırlama kutularını göster\\\",\\\"Description\\\":\\\"Sınırlama kutusunun görüntülenip görüntülenmeyeceğini seçin\\\",\\\"Type\\\":4,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ShowBoundingBoxes_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"ShowBoundingBoxes_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"BorderColor\\\",\\\"DisplayName\\\":\\\"Kenarlık rengi\\\",\\\"Description\\\":\\\"Denetim sınırının rengi\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"#D2D0CE\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"BorderColor_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"BorderColor_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"BorderStyle\\\",\\\"DisplayName\\\":\\\"Kenarlık stili\\\",\\\"Description\\\":\\\"Denetim sınırının stili\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"solid\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"BorderStyle_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"BorderStyle_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"BorderThickness\\\",\\\"DisplayName\\\":\\\"Kenarlık kalınlığı\\\",\\\"Description\\\":\\\"Denetim sınırının kalınlığı\\\",\\\"Type\\\":16,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"1\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"BorderThickness_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"BorderThickness_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"FontColor\\\",\\\"DisplayName\\\":\\\"Renk\\\",\\\"Description\\\":\\\"Yazı tipi rengi\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"#FFF\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Color_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"Color_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"FillColor\\\",\\\"DisplayName\\\":\\\"Dolgu\\\",\\\"Description\\\":\\\"Dolgu rengi\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"#3D5FAE\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Fill_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"Fill_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"DisabledBorderColor\\\",\\\"DisplayName\\\":\\\"Devre dışı bırakılan kenarlık rengi\\\",\\\"Description\\\":\\\"Devre dışı bırakıldığında denetim sınırının rengi\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"#A6A6A6\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DisabledBorderColor_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"DisabledBorderColor_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"DisabledColor\\\",\\\"DisplayName\\\":\\\"Devre dışı bırakılan renk\\\",\\\"Description\\\":\\\"Denetim devre dışı bırakıldığında yazı tipi rengi\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"#A6A6A6\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DisabledColor_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"DisabledColor_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"DisabledFill\\\",\\\"DisplayName\\\":\\\"Devre dışı bırakılan dolgu\\\",\\\"Description\\\":\\\"Denetim devre dışı bırakıldığında dolgu rengi\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"#F4F4F4\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DisabledFill_Property_Name\\\",\\\"DescriptionResourceString\\\":\\\"DisabledFill_Property_Description\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"ButtonHeight\\\",\\\"DisplayName\\\":\\\"\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"40\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"70\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"LoadSchema\\\",\\\"DisplayName\\\":\\\"\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":4,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"true\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"ShouldReset\\\",\\\"DisplayName\\\":\\\"\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":20,\\\"Usage\\\":2,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"true\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":true,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"CommandBarIconSize\\\",\\\"DisplayName\\\":\\\"\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"16\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"24\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"CommandBarFontSize\\\",\\\"DisplayName\\\":\\\"\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"14\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"20\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"OcrObjects\\\",\\\"DisplayName\\\":\\\"\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":5,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"PCFTeamsTheme\\\",\\\"DisplayName\\\":\\\"PCFTeamsTheme\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":3,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false}]\",\"IncludedProperties\":\"[{\\\"Name\\\":\\\"X\\\",\\\"DisplayName\\\":\\\"CC_X\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":null,\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CC_X\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"Y\\\",\\\"DisplayName\\\":\\\"CC_Y\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":null,\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CC_Y\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"Visible\\\",\\\"DisplayName\\\":\\\"Visible\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":4,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PfxDefaultValue\\\":null,\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Visible\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"DisplayMode\\\",\\\"DisplayName\\\":\\\"DisplayMode\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":27,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PfxDefaultValue\\\":null,\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DisplayMode\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false},{\\\"Name\\\":\\\"TabIndex\\\",\\\"DisplayName\\\":\\\"TabIndex\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"0\\\",\\\"PfxDefaultValue\\\":null,\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"TabIndex\\\",\\\"DescriptionResourceString\\\":\\\"\\\",\\\"IsResettableToManifestDefault\\\":false,\\\"IsLinkableToParentTheme\\\":false}]\",\"CommonEvents\":\"[{\\\"Name\\\":\\\"OnChange\\\",\\\"DisplayName\\\":\\\"OnChange\\\",\\\"Description\\\":\\\"\\\",\\\"PfxDefaultValue\\\":null,\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false}]\",\"PropertyDependencies\":\"[{\\\"Input\\\":\\\"LoadSchema\\\",\\\"Output\\\":\\\"Results\\\",\\\"RequiredFor\\\":\\\"schema\\\"},{\\\"Input\\\":\\\"LoadSchema\\\",\\\"Output\\\":\\\"Selected\\\",\\\"RequiredFor\\\":\\\"schema\\\"}]\",\"SubscribedFunctionalities\":\"{\\\"supportResettableProperties\\\":\\\"true\\\"}\",\"AuthConfigProperties\":\"[{\\\"Text\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"DisplayMode\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":27,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"ImageDisplayed\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"ShowControls\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"FontColor\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Color\\\",\\\"SectionName\\\":null,\\\"Type\\\":31,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"FillColor\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Color\\\",\\\"SectionName\\\":null,\\\"Type\\\":32,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"BorderStyle\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Border\\\",\\\"SectionName\\\":null,\\\"Type\\\":30,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"BorderThickness\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Border\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"BorderColor\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Border\\\",\\\"SectionName\\\":null,\\\"Type\\\":29,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"DisabledColor\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"DisabledColor\\\",\\\"SectionName\\\":null,\\\"Type\\\":31,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"DisabledFill\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"DisabledColor\\\",\\\"SectionName\\\":null,\\\"Type\\\":32,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"DisabledBorderColor\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"DisabledColor\\\",\\\"SectionName\\\":null,\\\"Type\\\":29,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"Visible\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"X\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Position\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"Y\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Position\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"Width\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Size\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"Height\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Size\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"ShowBoundingBoxes\\\":{\\\"SectionIndex\\\":2,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false}},{\\\"DefaultImage\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Data\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"X\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"Y\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"Width\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"Height\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"Visible\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"DisplayMode\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"BorderColor\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"BorderStyle\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"BorderThickness\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"FontColor\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"FillColor\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"DisabledBorderColor\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"DisabledColor\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"DisabledFill\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false},\\\"OnChange\\\":{\\\"SectionIndex\\\":2,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Behavior\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false,\\\"SectionType\\\":null,\\\"ShowInCanvasInlineActionBar\\\":false}}]\"}",
+      "FirstParty": true,
+      "Id": "http://microsoft.com/appmagic/powercontrol/TextRecognizer",
+      "IsComponentDefinition": false,
+      "IsCustomGroupControlTemplate": false,
+      "IsPremiumPcfControl": false,
+      "LastModifiedTimestamp": "0",
+      "Name": "TextRecognizer",
+      "OverridableProperties": {
+        "Results": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Table",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "Record",
+                "Name": "BoundingBox",
+                "Type": [
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Height",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Left",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Top",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Width",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "PageNumber",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Text",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.349"
+        },
+        "Selected": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Record",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "Record",
+                "Name": "BoundingBox",
+                "Type": [
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Height",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Left",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Top",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Width",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "PageNumber",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Text",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.349"
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {
+        "Results": {
+          "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}}",
+          "PCFSkipValidation": false
+        },
+        "Selected": {
+          "DynamicSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"BoundingBox\":{\"type\":\"object\",\"properties\":{\"Left\":{\"type\":\"number\"},\"Top\":{\"type\":\"number\"},\"Width\":{\"type\":\"number\"},\"Height\":{\"type\":\"number\"}}},\"Text\":{\"type\":\"string\"},\"PageNumber\":{\"type\":\"number\"}}}",
+          "PCFSkipValidation": false
+        }
+      },
+      "TemplateDisplayName": "TextRecognizer",
+      "Version": "1.0.112"
+    }
+  },
+  "PublishOrderIndices": {
+    "88def012-48cb-408e-b4d4-89c84a4ef262": 36,
+    "App": 0,
+    "btnErrorCard": 53,
+    "btnErrorHome": 57,
+    "btnErrorMark": 52,
+    "btnErrorRetry": 56,
+    "btnHomeHeroCard": 3,
+    "btnHomeScanMark": 4,
+    "btnLoadingCard": 27,
+    "btnLoadingHalo": 25,
+    "btnProductCard": 37,
+    "btnProductToggle": 2002,
+    "btnResultsEmptyCard": 48,
+    "btnResultsEmptyMark": 49,
+    "btnResultsScanAgain": 32,
+    "btnScan": 8,
+    "btnScanBack": 10,
+    "btnScanEmptyCard": 20,
+    "btnScanSurface": 14,
+    "galProducts": 35,
+    "Host": 0,
+    "lblErrorBody": 55,
+    "lblErrorTitle": 54,
+    "lblHomeCardBody": 6,
+    "lblHomeCardHint": 7,
+    "lblHomeCardTitle": 5,
+    "lblHomeEyebrow": 1,
+    "lblHomeFooter": 9,
+    "lblHomeTitle": 2,
+    "lblLoadingBody": 29,
+    "lblLoadingProduct": 30,
+    "lblLoadingTitle": 28,
+    "lblProductChevron": 2001,
+    "lblProductConflict": 40,
+    "lblProductName": 38,
+    "lblProductNumber": 39,
+    "lblResultsCount": 34,
+    "lblResultsEmptyBody": 51,
+    "lblResultsEmptyTitle": 50,
+    "lblResultsEyebrow": 31,
+    "lblResultsTitle": 33,
+    "lblScanEmptyBody": 23,
+    "lblScanEmptyTitle": 22,
+    "lblScanGuideCaption": 13,
+    "lblScanHint": 21,
+    "lblScanInstruction": 12,
+    "lblScanTitle": 11,
+    "lblWarehouseAvailable": 45,
+    "lblWarehouseName": 43,
+    "lblWarehouseReserved": 46,
+    "scrError": 0,
+    "scrHome": 0,
+    "scrLoading": 0,
+    "scrResults": 0,
+    "scrScan": 0,
+    "shpHomeTopGlow": 0,
+    "shpScanGuideBottomLeft": 18,
+    "shpScanGuideBottomRight": 19,
+    "shpScanGuideTopLeft": 16,
+    "shpScanGuideTopRight": 17,
+    "shpWarehouseDivider": 47,
+    "TextRecognizer1": 15,
+    "tmrLoadingFlow": 26
+  },
+  "ResourcesJsonIndices": {},
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.5068285,
+    "ControlCount": {
+      "button": 17,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "label": 29,
+      "rectangle": 6,
+      "screen": 5,
+      "TextRecognizer": 1,
+      "timer": 1
+    },
+    "DeserializationLoadTime": 1.3025895
+  },
+  "WasLocalDatabaseReferencesEmpty": false
+}

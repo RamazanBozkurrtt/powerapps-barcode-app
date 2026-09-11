@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "check/1.0.0": {
+        "dependencies": {
+          "Microsoft.PowerPlatform.Formulas.Tools": "0.9.3438.1"
+        },
+        "runtime": {
+          "check.dll": {}
+        }
+      },
+      "Microsoft.PowerPlatform.Formulas.Tools/0.9.3438.1": {
+        "runtime": {
+          "Microsoft.PowerPlatform.Formulas.Tools.dll": {
+            "assemblyVersion": "0.9.3438.1",
+            "fileVersion": "0.9.3438.1"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.0.0": {
+        "runtime": {
+          "Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.4.30916"
+          }
+        }
+      },
+      "YamlDotNet/17.0.0.0": {
+        "runtime": {
+          "YamlDotNet.dll": {
+            "assemblyVersion": "17.0.0.0",
+            "fileVersion": "17.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "check/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.PowerPlatform.Formulas.Tools/0.9.3438.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/13.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "YamlDotNet/17.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

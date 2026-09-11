@@ -1,0 +1,34 @@
+App:
+  Properties:
+    MinScreenHeight: =240
+    MinScreenWidth: =320
+    OnStart: |-
+      =Set(varAcceptedText, "");
+      Set(varErrorMessage, "");
+      Set(varScanAccepted, false);
+      Set(varFlowCallStarted, false);
+      Set(varLoadingExecutionStarted, false);
+      Set(varOcrEmpty, false);
+      Set(varResultJson, "");
+      ClearCollect(
+          colProductGroups,
+          {
+              ItemNumber: "",
+              ProductName: "",
+              HasNameConflict: false,
+              WarehouseRows: Table(
+                  {
+                      InventoryWarehouseId: "",
+                      AvailableOnHandQuantity: 0,
+                      ReservedOnHandQuantity: 0
+                  }
+              )
+          }
+      );
+      Clear(colProductGroups);
+      Set(varExpandedItemNumber, Blank());
+      Set(varProductExpanded, false);
+      Set(varScanReady, false);
+      Set(varScanEntryImage, "")
+    StartScreen: =scrHome
+    Theme: =PowerAppsTheme

@@ -1,0 +1,234 @@
+Screens:
+  scrHome:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      Height: =Max(App.Height, App.MinScreenHeight)
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+      Width: =Max(App.Width, App.MinScreenWidth)
+    Children:
+    - shpHomeTopGlow:
+        Control: Rectangle@2.3.0
+        Properties:
+          Fill: =RGBA(255, 255, 255, 1)
+          Height: =220
+          Width: =Parent.Width
+    - lblHomeEyebrow:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(194, 65, 12, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =28
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =12
+          Text: ="STOK ASİSTANI"
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =24
+    - lblHomeTitle:
+        Control: Label@2.5.1
+        Properties:
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Bold
+          Height: =108
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =24
+          Text: |-
+            ="Ürünü bulun.
+            Stokları görün."
+          VerticalAlign: =VerticalAlign.Top
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =64
+    - btnHomeHeroCard:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =440
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =-1
+          Text: =""
+          Visible: =false
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =218
+          ZIndex: =4
+    - btnHomeScanMark:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =112
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =-1
+          Text: ="⌗"
+          Visible: =false
+          Width: =112
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =270
+          ZIndex: =5
+    - lblHomeCardTitle:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =40
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =16
+          Text: ="Fotoğrafla veya yazarak"
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =192
+    - lblHomeCardBody:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Font: =Font.OpenSans
+          Height: =84
+          PaddingBottom: =0
+          PaddingLeft: =12
+          PaddingRight: =12
+          PaddingTop: =0
+          Size: =15
+          Text: ="Etiketi fotoğraflayın veya ürün adını yazın. Fotoğrafta sağ üstteki metin seçilir."
+          VerticalAlign: =VerticalAlign.Top
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =240
+    - lblHomeCardHint:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Fill: =RGBA(244, 247, 255, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =46
+          PaddingBottom: =0
+          PaddingLeft: =12
+          PaddingRight: =12
+          PaddingTop: =0
+          Size: =12
+          Text: ="HIZLI  •  GÜVENLİ  •  MOBİL"
+          Visible: =false
+          Width: =Parent.Width - 176
+          X: =88
+          Y: =570
+    - btnScan:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: ="Ürün etiketini taramaya başla"
+          BorderColor: =RGBA(194, 65, 12, 1)
+          BorderThickness: =1
+          Color: =RGBA(255, 255, 255, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Edit
+          Fill: =RGBA(194, 65, 12, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =52
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(255, 255, 255, 1)
+          HoverFill: =RGBA(154, 52, 18, 1)
+          OnSelect: |-
+            =Set(varFlowCallStarted, false);
+            Navigate(scrScan, ScreenTransition.Fade)
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(255, 255, 255, 1)
+          PressedFill: =RGBA(124, 45, 18, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =0
+          Text: ="Ürün ara"
+          Visible: =true
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =Max(340, Parent.Height - 148)
+          ZIndex: =9
+    - lblHomeFooter:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(75, 85, 99, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Font: =Font.OpenSans
+          Height: =60
+          PaddingBottom: =0
+          PaddingLeft: =16
+          PaddingRight: =16
+          PaddingTop: =0
+          Size: =12
+          Text: ="Kamera erişimi yalnızca ürün etiketini okumak için kullanılır."
+          Width: =Parent.Width - 40
+          X: =20
+          Y: =btnScan.Y + btnScan.Height + 12

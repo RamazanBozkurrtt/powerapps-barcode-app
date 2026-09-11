@@ -1,0 +1,51 @@
+{
+  "package_structure": "PASS",
+  "contrast": {
+    "body": 14.68,
+    "muted": 7.56,
+    "button": 5.18,
+    "disabled": 6.87,
+    "reserve": 4.88
+  },
+  "viewport_sizes": [
+    [
+      320,
+      480
+    ],
+    [
+      320,
+      568
+    ],
+    [
+      360,
+      640
+    ],
+    [
+      375,
+      667
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      412,
+      915
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      390,
+      300
+    ]
+  ],
+  "formula_count": 2516,
+  "executable_cases": 411,
+  "runtime": "NOT EXECUTED: browser inventory returned no browsers/apps"
+}

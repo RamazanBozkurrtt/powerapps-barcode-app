@@ -1,0 +1,21 @@
+{
+  "repair": "PASS",
+  "user_session_id": "c559ed20-5925-40b6-abcb-3d0b7097cc1f",
+  "changed_package_entries": [
+    "Controls/15.json",
+    "packed.json"
+  ],
+  "restored_empty_children": [
+    "lblManualProductName",
+    "txtProductName",
+    "btnSearchProduct"
+  ],
+  "packed_json_change": "LastPackedDateTimeUtc only",
+  "all_other_package_entries_byte_identical": true,
+  "all_formulas_layout_theme_ocr_and_connector_data_unchanged": true,
+  "original_loader": "FAIL: NullReferenceException",
+  "repaired_loader": "PASS",
+  "sha256": "6b2e16ad7afef315f6e8a357d8df9458a5f0dfd6e24180ba861b1bbc069d08db",
+  "bytes": 158238,
+  "studio_runtime": "NOT EXECUTED; PAC document load is not a Studio/player session"
+}

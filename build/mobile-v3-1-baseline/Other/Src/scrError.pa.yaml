@@ -1,0 +1,186 @@
+Screens:
+  scrError:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+    Children:
+    - btnErrorMark:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(55, 65, 81, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(55, 65, 81, 1)
+          DisabledFill: =RGBA(255, 255, 255, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =104
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(55, 65, 81, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(55, 65, 81, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =-1
+          Text: ="!"
+          Visible: =true
+          Width: =104
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =(Parent.Height - 560) / 2 + 62
+          ZIndex: =2
+    - btnErrorCard:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(55, 65, 81, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(55, 65, 81, 1)
+          DisabledFill: =RGBA(255, 255, 255, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =560
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(55, 65, 81, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(55, 65, 81, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =-1
+          Text: =""
+          Visible: =true
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =(Parent.Height - Self.Height) / 2
+          ZIndex: =1
+    - lblErrorTitle:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(20, 27, 45, 1)
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Bold
+          Height: =52
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =23
+          Text: ="İşlem tamamlanamadı"
+          Width: =Parent.Width - 112
+          X: =56
+          Y: =(Parent.Height - 560) / 2 + 204
+    - lblErrorBody:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(91, 101, 120, 1)
+          Font: =Font.OpenSans
+          Height: =82
+          PaddingBottom: =0
+          PaddingLeft: =12
+          PaddingRight: =12
+          PaddingTop: =0
+          Size: =14
+          Text: =If(IsBlank(varErrorMessage), "Bağlantınızı kontrol edin ve ürün etiketini yeniden tarayın.", varErrorMessage)
+          VerticalAlign: =VerticalAlign.Top
+          Width: =Parent.Width - 112
+          X: =56
+          Y: =(Parent.Height - 560) / 2 + 274
+    - btnErrorRetry:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: ="Ürün etiketini yeniden tara"
+          BorderColor: =RGBA(194, 65, 12, 1)
+          BorderThickness: =1
+          Color: =RGBA(255, 255, 255, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(55, 65, 81, 1)
+          DisabledFill: =RGBA(255, 255, 255, 1)
+          DisplayMode: =DisplayMode.Edit
+          Fill: =RGBA(194, 65, 12, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =64
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(255, 255, 255, 1)
+          HoverFill: =RGBA(154, 52, 18, 1)
+          OnSelect: |-
+            =Set(varFlowCallStarted, false);
+            Navigate(scrScan, ScreenTransition.Fade)
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(255, 255, 255, 1)
+          PressedFill: =RGBA(124, 45, 18, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =0
+          Text: ="Tekrar Dene"
+          Visible: =true
+          Width: =Parent.Width - 144
+          X: =72
+          Y: =(Parent.Height - 560) / 2 + 384
+          ZIndex: =5
+    - btnErrorHome:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: ="Ana sayfaya dön"
+          BorderColor: =RGBA(194, 65, 12, 1)
+          BorderThickness: =1
+          Color: =RGBA(255, 255, 255, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(55, 65, 81, 1)
+          DisabledFill: =RGBA(255, 255, 255, 1)
+          DisplayMode: =DisplayMode.Edit
+          Fill: =RGBA(194, 65, 12, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.OpenSans
+          FontWeight: =FontWeight.Semibold
+          Height: =56
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(255, 255, 255, 1)
+          HoverFill: =RGBA(154, 52, 18, 1)
+          OnSelect: =Navigate(scrHome, ScreenTransition.Fade)
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(255, 255, 255, 1)
+          PressedFill: =RGBA(124, 45, 18, 1)
+          RadiusBottomLeft: =12
+          RadiusBottomRight: =12
+          RadiusTopLeft: =12
+          RadiusTopRight: =12
+          Size: =16
+          TabIndex: =0
+          Text: ="Ana Sayfa"
+          Visible: =true
+          Width: =Parent.Width - 144
+          X: =72
+          Y: =(Parent.Height - 560) / 2 + 464
+          ZIndex: =6

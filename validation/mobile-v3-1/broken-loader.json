@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "unpack",
+    "--msapp",
+    "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Mobile-Light-v3.msapp",
+    "--sources",
+    "C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\build\\v31-audit-izjcba2e",
+    "--layout",
+    "Experimental"
+  ],
+  "exit": 1,
+  "stdout": "The Experimental sources layout is deprecated, and will be removed in a future release. Consider explicitly specifying `--layout SourceCode` to enable the latest supported layout.\nUnpack from C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\Barkod-Uygulamasi-Mobile-Light-v3.msapp --> C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\build\\v31-audit-izjcba2e\nSorry, the app encountered a non-recoverable error and will need to terminate. The exception details have been captured and will be forwarded to the development team, if telemetry has been enabled. Session Id: 5d9e0c5f-faf9-4274-a547-132cff8c824a, Exception Type: System.NullReferenceException\nThe diagnostic logs can be found at: C:\\Users\\ramaz\\.dotnet\\tools\\.store\\microsoft.powerapps.cli.tool\\2.11.2\\microsoft.powerapps.cli.tool\\2.11.2\\tools\\net10.0\\any\\logs\\pac-log.txt\n",
+  "stderr": ""
+}

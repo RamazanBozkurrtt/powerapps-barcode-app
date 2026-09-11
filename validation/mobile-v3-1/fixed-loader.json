@@ -1,0 +1,17 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "unpack",
+    "--msapp",
+    "build/mobile-v3-children-fix.msapp",
+    "--sources",
+    "build/mobile-v3-1-fixed",
+    "--layout",
+    "Experimental",
+    "--overwrite"
+  ],
+  "exit": 1,
+  "stdout": "The Experimental sources layout is deprecated, and will be removed in a future release. Consider explicitly specifying `--layout SourceCode` to enable the latest supported layout.\nUnpack from C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\build\\mobile-v3-children-fix.msapp --> C:\\Users\\ramaz\\source\\repos\\powerapps-barcode-app\\build\\mobile-v3-1-fixed\nSorry, the app encountered a non-recoverable error and will need to terminate. The exception details have been captured and will be forwarded to the development team, if telemetry has been enabled. Session Id: a4ab8197-b97b-4111-b511-239c6e15d68f, Exception Type: System.NullReferenceException\nThe diagnostic logs can be found at: C:\\Users\\ramaz\\.dotnet\\tools\\.store\\microsoft.powerapps.cli.tool\\2.11.2\\microsoft.powerapps.cli.tool\\2.11.2\\tools\\net10.0\\any\\logs\\pac-log.txt\n",
+  "stderr": ""
+}

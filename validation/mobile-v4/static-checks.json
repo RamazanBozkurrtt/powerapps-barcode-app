@@ -1,0 +1,53 @@
+{
+  "original_behavior_formulas_unchanged": 70,
+  "references_byte_identical": true,
+  "ocr_metadata_identical": true,
+  "yaml_runtime_parity": true,
+  "control_count": 82,
+  "formula_count": 3093,
+  "executable_cases": 197,
+  "viewports": [
+    [
+      320,
+      480
+    ],
+    [
+      320,
+      568
+    ],
+    [
+      360,
+      640
+    ],
+    [
+      375,
+      667
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      412,
+      915
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      390,
+      240
+    ],
+    [
+      1024,
+      768
+    ]
+  ],
+  "physical_phone": "NOT TESTED",
+  "studio": "NOT TESTED"
+}
