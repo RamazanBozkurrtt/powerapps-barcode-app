@@ -1,0 +1,282 @@
+Screens:
+  scrError:
+    Properties:
+      Fill: =RGBA(249, 250, 251, 1)
+      Height: =App.Height
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+      Width: =App.Width
+    Children:
+    - btnErrorMark:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.'Open Sans'
+          FontWeight: =FontWeight.Semibold
+          Height: =64
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =8
+          RadiusBottomRight: =8
+          RadiusTopLeft: =8
+          RadiusTopRight: =8
+          Size: =26
+          TabIndex: =-1
+          Text: ="!"
+          Visible: =false
+          Width: =64
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =Max(16, (Parent.Height - 448) / 2)
+          ZIndex: =2
+    - btnErrorCard:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.'Open Sans'
+          FontWeight: =FontWeight.Semibold
+          Height: =560
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =8
+          RadiusBottomRight: =8
+          RadiusTopLeft: =8
+          RadiusTopRight: =8
+          Size: =16
+          TabIndex: =-1
+          Text: =""
+          Visible: =false
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =(Parent.Height - Self.Height) / 2
+          ZIndex: =1
+    - conError:
+        Control: GroupContainer@1.3.0
+        Variant: AutoLayout
+        Properties:
+          BorderThickness: =0
+          Fill: =RGBA(0, 0, 0, 0)
+          FillPortions: =0
+          Height: =Parent.Height
+          LayoutAlignItems: =LayoutAlignItems.Stretch
+          LayoutDirection: =LayoutDirection.Vertical
+          LayoutGap: =20
+          LayoutJustifyContent: =LayoutJustifyContent.Start
+          LayoutMinHeight: =0
+          LayoutMinWidth: =0
+          LayoutMode: =LayoutMode.Auto
+          LayoutOverflowX: =LayoutOverflow.Hide
+          LayoutOverflowY: =LayoutOverflow.Scroll
+          LayoutWrap: =false
+          PaddingBottom: =24
+          PaddingLeft: =20
+          PaddingRight: =20
+          PaddingTop: =Max(24, Min(120, (Parent.Height - conErrorCard.Height) / 3))
+          Visible: =true
+          Width: =Min(Parent.Width, 560)
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =0
+          ZIndex: =100
+        Children:
+        - conErrorCard:
+            Control: GroupContainer@1.3.0
+            Variant: AutoLayout
+            Properties:
+              AlignInContainer: =AlignInContainer.Stretch
+              BorderColor: =RGBA(229, 231, 235, 1)
+              BorderThickness: =1
+              Fill: =RGBA(255, 255, 255, 1)
+              FillPortions: =0
+              Height: =lblErrorTitle.Height + lblErrorBody.Height + btnErrorRetry.Height + btnErrorHome.Height +
+                Self.LayoutGap * 3 + Self.PaddingTop + Self.PaddingBottom
+              LayoutAlignItems: =LayoutAlignItems.Stretch
+              LayoutDirection: =LayoutDirection.Vertical
+              LayoutGap: =16
+              LayoutJustifyContent: =LayoutJustifyContent.Start
+              LayoutMinHeight: =0
+              LayoutMinWidth: =0
+              LayoutMode: =LayoutMode.Auto
+              LayoutOverflowX: =LayoutOverflow.Hide
+              LayoutOverflowY: =LayoutOverflow.Hide
+              LayoutWrap: =false
+              PaddingBottom: =24
+              PaddingLeft: =24
+              PaddingRight: =24
+              PaddingTop: =24
+              RadiusBottomLeft: =16
+              RadiusBottomRight: =16
+              RadiusTopLeft: =16
+              RadiusTopRight: =16
+              Visible: =true
+              Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+              X: =0
+              Y: =0
+              ZIndex: =1
+            Children:
+            - lblErrorTitle:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Left
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  Color: =RGBA(31, 41, 55, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Bold
+                  Height: =56
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =21
+                  Text: ="İşlem tamamlanamadı"
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =1
+            - lblErrorBody:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Left
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  Color: =RGBA(75, 85, 99, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  Height: =80
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =14
+                  Text: =If(IsBlank(varErrorMessage), "Bağlantınızı kontrol edin ve ürün etiketini yeniden tarayın.",
+                    varErrorMessage)
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =2
+            - btnErrorRetry:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  AccessibleLabel: ="Ürün etiketini yeniden tara"
+                  Align: =Align.Center
+                  AlignInContainer: =AlignInContainer.Stretch
+                  BorderColor: =RGBA(194, 65, 12, 1)
+                  BorderThickness: =1
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(229, 231, 235, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  DisabledFill: =RGBA(243, 244, 246, 1)
+                  DisplayMode: =DisplayMode.Edit
+                  Fill: =RGBA(194, 65, 12, 1)
+                  FillPortions: =0
+                  FocusedBorderColor: =RGBA(194, 65, 12, 1)
+                  FocusedBorderThickness: =3
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =48
+                  HoverBorderColor: =RGBA(194, 65, 12, 1)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =RGBA(154, 52, 18, 1)
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  OnSelect: |-
+                    =Set(varFlowCallStarted, false);
+                    Navigate(scrScan, ScreenTransition.Fade)
+                  PaddingLeft: =12
+                  PaddingRight: =12
+                  PressedBorderColor: =RGBA(194, 65, 12, 1)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(124, 45, 18, 1)
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                  Size: =15
+                  TabIndex: =0
+                  Text: ="Tekrar Dene"
+                  Visible: =true
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =3
+            - btnErrorHome:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  AccessibleLabel: ="Ana sayfaya dön"
+                  Align: =Align.Center
+                  AlignInContainer: =AlignInContainer.Stretch
+                  BorderColor: =RGBA(194, 65, 12, 1)
+                  BorderThickness: =1
+                  Color: =RGBA(194, 65, 12, 1)
+                  DisabledBorderColor: =RGBA(229, 231, 235, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  DisabledFill: =RGBA(243, 244, 246, 1)
+                  DisplayMode: =DisplayMode.Edit
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  FocusedBorderColor: =RGBA(194, 65, 12, 1)
+                  FocusedBorderThickness: =3
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =48
+                  HoverBorderColor: =RGBA(194, 65, 12, 1)
+                  HoverColor: =RGBA(194, 65, 12, 1)
+                  HoverFill: =RGBA(255, 247, 237, 1)
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  OnSelect: =Navigate(scrHome, ScreenTransition.Fade)
+                  PaddingLeft: =12
+                  PaddingRight: =12
+                  PressedBorderColor: =RGBA(194, 65, 12, 1)
+                  PressedColor: =RGBA(194, 65, 12, 1)
+                  PressedFill: =RGBA(255, 247, 237, 1)
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                  Size: =15
+                  TabIndex: =0
+                  Text: ="Ana Sayfa"
+                  Visible: =true
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =4

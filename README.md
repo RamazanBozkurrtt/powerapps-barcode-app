@@ -1,6 +1,20 @@
 # powerapps-barcode-app
 
-Güncel UI refactor teslimi: **[Barkod-Uygulamasi-Mobile-Light-v4.msapp](Barkod-Uygulamasi-Mobile-Light-v4.msapp)**.
+Güncel ekran kompozisyonu teslimi: **[Barkod-Uygulamasi-Mobile-Light-v5.msapp](Barkod-Uygulamasi-Mobile-Light-v5.msapp)**.
+
+Home aksiyon kartı, iki yöntemli arama formu, kompakt ürün kartları ve merkezde spinner içerir.
+V4'teki 76 davranış formülü, App tanımı, timer'lar ve veri bağlantıları korunmuştur.
+Yerel formül/paket kontrolleri başarılıdır; v5 Studio App Checker ve gerçek telefon kabulü bekler.
+
+[V5 kaynak ve komutlar](app-src-mobile-v5/README.md) ·
+[Yerleşim önizlemesi](validation/mobile-v5/preview/index.html) ·
+[Doğrulama raporu](validation/mobile-v5/REPORT.md).
+
+Önceki, font hataları giderilmiş teslim: **[Barkod-Uygulamasi-Mobile-Light-v4.msapp](Barkod-Uygulamasi-Mobile-Light-v4.msapp)**.
+
+Bu paketin Font formülleri düzeltildi: 53 `.Font` özelliği `Font.'Open Sans'` kullanır.
+UI düzeni ve iş mantığı korunmuştur. Değişen dosyalar ve doğrulama kapsamı:
+[Font düzeltme raporu](validation/font-fix/REPORT.md). Studio App Checker sonucu henüz doğrulanmadı.
 
 Turuncu/beyaz tasarım, kaydırılabilir auto-layout ekranlar, kompakt ürün kartları,
 kart içinde ambar detayları ve Türkçe sayı/rezerve gösterimi içerir. V3.1'deki

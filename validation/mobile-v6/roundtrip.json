@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "unpack",
+    "--msapp",
+    "C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\versions\\Barkod-Uygulamasi-Mobile-Light-v6.msapp",
+    "--sources",
+    "C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\build\\font-tools\\v6-roundtrip-s9fe1tzy",
+    "--layout",
+    "SourceCode"
+  ],
+  "exit": 0,
+  "stdout": "Unpack from C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\versions\\Barkod-Uygulamasi-Mobile-Light-v6.msapp --> C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\build\\font-tools\\v6-roundtrip-s9fe1tzy\nUnpacking succeeded.\n",
+  "stderr": ""
+}

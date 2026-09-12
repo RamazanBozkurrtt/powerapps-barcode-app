@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "unpack",
+    "--msapp",
+    "Barkod-Uygulamasi-Mobile-Light-v4.msapp",
+    "--sources",
+    "build/font-tools/final-sourcecode",
+    "--layout",
+    "SourceCode"
+  ],
+  "exit": 0,
+  "stdout": "Unpack from C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\Barkod-Uygulamasi-Mobile-Light-v4.msapp --> C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\build\\font-tools\\final-sourcecode\nUnpacking succeeded.\n",
+  "stderr": ""
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "unpack",
+    "--msapp",
+    "C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\versions\\Barkod-Uygulamasi-Mobile-Light-v6.msapp",
+    "--sources",
+    "C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\build\\font-tools\\v6-loader-bnerw9ks",
+    "--layout",
+    "Experimental"
+  ],
+  "exit": 0,
+  "stdout": "The Experimental sources layout is deprecated, and will be removed in a future release. Consider explicitly specifying `--layout SourceCode` to enable the latest supported layout.\nUnpack from C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\versions\\Barkod-Uygulamasi-Mobile-Light-v6.msapp --> C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\build\\font-tools\\v6-loader-bnerw9ks\n  source format version: 0.30\n",
+  "stderr": ""
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "formula_count": 3636,
+  "executable_checks": 229,
+  "original_behavior_formulas_unchanged": 76,
+  "app_and_timers_identical": true,
+  "control_reference_checks": 699,
+  "invalid_font_identifiers": 0,
+  "yaml_runtime_parity": true,
+  "backend_references_byte_identical": true,
+  "studio_app_checker": "NOT RUN",
+  "physical_phone": "NOT TESTED"
+}

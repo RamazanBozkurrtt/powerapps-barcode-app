@@ -1,0 +1,429 @@
+Screens:
+  scrHome:
+    Properties:
+      Fill: =RGBA(249, 250, 251, 1)
+      Height: =App.Height
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+      Width: =App.Width
+    Children:
+    - shpHomeTopGlow:
+        Control: Rectangle@2.3.0
+        Properties:
+          Fill: =RGBA(255, 255, 255, 1)
+          Height: =220
+          Visible: =false
+          Width: =Parent.Width
+    - btnHomeHeroCard:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.'Open Sans'
+          FontWeight: =FontWeight.Semibold
+          Height: =440
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =8
+          RadiusBottomRight: =8
+          RadiusTopLeft: =8
+          RadiusTopRight: =8
+          Size: =16
+          TabIndex: =-1
+          Text: =""
+          Visible: =false
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =218
+          ZIndex: =4
+    - btnHomeScanMark:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.'Open Sans'
+          FontWeight: =FontWeight.Semibold
+          Height: =112
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =8
+          RadiusBottomRight: =8
+          RadiusTopLeft: =8
+          RadiusTopRight: =8
+          Size: =16
+          TabIndex: =-1
+          Text: ="⌗"
+          Visible: =false
+          Width: =112
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =270
+          ZIndex: =5
+    - lblHomeCardHint:
+        Control: Label@2.5.1
+        Properties:
+          Align: =Align.Center
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          Fill: =RGBA(0, 0, 0, 0)
+          Font: =Font.'Open Sans'
+          FontWeight: =FontWeight.Semibold
+          Height: =46
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =14
+          Text: ="HIZLI  •  GÜVENLİ  •  MOBİL"
+          Visible: =false
+          Width: =Parent.Width - 176
+          X: =88
+          Y: =570
+    - conHome:
+        Control: GroupContainer@1.3.0
+        Variant: AutoLayout
+        Properties:
+          BorderThickness: =0
+          Fill: =RGBA(0, 0, 0, 0)
+          FillPortions: =0
+          Height: =Parent.Height
+          LayoutAlignItems: =LayoutAlignItems.Stretch
+          LayoutDirection: =LayoutDirection.Vertical
+          LayoutGap: =24
+          LayoutJustifyContent: =LayoutJustifyContent.Start
+          LayoutMinHeight: =0
+          LayoutMinWidth: =0
+          LayoutMode: =LayoutMode.Auto
+          LayoutOverflowX: =LayoutOverflow.Hide
+          LayoutOverflowY: =LayoutOverflow.Scroll
+          LayoutWrap: =false
+          PaddingBottom: =24
+          PaddingLeft: =20
+          PaddingRight: =20
+          PaddingTop: =Max(24, Min(88, (Parent.Height - conHomeIntro.Height - conHomeAction.Height - lblHomeFooter.Height
+            - 72) / 3))
+          Visible: =true
+          Width: =Min(Parent.Width, 560)
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =0
+          ZIndex: =100
+        Children:
+        - conHomeIntro:
+            Control: GroupContainer@1.3.0
+            Variant: AutoLayout
+            Properties:
+              AlignInContainer: =AlignInContainer.Stretch
+              BorderThickness: =0
+              Fill: =RGBA(0, 0, 0, 0)
+              FillPortions: =0
+              Height: =lblHomeEyebrow.Height + lblHomeTitle.Height + lblHomeCardBody.Height + Self.LayoutGap * 2
+                + Self.PaddingTop + Self.PaddingBottom
+              LayoutAlignItems: =LayoutAlignItems.Stretch
+              LayoutDirection: =LayoutDirection.Vertical
+              LayoutGap: =12
+              LayoutJustifyContent: =LayoutJustifyContent.Start
+              LayoutMinHeight: =0
+              LayoutMinWidth: =0
+              LayoutMode: =LayoutMode.Auto
+              LayoutOverflowX: =LayoutOverflow.Hide
+              LayoutOverflowY: =LayoutOverflow.Hide
+              LayoutWrap: =false
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Visible: =true
+              Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+              X: =0
+              Y: =0
+              ZIndex: =1
+            Children:
+            - lblHomeEyebrow:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Left
+                  AlignInContainer: =AlignInContainer.Stretch
+                  Color: =RGBA(194, 65, 12, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =24
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =13
+                  Text: ="STOK ASİSTANI"
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =1
+            - lblHomeTitle:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Left
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  Color: =RGBA(31, 41, 55, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Bold
+                  Height: =96
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =If(App.Width < 360, 26, 28)
+                  Text: ="Ürünü bulun." & Char(10) & "Stokları görün."
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =2
+            - lblHomeCardBody:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Left
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  Color: =RGBA(75, 85, 99, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  Height: =80
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =15
+                  Text: ="Depolardaki stok durumunu ürün etiketi, ürün adı veya ürün koduyla hızlıca sorgulayın."
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =3
+        - conHomeAction:
+            Control: GroupContainer@1.3.0
+            Variant: AutoLayout
+            Properties:
+              AlignInContainer: =AlignInContainer.Stretch
+              BorderColor: =RGBA(229, 231, 235, 1)
+              BorderThickness: =1
+              Fill: =RGBA(255, 255, 255, 1)
+              FillPortions: =0
+              Height: =lblHomeCardTitle.Height + lblHomeActionBody.Height + btnScan.Height + Self.LayoutGap * 2
+                + Self.PaddingTop + Self.PaddingBottom
+              LayoutAlignItems: =LayoutAlignItems.Stretch
+              LayoutDirection: =LayoutDirection.Vertical
+              LayoutGap: =12
+              LayoutJustifyContent: =LayoutJustifyContent.Start
+              LayoutMinHeight: =0
+              LayoutMinWidth: =0
+              LayoutMode: =LayoutMode.Auto
+              LayoutOverflowX: =LayoutOverflow.Hide
+              LayoutOverflowY: =LayoutOverflow.Hide
+              LayoutWrap: =false
+              PaddingBottom: =20
+              PaddingLeft: =20
+              PaddingRight: =20
+              PaddingTop: =20
+              RadiusBottomLeft: =16
+              RadiusBottomRight: =16
+              RadiusTopLeft: =16
+              RadiusTopRight: =16
+              Visible: =true
+              Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+              X: =0
+              Y: =0
+              ZIndex: =2
+            Children:
+            - lblHomeCardTitle:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Left
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  Color: =RGBA(31, 41, 55, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =32
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =18
+                  Text: ="Ürün arayın"
+                  Visible: =true
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =1
+            - lblHomeActionBody:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Left
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  BorderColor: =App.Theme.Colors.Darker40
+                  BorderStyle: =BorderStyle.Solid
+                  BorderThickness: =0
+                  Color: =RGBA(75, 85, 99, 1)
+                  ContentLanguage: =""
+                  DisabledBorderColor: =RGBA(56, 56, 56, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  DisabledFill: =RGBA(0, 0, 0, 0)
+                  DisplayMode: =DisplayMode.Edit
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  FocusedBorderColor: =Self.BorderColor
+                  FocusedBorderThickness: =0
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Normal
+                  Height: =52
+                  HoverBorderColor: =Self.BorderColor
+                  HoverColor: =Self.Color
+                  HoverFill: =Self.Fill
+                  IsErrorMessage: =false
+                  Italic: =false
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  LineHeight: =1.2
+                  Live: =Live.Off
+                  OnSelect: =false
+                  Overflow: =Overflow.Hidden
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PressedBorderColor: =Self.BorderColor
+                  PressedColor: =Self.Color
+                  PressedFill: =Self.Fill
+                  Role: =TextRole.Default
+                  Size: =14
+                  Strikethrough: =false
+                  TabIndex: =-1
+                  Text: ="Etiketi fotoğraflayın veya ürün bilgilerini yazarak başlayın."
+                  Tooltip: =""
+                  Underline: =false
+                  VerticalAlign: =VerticalAlign.Top
+                  Visible: =true
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  Wrap: =true
+                  X: =0
+                  Y: =0
+                  ZIndex: =2
+                  maximumHeight: =7680
+                  maximumWidth: =1366
+                  minimumHeight: =1
+                  minimumWidth: =1
+            - btnScan:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  AccessibleLabel: ="Ürün etiketini taramaya başla"
+                  Align: =Align.Center
+                  AlignInContainer: =AlignInContainer.Stretch
+                  BorderColor: =RGBA(194, 65, 12, 1)
+                  BorderThickness: =1
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(229, 231, 235, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  DisabledFill: =RGBA(243, 244, 246, 1)
+                  DisplayMode: =DisplayMode.Edit
+                  Fill: =RGBA(194, 65, 12, 1)
+                  FillPortions: =0
+                  FocusedBorderColor: =RGBA(194, 65, 12, 1)
+                  FocusedBorderThickness: =3
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =52
+                  HoverBorderColor: =RGBA(194, 65, 12, 1)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =RGBA(154, 52, 18, 1)
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  OnSelect: |-
+                    =Set(varFlowCallStarted, false);
+                    Navigate(scrScan, ScreenTransition.Fade)
+                  PaddingLeft: =12
+                  PaddingRight: =12
+                  PressedBorderColor: =RGBA(194, 65, 12, 1)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(124, 45, 18, 1)
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                  Size: =16
+                  TabIndex: =0
+                  Text: ="Ürün ara"
+                  Visible: =true
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =3
+        - lblHomeFooter:
+            Control: Label@2.5.1
+            Properties:
+              Align: =Align.Left
+              AlignInContainer: =AlignInContainer.Stretch
+              AutoHeight: =true
+              Color: =RGBA(75, 85, 99, 1)
+              DisabledColor: =RGBA(75, 85, 99, 1)
+              Fill: =RGBA(0, 0, 0, 0)
+              FillPortions: =0
+              Font: =Font.'Open Sans'
+              Height: =48
+              LayoutMinHeight: =0
+              LayoutMinWidth: =0
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Size: =13
+              Text: ="Kullanılabilir ve rezerve stokları tek ekranda görüntüleyin."
+              Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+              X: =0
+              Y: =0
+              ZIndex: =3

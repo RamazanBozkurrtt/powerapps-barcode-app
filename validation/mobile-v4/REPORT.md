@@ -1,5 +1,8 @@
 # Mobile Light v4 — UI/UX refactor
 
+Bu rapor ilk UI refactor doğrulamasını kaydeder. Sonraki yalnızca Font formülü
+düzeltmesi, güncel paket özeti ve App Checker sınırı için [Font raporuna](../font-fix/REPORT.md) bakın.
+
 Teslim: [v4 .msapp](../../Barkod-Uygulamasi-Mobile-Light-v4.msapp).
 Kaynak: [app-src-mobile-v4](../../app-src-mobile-v4/README.md).
 

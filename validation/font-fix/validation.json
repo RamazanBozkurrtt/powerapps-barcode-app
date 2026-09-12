@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "package_sha256": "609ccadfd0de010f92228e6bb46a9709060a2ceca6af055d3b77d7a2e78ca579",
+  "pack_exit": 0,
+  "sourcecode_unpack_exit": 0,
+  "experimental_unpack_exit": 0,
+  "experimental_evidence": "unpack-experimental-final.txt",
+  "package_snapshot_roundtrip_byte_identical": true,
+  "repack_non_yaml_payloads_byte_identical": true,
+  "repack_yaml_line_endings_only": [
+    "Src/App.pa.yaml",
+    "Src/scrError.pa.yaml",
+    "Src/scrHome.pa.yaml",
+    "Src/scrResults.pa.yaml",
+    "Src/scrScan.pa.yaml",
+    "Src/_EditorState.pa.yaml"
+  ],
+  "repack_metadata_only": [
+    "packed.json"
+  ],
+  "font_formulas_changed_by_pac": false,
+  "parse_formulas": 3093,
+  "parse_errors": 0,
+  "executable_checks": 197,
+  "executable_failures": 0,
+  "studio_app_checker": "NOT RUN"
+}

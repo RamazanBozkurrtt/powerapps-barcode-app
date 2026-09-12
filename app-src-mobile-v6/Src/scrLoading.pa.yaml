@@ -1,0 +1,436 @@
+Screens:
+  scrLoading:
+    Properties:
+      Fill: =RGBA(249, 250, 251, 1)
+      Height: =App.Height
+      LoadingSpinner: =LoadingSpinner.Controls
+      LoadingSpinnerColor: =RGBA(194, 65, 12, 1)
+      OnVisible: =false
+      Width: =App.Width
+    Children:
+    - btnLoadingHalo:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.'Open Sans'
+          FontWeight: =FontWeight.Semibold
+          Height: =72
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =8
+          RadiusBottomRight: =8
+          RadiusTopLeft: =8
+          RadiusTopRight: =8
+          Size: =24
+          TabIndex: =-1
+          Text: ="•••"
+          Visible: =false
+          Width: =72
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =Max(24, (Parent.Height - 330) / 2)
+          ZIndex: =2
+    - tmrLoadingFlow:
+        Control: Timer@2.1.0
+        Properties:
+          AutoPause: =true
+          AutoStart: =false
+          Duration: =250
+          Font: =Font.'Open Sans'
+          OnTimerEnd: |-
+            =If(
+                App.ActiveScreen = scrLoading && varScanAccepted && !IsBlank(varAcceptedText) && !varFlowCallStarted && !varLoadingExecutionStarted,
+                Set(varLoadingExecutionStarted, true);
+                Set(varFlowCallStarted, true);
+                IfError(
+                    Set(varFlowResponse, barcode_flow.Run(varAcceptedText));
+                    Set(varResultJson, varFlowResponse.result_json);
+                    IfError(
+                        ClearCollect(
+                            colParsedRows,
+                            ForAll(
+                                Table(ParseJSON(varResultJson)) As row,
+                                {
+                                    ItemNumber: Text(row.Value.ItemNumber),
+                                    ProductName: Text(row.Value.ProductName),
+                                    InventoryWarehouseId: Text(row.Value.InventoryWarehouseId),
+                                    AvailableOnHandQuantity: Coalesce(
+                                        IfError(
+                                            Value(row.Value.AvailableOnHandQuantity),
+                                            Blank()
+                                        ),
+                                        0
+                                    ),
+                                    ReservedOnHandQuantity: Coalesce(
+                                        IfError(
+                                            Value(row.Value.ReservedOnHandQuantity),
+                                            Blank()
+                                        ),
+                                        0
+                                    )
+                                }
+                            )
+                        );
+                        ClearCollect(
+                            colProductGroups,
+                            AddColumns(
+                                GroupBy(
+                                    colParsedRows,
+                                    ItemNumber,
+                                    WarehouseRows
+                                ) As ProductGroup,
+                                ProductName,
+                                First(ProductGroup.WarehouseRows).ProductName,
+                                HasNameConflict,
+                                CountRows(
+                                    Distinct(
+                                        ProductGroup.WarehouseRows,
+                                        ProductName
+                                    )
+                                ) > 1
+                            )
+                        );
+                        Navigate(scrResults, ScreenTransition.Fade),
+                        Set(varErrorMessage, "Stok verisi işlenirken bir hata oluştu.");
+                        Navigate(scrError, ScreenTransition.Fade)
+                    ),
+                    Set(varErrorMessage, "Stok bilgileri alınırken bir bağlantı hatası oluştu.");
+                    Navigate(scrError, ScreenTransition.Fade)
+                )
+            )
+          Repeat: =false
+          Reset: =App.ActiveScreen <> scrLoading
+          Start: =App.ActiveScreen = scrLoading && varScanAccepted && !IsBlank(varAcceptedText) && !varFlowCallStarted
+            && !varLoadingExecutionStarted
+          Visible: =false
+    - btnLoadingCard:
+        Control: Classic/Button@2.2.0
+        Properties:
+          AccessibleLabel: =""
+          BorderColor: =RGBA(229, 231, 235, 1)
+          BorderThickness: =1
+          Color: =RGBA(31, 41, 55, 1)
+          DisabledBorderColor: =RGBA(229, 231, 235, 1)
+          DisabledColor: =RGBA(75, 85, 99, 1)
+          DisabledFill: =RGBA(243, 244, 246, 1)
+          DisplayMode: =DisplayMode.Disabled
+          Fill: =RGBA(255, 255, 255, 1)
+          FocusedBorderColor: =RGBA(194, 65, 12, 1)
+          FocusedBorderThickness: =3
+          Font: =Font.'Open Sans'
+          FontWeight: =FontWeight.Semibold
+          Height: =520
+          HoverBorderColor: =RGBA(194, 65, 12, 1)
+          HoverColor: =RGBA(31, 41, 55, 1)
+          HoverFill: =RGBA(255, 247, 237, 1)
+          OnSelect: =false
+          PressedBorderColor: =RGBA(194, 65, 12, 1)
+          PressedColor: =RGBA(31, 41, 55, 1)
+          PressedFill: =RGBA(255, 247, 237, 1)
+          RadiusBottomLeft: =8
+          RadiusBottomRight: =8
+          RadiusTopLeft: =8
+          RadiusTopRight: =8
+          Size: =16
+          TabIndex: =-1
+          Text: =""
+          Visible: =false
+          Width: =Parent.Width - 64
+          X: =32
+          Y: =(Parent.Height - Self.Height) / 2
+          ZIndex: =1
+    - conLoading:
+        Control: GroupContainer@1.3.0
+        Variant: AutoLayout
+        Properties:
+          BorderThickness: =0
+          Fill: =RGBA(0, 0, 0, 0)
+          FillPortions: =0
+          Height: =Parent.Height
+          LayoutAlignItems: =LayoutAlignItems.Stretch
+          LayoutDirection: =LayoutDirection.Vertical
+          LayoutGap: =0
+          LayoutJustifyContent: =LayoutJustifyContent.Start
+          LayoutMinHeight: =0
+          LayoutMinWidth: =0
+          LayoutMode: =LayoutMode.Auto
+          LayoutOverflowX: =LayoutOverflow.Hide
+          LayoutOverflowY: =LayoutOverflow.Scroll
+          LayoutWrap: =false
+          PaddingBottom: =24
+          PaddingLeft: =20
+          PaddingRight: =20
+          PaddingTop: =Max(24, (Parent.Height - conLoadingCard.Height) / 2)
+          Visible: =true
+          Width: =Min(Parent.Width, 560)
+          X: =(Parent.Width - Self.Width) / 2
+          Y: =0
+          ZIndex: =100
+        Children:
+        - conLoadingCard:
+            Control: GroupContainer@1.3.0
+            Variant: AutoLayout
+            Properties:
+              AlignInContainer: =AlignInContainer.Stretch
+              BorderColor: =RGBA(229, 231, 235, 1)
+              BorderThickness: =1
+              Fill: =RGBA(255, 255, 255, 1)
+              FillPortions: =0
+              Height: =imgLoadingSpinner.Height + lblLoadingTitle.Height + lblLoadingBody.Height + lblLoadingProduct.Height
+                + Self.LayoutGap * 3 + Self.PaddingTop + Self.PaddingBottom
+              LayoutAlignItems: =LayoutAlignItems.Stretch
+              LayoutDirection: =LayoutDirection.Vertical
+              LayoutGap: =16
+              LayoutJustifyContent: =LayoutJustifyContent.Start
+              LayoutMinHeight: =0
+              LayoutMinWidth: =0
+              LayoutMode: =LayoutMode.Auto
+              LayoutOverflowX: =LayoutOverflow.Hide
+              LayoutOverflowY: =LayoutOverflow.Hide
+              LayoutWrap: =false
+              PaddingBottom: =24
+              PaddingLeft: =24
+              PaddingRight: =24
+              PaddingTop: =24
+              RadiusBottomLeft: =16
+              RadiusBottomRight: =16
+              RadiusTopLeft: =16
+              RadiusTopRight: =16
+              Visible: =true
+              Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+              X: =0
+              Y: =0
+              ZIndex: =1
+            Children:
+            - imgLoadingSpinner:
+                Control: Image@2.2.0
+                Properties:
+                  AccessibleLabel: ="Stok sorgulanıyor"
+                  AlignInContainer: =AlignInContainer.Center
+                  FillPortions: =0
+                  Height: =48
+                  Image: ="data:image/svg+xml;utf8," & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0
+                    0 48 48'><circle cx='24' cy='24' r='19' fill='none' stroke='#F3E8DF' stroke-width='4'/><path
+                    d='M24 5a19 19 0 0 1 19 19' fill='none' stroke='#C2410C' stroke-width='4' stroke-linecap='round'
+                    transform='rotate(" & Text(tmrLoadingVisual.Value * 360 / tmrLoadingVisual.Duration, "0", "en-US")
+                    & " 24 24)'/></svg>")
+                  ImagePosition: =ImagePosition.Fit
+                  LayoutMinHeight: =48
+                  LayoutMinWidth: =48
+                  OnSelect: =false
+                  TabIndex: =-1
+                  Visible: =true
+                  Width: =48
+                  X: =0
+                  Y: =0
+                  ZIndex: =1
+            - lblLoadingTitle:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  Color: =RGBA(31, 41, 55, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =56
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  Live: =Live.Polite
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =19
+                  Text: ="Stok bilgileri hazırlanıyor"
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =2
+            - lblLoadingBody:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  Color: =RGBA(75, 85, 99, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  Height: =24
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =13
+                  Text: ="Aranan ürün"
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =3
+            - lblLoadingProduct:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  Color: =RGBA(31, 41, 55, 1)
+                  DisabledColor: =RGBA(75, 85, 99, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  FillPortions: =0
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =48
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =12
+                  PaddingRight: =12
+                  PaddingTop: =0
+                  Size: =20
+                  Text: =varAcceptedText
+                  Visible: =!IsBlank(varAcceptedText)
+                  Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                  X: =0
+                  Y: =0
+                  ZIndex: =4
+    - tmrLoadingVisual:
+        Properties:
+          Align: =Align.Center
+          AutoPause: =true
+          AutoStart: =false
+          BorderColor: =App.Theme.Colors.Primary
+          BorderStyle: =BorderStyle.Solid
+          BorderThickness: =2
+          Color: =App.Theme.Colors.PrimaryForeground
+          ContentLanguage: =""
+          DisabledBorderColor: =RGBA(244, 244, 244, 1)
+          DisabledColor: =RGBA(166, 166, 166, 1)
+          DisabledFill: =RGBA(244, 244, 244, 1)
+          DisplayMode: =DisplayMode.Edit
+          Duration: =1600
+          Fill: =App.Theme.Colors.Primary
+          FocusedBorderColor: =Self.BorderColor
+          FocusedBorderThickness: =4
+          Font: =Font.'Open Sans'
+          FontWeight: =FontWeight.Normal
+          Height: =70
+          HoverBorderColor: =App.Theme.Colors.Darker10
+          HoverColor: =App.Theme.Colors.PrimaryForeground
+          HoverFill: =App.Theme.Colors.Darker10
+          Italic: =false
+          OnSelect: =false
+          OnTimerEnd: =false
+          OnTimerStart: =false
+          PaddingBottom: =5
+          PaddingLeft: =5
+          PaddingRight: =5
+          PaddingTop: =5
+          PressedBorderColor: =App.Theme.Colors.Darker40
+          PressedColor: =Self.Color
+          PressedFill: =App.Theme.Colors.Darker40
+          RadiusBottomLeft: =10
+          RadiusBottomRight: =10
+          RadiusTopLeft: =10
+          RadiusTopRight: =10
+          Repeat: =true
+          Reset: =App.ActiveScreen <> scrLoading
+          Size: =13
+          Start: =App.ActiveScreen = scrLoading
+          Strikethrough: =false
+          TabIndex: =0
+          Text: =Text(Time(0, 0, Self.Value/1000), "hh:mm:ss")
+          Tooltip: =""
+          Underline: =false
+          VerticalAlign: =VerticalAlign.Middle
+          Visible: =false
+          Width: =280
+          X: =0
+          Y: =0
+          ZIndex: =6
+          maximumHeight: =768
+          maximumWidth: =1366
+          minimumHeight: =5
+          minimumWidth: =5
+    - conLoadingProgress:
+        Control: GroupContainer@1.3.0
+        Variant: AutoLayout
+        Properties:
+          AlignInContainer: =AlignInContainer.Stretch
+          BorderThickness: =0
+          Fill: =RGBA(229, 231, 235, 1)
+          FillPortions: =0
+          Height: =0
+          LayoutAlignItems: =LayoutAlignItems.Stretch
+          LayoutDirection: =LayoutDirection.Horizontal
+          LayoutGap: =8
+          LayoutJustifyContent: =LayoutJustifyContent.Start
+          LayoutMinHeight: =0
+          LayoutMinWidth: =0
+          LayoutMode: =LayoutMode.Auto
+          LayoutOverflowX: =LayoutOverflow.Hide
+          LayoutOverflowY: =LayoutOverflow.Hide
+          LayoutWrap: =false
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Visible: =false
+          Width: =0
+          X: =0
+          Y: =0
+          ZIndex: =1
+        Children:
+        - shpLoadingProgress:
+            Control: Rectangle@2.3.0
+            Properties:
+              AccessibleLabel: =""
+              BorderColor: =App.Theme.Colors.Darker40
+              BorderStyle: =BorderStyle.Solid
+              BorderThickness: =0
+              ContentLanguage: =""
+              DisabledFill: =Self.Fill
+              DisplayMode: =DisplayMode.Edit
+              Fill: =RGBA(194, 65, 12, 1)
+              FillPortions: =0
+              FocusedBorderColor: =Self.BorderColor
+              FocusedBorderThickness: =2
+              Height: =4
+              HoverFill: =Self.Fill
+              LayoutMinHeight: =0
+              LayoutMinWidth: =0
+              OnSelect: =false
+              PreserveAspectRatio: =false
+              PressedFill: =Self.Fill
+              TabIndex: =-1
+              Tooltip: =""
+              Visible: =true
+              Width: =Max(24, Parent.Width * tmrLoadingVisual.Value / tmrLoadingVisual.Duration)
+              X: =0
+              Y: =0
+              ZIndex: =1
+              maximumHeight: =768
+              maximumWidth: =1366
+              minimumHeight: =1
+              minimumWidth: =1

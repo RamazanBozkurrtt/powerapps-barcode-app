@@ -1,0 +1,324 @@
+{
+  "status": "PASS",
+  "baseline_revision": "5be43d545607106f49ac424f3dc42a08d882bc82",
+  "package": "Barkod-Uygulamasi-Mobile-Light-v4.msapp",
+  "sha256": "609ccadfd0de010f92228e6bb46a9709060a2ceca6af055d3b77d7a2e78ca579",
+  "sources": {
+    "app-src": {
+      "invalid_yaml_before": 0,
+      "invalid_after": 0,
+      "yaml_font_count": 0,
+      "runtime_font_count": 45,
+      "runtime_fonts": {
+        "App.Theme.Font": 29,
+        "\"\"": 16
+      }
+    },
+    "app-src-mobile-v3": {
+      "invalid_yaml_before": 49,
+      "invalid_after": 0,
+      "yaml_font_count": 49,
+      "runtime_font_count": 50,
+      "runtime_fonts": {
+        "Font.'Open Sans'": 49,
+        "App.Theme.Font": 1
+      }
+    },
+    "app-src-mobile-v3-1": {
+      "invalid_yaml_before": 49,
+      "invalid_after": 0,
+      "yaml_font_count": 49,
+      "runtime_font_count": 50,
+      "runtime_fonts": {
+        "Font.'Open Sans'": 49,
+        "App.Theme.Font": 1
+      }
+    },
+    "app-src-mobile-v4": {
+      "invalid_yaml_before": 51,
+      "invalid_after": 0,
+      "yaml_font_count": 53,
+      "runtime_font_count": 53,
+      "runtime_fonts": {
+        "Font.'Open Sans'": 53
+      }
+    },
+    "app-src-phase3": {
+      "invalid_yaml_before": 0,
+      "invalid_after": 0,
+      "yaml_font_count": 0,
+      "runtime_font_count": 47,
+      "runtime_fonts": {
+        "App.Theme.Font": 31,
+        "\"\"": 16
+      }
+    },
+    "app-src-phase3-v2": {
+      "invalid_yaml_before": 46,
+      "invalid_after": 0,
+      "yaml_font_count": 46,
+      "runtime_font_count": 47,
+      "runtime_fonts": {
+        "Font.'Open Sans'": 46,
+        "App.Theme.Font": 1
+      }
+    }
+  },
+  "font_changes": {
+    "btnHomeHeroCard.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnHomeScanMark.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblHomeCardTitle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblHomeCardHint.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblHomeEyebrow.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblHomeTitle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblHomeCardBody.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnScan.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblHomeFooter.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblScanGuideCaption.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnScanSurface.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnScanEmptyCard.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblScanEmptyTitle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblScanEmptyBody.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnScanBack.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblScanTitle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblScanInstruction.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblManualProductName.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "txtProductName.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnSearchProduct.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblScanHint.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnLoadingHalo.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "tmrLoadingFlow.Font": {
+      "before": "App.Theme.Font",
+      "after": "Font.'Open Sans'"
+    },
+    "btnLoadingCard.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblLoadingTitle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblLoadingBody.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblLoadingProduct.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "tmrLoadingVisual.Font": {
+      "before": "App.Theme.Font",
+      "after": "Font.'Open Sans'"
+    },
+    "lblResultsEyebrow.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnResultsEmptyCard.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnResultsEmptyMark.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblResultsTitle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnResultsScanAgain.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblResultsCount.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnProductCard.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblProductName.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblProductNumber.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblProductConflict.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblProductChevron.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnProductToggle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblWarehouseName.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblWarehouseAvailable.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblWarehouseReserved.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblWarehouseHeading.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblAvailableHeading.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblResultsEmptyTitle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblResultsEmptyBody.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnErrorMark.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnErrorCard.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblErrorTitle.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "lblErrorBody.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnErrorRetry.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    },
+    "btnErrorHome.Font": {
+      "before": "Font.OpenSans",
+      "after": "Font.'Open Sans'"
+    }
+  },
+  "all_non_font_properties_unchanged": true,
+  "other_package_entries_byte_identical": true,
+  "yaml_snapshot_package_parity": true,
+  "changed_source_and_package_files": [
+    "app-src-mobile-v3/Src/scrError.pa.yaml",
+    "app-src-mobile-v3/Src/scrHome.pa.yaml",
+    "app-src-mobile-v3/Src/scrLoading.pa.yaml",
+    "app-src-mobile-v3/Src/scrResults.pa.yaml",
+    "app-src-mobile-v3/Src/scrScan.pa.yaml",
+    "app-src-mobile-v3/Barkod-Uygulamasi-Phase2-FIXED-v2.msapr",
+    "app-src-mobile-v3-1/Src/scrError.pa.yaml",
+    "app-src-mobile-v3-1/Src/scrHome.pa.yaml",
+    "app-src-mobile-v3-1/Src/scrLoading.pa.yaml",
+    "app-src-mobile-v3-1/Src/scrResults.pa.yaml",
+    "app-src-mobile-v3-1/Src/scrScan.pa.yaml",
+    "app-src-mobile-v3-1/Barkod-Uygulamasi-Phase2-FIXED-v2.msapr",
+    "app-src-mobile-v4/Src/scrError.pa.yaml",
+    "app-src-mobile-v4/Src/scrHome.pa.yaml",
+    "app-src-mobile-v4/Src/scrLoading.pa.yaml",
+    "app-src-mobile-v4/Src/scrResults.pa.yaml",
+    "app-src-mobile-v4/Src/scrScan.pa.yaml",
+    "app-src-mobile-v4/Barkod-Uygulamasi-Phase2-FIXED-v2.msapr",
+    "app-src-phase3-v2/Src/scrError.pa.yaml",
+    "app-src-phase3-v2/Src/scrHome.pa.yaml",
+    "app-src-phase3-v2/Src/scrLoading.pa.yaml",
+    "app-src-phase3-v2/Src/scrResults.pa.yaml",
+    "app-src-phase3-v2/Src/scrScan.pa.yaml",
+    "app-src-phase3-v2/Barkod-Uygulamasi-Phase2-FIXED-v2.msapr",
+    "Barkod-Uygulamasi-Mobile-Light-v4.msapp"
+  ],
+  "changed_package_entries": [
+    "Controls/4.json",
+    "Controls/15.json",
+    "Controls/31.json",
+    "Controls/38.json",
+    "Controls/60.json",
+    "Src/scrError.pa.yaml",
+    "Src/scrHome.pa.yaml",
+    "Src/scrLoading.pa.yaml",
+    "Src/scrResults.pa.yaml",
+    "Src/scrScan.pa.yaml"
+  ],
+  "studio_app_checker": "NOT RUN: no connected Power Apps Studio session"
+}

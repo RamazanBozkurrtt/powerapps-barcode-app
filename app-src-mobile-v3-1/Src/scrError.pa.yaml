@@ -20,7 +20,7 @@ Screens:
           Fill: =RGBA(255, 255, 255, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =64
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -56,7 +56,7 @@ Screens:
           Fill: =RGBA(255, 255, 255, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =560
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -84,7 +84,7 @@ Screens:
           Align: =Align.Center
           Color: =RGBA(31, 41, 55, 1)
           DisabledColor: =RGBA(75, 85, 99, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Bold
           Height: =60
           PaddingBottom: =0
@@ -102,7 +102,7 @@ Screens:
           Align: =Align.Center
           Color: =RGBA(31, 41, 55, 1)
           DisabledColor: =RGBA(75, 85, 99, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           Height: =120
           PaddingBottom: =0
           PaddingLeft: =12
@@ -128,7 +128,7 @@ Screens:
           Fill: =RGBA(194, 65, 12, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =48
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -166,7 +166,7 @@ Screens:
           Fill: =RGBA(194, 65, 12, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =48
           HoverBorderColor: =RGBA(194, 65, 12, 1)

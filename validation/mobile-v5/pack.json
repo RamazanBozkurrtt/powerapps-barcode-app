@@ -1,0 +1,18 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "pack",
+    "--sources",
+    "C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\app-src-mobile-v5",
+    "--msapp",
+    "C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\Barkod-Uygulamasi-Mobile-Light-v5.msapp",
+    "--layout",
+    "SourceCode",
+    "--disable-load-from-yaml",
+    "--overwrite"
+  ],
+  "exit": 0,
+  "stdout": "Pack from C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\app-src-mobile-v5 --> C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\Barkod-Uygulamasi-Mobile-Light-v5.msapp\nPacking succeeded.\n",
+  "stderr": ""
+}

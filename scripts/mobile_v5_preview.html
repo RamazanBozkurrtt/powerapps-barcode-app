@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stok Asistanı — v5 yerleşim önizlemesi</title>
+<style>
+@font-face{font-family:Open Sans;src:url(OpenSans.ttf)}
+*{box-sizing:border-box}body{margin:0;background:#e8eaed;color:#1f2937;font:14px 'Open Sans',sans-serif}
+aside{padding:20px;max-width:1000px;margin:auto}aside p{margin:8px 0;color:#4b5563}select,aside button{padding:8px;margin:4px;border:1px solid #cbd0d8;border-radius:6px;background:white}
+#phone{position:relative;margin:12px auto 36px;background:#f9fafb;overflow:hidden;box-shadow:0 10px 32px #0002}
+.control{position:absolute;white-space:pre-wrap;overflow:hidden;font-family:'Open Sans',sans-serif;line-height:1.3;border-style:solid}
+.control button,.control input{font:inherit}.action{cursor:pointer}.label{display:flex;flex-direction:column}.surface{border-style:solid}.field{outline:none}.field:focus{border-color:#c2410c!important;box-shadow:0 0 0 1px #c2410c}.action:focus-visible{outline:2px solid #c2410c;outline-offset:-3px}
+#measure{position:absolute;visibility:hidden;white-space:pre-wrap;line-height:1.3;font-family:'Open Sans';height:auto;left:-9999px}
+</style>
+<aside><strong>V5 ekran kompozisyonu</strong><p>Uygulama paketindeki kontrol ağacı ve görsel formüllerden üretilen yerleşim simülasyonu. Power Apps Studio veya gerçek telefon kaydı değildir. Veriler örnektir; OCR ve Flow çalıştırılmaz.</p>
+<select id="screen"><option value="scrHome">Home</option><option value="scrScan">Ürün ara</option><option value="scrResults">Sonuçlar</option><option value="scrLoading">Yükleniyor</option><option value="scrError">Hata</option></select>
+<select id="viewport"><option>390×844</option><option>320×568</option><option>360×640</option><option>430×932</option><option>844×390</option><option>390×240</option></select>
+<button id="expand">İlk kartı aç/kapat</button><button id="long">Uzun metin</button></aside>
+<div id="phone"></div><div id="measure"></div>
+<script src="controls.js"></script><script src="preview.js"></script>
+</html>

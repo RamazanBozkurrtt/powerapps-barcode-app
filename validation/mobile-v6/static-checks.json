@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "formula_count_prepared": 3662,
+  "executable_checks_prepared": 232,
+  "local_powerfx_parse_failures": 0,
+  "local_powerfx_executable_checks": "PASS",
+  "existing_behavior_formulas_unchanged": 84,
+  "galProducts_variable_height_runtime": true,
+  "template_bottom_spacer_runtime_and_yaml": true,
+  "galWarehouses_unchanged": true,
+  "responsive_manifest": {
+    "DocumentLayoutWidth": 390,
+    "DocumentLayoutHeight": 844,
+    "DocumentLayoutOrientation": "portrait",
+    "DocumentLayoutScaleToFit": false,
+    "DocumentLayoutMaintainAspectRatio": false,
+    "DocumentLayoutLockOrientation": false,
+    "DocumentAppType": "Phone"
+  },
+  "root_screen_and_container_formulas": "PASS",
+  "invalid_font_identifiers": 0,
+  "embedded_historical_app_checker_formula_findings": 3,
+  "embedded_app_checker_preserved_from_v5": true,
+  "studio_app_checker": "NOT RUN",
+  "physical_phone": "NOT TESTED"
+}

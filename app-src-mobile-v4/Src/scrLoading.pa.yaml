@@ -22,7 +22,7 @@ Screens:
           Fill: =RGBA(255, 255, 255, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =72
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -47,6 +47,7 @@ Screens:
     - tmrLoadingFlow:
         Control: Timer@2.1.0
         Properties:
+          Font: =Font.'Open Sans'
           AutoPause: =true
           AutoStart: =false
           Duration: =250
@@ -130,7 +131,7 @@ Screens:
           Fill: =RGBA(255, 255, 255, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =520
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -284,7 +285,7 @@ Screens:
                   Color: =RGBA(31, 41, 55, 1)
                   DisabledColor: =RGBA(75, 85, 99, 1)
                   FillPortions: =0
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   FontWeight: =FontWeight.Bold
                   Height: =56
                   LayoutMinHeight: =0
@@ -309,7 +310,7 @@ Screens:
                   Color: =RGBA(75, 85, 99, 1)
                   DisabledColor: =RGBA(75, 85, 99, 1)
                   FillPortions: =0
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   Height: =60
                   LayoutMinHeight: =0
                   LayoutMinWidth: =0
@@ -334,7 +335,7 @@ Screens:
                   DisabledColor: =RGBA(75, 85, 99, 1)
                   Fill: =RGBA(255, 247, 237, 1)
                   FillPortions: =0
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   FontWeight: =FontWeight.Semibold
                   Height: =40
                   LayoutMinHeight: =0
@@ -368,7 +369,7 @@ Screens:
           Fill: =App.Theme.Colors.Primary
           FocusedBorderColor: =Self.BorderColor
           FocusedBorderThickness: =4
-          Font: =App.Theme.Font
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Normal
           Height: =70
           HoverBorderColor: =App.Theme.Colors.Darker10

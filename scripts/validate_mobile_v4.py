@@ -56,6 +56,10 @@ for c in cs.values():
         assert [prop(child['Name'], 'ZIndex') for child in c['Children']] == [str(i) for i in range(1, len(c['Children'])+1)]
 rules = [{'name': n+'.'+r['Property'], 'formula': r['InvariantScript']}
          for n, c in cs.items() for r in c['Rules'] if r['InvariantScript']]
+# Parsing alone accepts unresolved enum members; validate every Font explicitly.
+fonts = [r for r in rules if r['name'].endswith('.Font')]
+assert len(fonts) == 53, len(fonts)
+assert all(r['formula'] == "Font.'Open Sans'" for r in fonts), fonts
 assert sum('barcode_flow.Run(' in r['formula'] for r in rules) == 1
 assert all('Reserve:' not in r['formula'] for r in rules)
 # The previous executable fixtures are valid because every original behavior,

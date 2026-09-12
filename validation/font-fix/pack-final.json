@@ -1,0 +1,18 @@
+{
+  "command": [
+    "pac",
+    "canvas",
+    "pack",
+    "--sources",
+    "app-src-mobile-v4",
+    "--msapp",
+    "build/font-tools/repacked-final.msapp",
+    "--layout",
+    "SourceCode",
+    "--disable-load-from-yaml",
+    "--overwrite"
+  ],
+  "exit": 0,
+  "stdout": "Pack from C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\app-src-mobile-v4 --> C:\\Users\\Ramazan Bozkurt\\Documents\\powerapps-barcode-app\\build\\font-tools\\repacked-final.msapp\nPacking succeeded.\n",
+  "stderr": ""
+}

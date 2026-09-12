@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "base_package": "versions\\Barkod-Uygulamasi-Mobile-Light-v5.msapp",
+  "base_sha256_before_and_after": "326d989cc73539f4dce37c27af4a9ded53d8958d113098d843f3b736f5354673",
+  "base_package_preserved": true,
+  "package": "versions\\Barkod-Uygulamasi-Mobile-Light-v6.msapp",
+  "sha256": "c824ae8ef8bfc6855560b69566b1cd67a84adef875a90a33d0027a639b5a7cbe",
+  "behavior_formulas_unchanged": 84,
+  "app_timers_and_nested_gallery_unchanged": true,
+  "added_control": "shpProductTemplateBottom",
+  "galProducts_variant": "galleryVariableTemplateHeight",
+  "studio_app_checker": "NOT RUN",
+  "physical_phone": "NOT TESTED"
+}

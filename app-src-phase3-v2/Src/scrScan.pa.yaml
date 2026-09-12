@@ -31,7 +31,7 @@ Screens:
           Fill: =RGBA(194, 65, 12, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =48
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -57,7 +57,7 @@ Screens:
         Control: Label@2.5.1
         Properties:
           Color: =RGBA(20, 27, 45, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Bold
           Height: =48
           PaddingBottom: =0
@@ -73,7 +73,7 @@ Screens:
         Control: Label@2.5.1
         Properties:
           Color: =RGBA(91, 101, 120, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           Height: =58
           PaddingBottom: =0
           PaddingLeft: =0
@@ -90,7 +90,7 @@ Screens:
         Properties:
           Align: =Align.Center
           Color: =RGBA(194, 65, 12, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =34
           PaddingBottom: =0
@@ -116,7 +116,7 @@ Screens:
           Fill: =RGBA(255, 255, 255, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =180
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -248,7 +248,7 @@ Screens:
           Fill: =RGBA(255, 255, 255, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =104
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -275,7 +275,7 @@ Screens:
         Properties:
           Align: =Align.Center
           Color: =RGBA(91, 101, 120, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           Height: =80
           PaddingBottom: =0
           PaddingLeft: =16
@@ -292,7 +292,7 @@ Screens:
         Control: Label@2.5.1
         Properties:
           Color: =RGBA(185, 28, 28, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =32
           PaddingBottom: =0
@@ -309,7 +309,7 @@ Screens:
         Control: Label@2.5.1
         Properties:
           Color: =RGBA(127, 29, 29, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           Height: =42
           PaddingBottom: =0
           PaddingLeft: =0

@@ -23,7 +23,7 @@ def apply_fixes(controls, docs, setp, get, changed):
         keep=['X','Y','Width','Height','Visible','DisplayMode','Text','OnSelect','AccessibleLabel','TabIndex','ZIndex']
         setp(name,**{p:old[p] for p in keep if p in old})
         decorative=old.get('DisplayMode')=='DisplayMode.Disabled'
-        setp(name, Font='Font.OpenSans', Size='16', FontWeight='FontWeight.Semibold',
+        setp(name, Font="Font.'Open Sans'", Size='16', FontWeight='FontWeight.Semibold',
              Fill=white if decorative else orange, Color=ink if decorative else white,
              HoverFill=soft if decorative else 'RGBA(154, 52, 18, 1)',
              PressedFill=soft if decorative else 'RGBA(124, 45, 18, 1)',
@@ -175,5 +175,5 @@ Set(varExpandedItemNumber, ThisItem.ItemNumber)'''
     # All visible surfaces are explicit; no dark theme-dependent fills remain.
     for name,c in controls.items():
         if c['Template']['Name']=='screen':setp(name,Fill=white)
-        if c['Template']['Name']=='label':setp(name,Font='Font.OpenSans')
+        if c['Template']['Name']=='label':setp(name,Font="Font.'Open Sans'")
     setp('shpHomeTopGlow',Fill=white)

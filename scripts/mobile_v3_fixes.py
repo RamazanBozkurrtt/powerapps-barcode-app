@@ -71,7 +71,7 @@ def apply_mobile(controls, setp, get, changed):
          Mode='TextMode.SingleLine', Format='TextFormat.Text', MaxLength='250',
          DelayOutput='false', Clear='true', Reset='false', OnChange='false', OnSelect='false',
          X='20', Y='268', Width='Parent.Width - 40', Height='48',
-         Font='Font.OpenSans', Size='16', Color=ink, Fill=white,
+         Font="Font.'Open Sans'", Size='16', Color=ink, Fill=white,
          BorderColor=muted, BorderThickness='1', HoverFill=white, HoverColor=ink,
          HoverBorderColor=orange, PressedFill=white, PressedColor=ink,
          DisabledFill='RGBA(243, 244, 246, 1)', DisabledColor=muted, DisabledBorderColor=muted,
@@ -123,7 +123,7 @@ If({OCR_GUARD},
             setp(name, Fill=white, Width='Max(App.Width, App.MinScreenWidth)',
                  Height='Max(App.Height, App.MinScreenHeight)')
         if kind == 'label':
-            setp(name, Color=ink, DisabledColor=muted, Font='Font.OpenSans')
+            setp(name, Color=ink, DisabledColor=muted, Font="Font.'Open Sans'")
         if kind == 'button' and name != 'btnProductToggle':
             decorative = get(name, 'DisplayMode') in ['DisplayMode.Disabled', 'DisplayMode.View']
             setp(name, Fill=white if decorative else orange, Color=ink if decorative else white,

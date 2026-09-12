@@ -26,7 +26,7 @@ Screens:
           Align: =Align.Center
           Color: =RGBA(31, 41, 55, 1)
           DisabledColor: =RGBA(75, 85, 99, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =34
           PaddingBottom: =0
@@ -53,7 +53,7 @@ Screens:
           Fill: =RGBA(255, 255, 255, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =180
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -125,7 +125,7 @@ Screens:
           Fill: =RGBA(255, 255, 255, 1)
           FocusedBorderColor: =RGBA(194, 65, 12, 1)
           FocusedBorderThickness: =3
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =104
           HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -152,7 +152,7 @@ Screens:
         Properties:
           Color: =RGBA(31, 41, 55, 1)
           DisabledColor: =RGBA(75, 85, 99, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           FontWeight: =FontWeight.Semibold
           Height: =32
           PaddingBottom: =0
@@ -170,7 +170,7 @@ Screens:
         Properties:
           Color: =RGBA(31, 41, 55, 1)
           DisabledColor: =RGBA(75, 85, 99, 1)
-          Font: =Font.OpenSans
+          Font: =Font.'Open Sans'
           Height: =42
           PaddingBottom: =0
           PaddingLeft: =0
@@ -256,7 +256,7 @@ Screens:
                   FillPortions: =0
                   FocusedBorderColor: =RGBA(194, 65, 12, 1)
                   FocusedBorderThickness: =3
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   FontWeight: =FontWeight.Semibold
                   Height: =48
                   HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -287,7 +287,7 @@ Screens:
                   Color: =RGBA(31, 41, 55, 1)
                   DisabledColor: =RGBA(75, 85, 99, 1)
                   FillPortions: =1
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   FontWeight: =FontWeight.Bold
                   Height: =48
                   LayoutMinHeight: =0
@@ -340,7 +340,7 @@ Screens:
                   Color: =RGBA(75, 85, 99, 1)
                   DisabledColor: =RGBA(75, 85, 99, 1)
                   FillPortions: =0
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   Height: =40
                   LayoutMinHeight: =0
                   LayoutMinWidth: =0
@@ -446,7 +446,7 @@ Screens:
                   FillPortions: =0
                   FocusedBorderColor: =Self.BorderColor
                   FocusedBorderThickness: =0
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   FontWeight: =FontWeight.Semibold
                   Height: =24
                   HoverBorderColor: =Self.BorderColor
@@ -504,7 +504,7 @@ Screens:
                   FillPortions: =0
                   FocusedBorderColor: =RGBA(194, 65, 12, 1)
                   FocusedBorderThickness: =2
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   Format: =TextFormat.Text
                   Height: =48
                   HintText: ="Örn. 57047 veya ürün adı"
@@ -553,7 +553,7 @@ Screens:
                   FillPortions: =0
                   FocusedBorderColor: =RGBA(194, 65, 12, 1)
                   FocusedBorderThickness: =3
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   FontWeight: =FontWeight.Semibold
                   Height: =48
                   HoverBorderColor: =RGBA(194, 65, 12, 1)
@@ -593,7 +593,7 @@ Screens:
                   Color: =RGBA(75, 85, 99, 1)
                   DisabledColor: =RGBA(75, 85, 99, 1)
                   FillPortions: =0
-                  Font: =Font.OpenSans
+                  Font: =Font.'Open Sans'
                   Height: =56
                   LayoutMinHeight: =0
                   LayoutMinWidth: =0

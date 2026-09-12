@@ -67,7 +67,7 @@ def apply_ui(cs, setp, get, changed, original):
         if kind == 'screen':
             setp(n, Width='App.Width', Height='App.Height', Fill=WHITE)
         if kind == 'label':
-            setp(n, Font='Font.OpenSans', Color=INK, Size='14', PaddingLeft='0', PaddingRight='0',
+            setp(n, Font="Font.'Open Sans'", Color=INK, Size='14', PaddingLeft='0', PaddingRight='0',
                  PaddingTop='0', PaddingBottom='0')
         if kind in ('button', 'text'):
             setp(n, RadiusTopLeft='8', RadiusTopRight='8', RadiusBottomLeft='8', RadiusBottomRight='8')
@@ -211,6 +211,8 @@ def apply_ui(cs, setp, get, changed, original):
     # Keep runtime tree order and Studio's ordering metadata in agreement after
     # reparenting. In particular, the old hint ZIndex must not precede the input.
     for n, c in cs.items():
+        if c['Template']['Name'] == 'timer':
+            setp(n, Font="Font.'Open Sans'")
         if c['Template']['Name'] == 'groupContainer':
             for index, child in enumerate(c['Children'], 1):
                 setp(child['Name'], ZIndex=str(index))
